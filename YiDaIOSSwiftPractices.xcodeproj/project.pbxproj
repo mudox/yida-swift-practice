@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2B48108124AA3A82457C3A2 /* Pods_YiDaIOSSwiftPracticesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B087A248BB17FD47F5DFF70D /* Pods_YiDaIOSSwiftPracticesTests.framework */; };
+		F20872FE0916A41C12D51E10 /* Pods_YiDaIOSSwiftPracticesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B636D437D6B7DF3A225AB2 /* Pods_YiDaIOSSwiftPracticesUITests.framework */; };
+		F403EF501D917CB100D61629 /* SecondLevelMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403EF4F1D917CB100D61629 /* SecondLevelMenuTableViewController.swift */; };
+		F47C9AF71D94396000E437DC /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C9AF61D94396000E437DC /* RootNavigationController.swift */; };
+		F48BA1561D93D23F0085A203 /* YDTintedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BA1551D93D23F0085A203 /* YDTintedLabel.swift */; };
+		F4AC75C51D91623000B5882D /* RootMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC75C41D91623000B5882D /* RootMenuViewController.swift */; };
+		F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FDF1D81A106006E1487 /* AppDelegate.swift */; };
+		F4C27FE51D81A106006E1487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE31D81A106006E1487 /* Main.storyboard */; };
+		F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE61D81A106006E1487 /* Assets.xcassets */; };
+		F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */; };
+		F4C27FF51D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FF41D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift */; };
+		F4C280001D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FFF1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift */; };
+		F4D386741D91A91A0009B4D5 /* SecondLevelMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D386731D91A91A0009B4D5 /* SecondLevelMenuTableViewCell.swift */; };
+		F4E40AA41D824DF500609D4F /* Mudox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E40AA31D824DF500609D4F /* Mudox.swift */; };
+		FE84531D08A770A42A999222 /* Pods_YiDaIOSSwiftPractices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEDA13FE5B58EC1DB630AD2 /* Pods_YiDaIOSSwiftPractices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4C27FF11D81A106006E1487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4C27FD41D81A106006E1487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4C27FDB1D81A106006E1487;
+			remoteInfo = YiDaIOSSwiftPractices;
+		};
+		F4C27FFC1D81A106006E1487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4C27FD41D81A106006E1487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4C27FDB1D81A106006E1487;
+			remoteInfo = YiDaIOSSwiftPractices;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0083B1C7B0C36867AA340D3C /* Pods-YiDaIOSSwiftPracticesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesTests/Pods-YiDaIOSSwiftPracticesTests.release.xcconfig"; sourceTree = "<group>"; };
+		07FB07B4A9FA1FDCF35BCA60 /* Pods-YiDaIOSSwiftPractices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPractices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPractices/Pods-YiDaIOSSwiftPractices.debug.xcconfig"; sourceTree = "<group>"; };
+		24C09EA493B19C532F91D0CF /* Pods-YiDaIOSSwiftPractices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPractices.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPractices/Pods-YiDaIOSSwiftPractices.release.xcconfig"; sourceTree = "<group>"; };
+		3FEDA13FE5B58EC1DB630AD2 /* Pods_YiDaIOSSwiftPractices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiDaIOSSwiftPractices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		866AF6623CAB75B5962A3586 /* Pods-YiDaIOSSwiftPracticesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesTests/Pods-YiDaIOSSwiftPracticesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B636D437D6B7DF3A225AB2 /* Pods_YiDaIOSSwiftPracticesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiDaIOSSwiftPracticesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B087A248BB17FD47F5DFF70D /* Pods_YiDaIOSSwiftPracticesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiDaIOSSwiftPracticesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C4B04E601AD63BC652274C /* Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F403EF4F1D917CB100D61629 /* SecondLevelMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLevelMenuTableViewController.swift; path = YiDaIOSSwiftPractices/Menu/SecondLevelMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		F47C9AF61D94396000E437DC /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootNavigationController.swift; path = YiDaIOSSwiftPractices/Menu/RootNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		F48BA1551D93D23F0085A203 /* YDTintedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YDTintedLabel.swift; path = YiDaIOSSwiftPractices/Menu/YDTintedLabel.swift; sourceTree = SOURCE_ROOT; };
+		F4AC75C41D91623000B5882D /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootMenuViewController.swift; path = YiDaIOSSwiftPractices/Menu/RootMenuViewController.swift; sourceTree = SOURCE_ROOT; };
+		F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiDaIOSSwiftPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C27FDF1D81A106006E1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4C27FE41D81A106006E1487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4C27FE61D81A106006E1487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4C27FE91D81A106006E1487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4C27FEB1D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C27FF01D81A106006E1487 /* YiDaIOSSwiftPracticesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiDaIOSSwiftPracticesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C27FF41D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiDaIOSSwiftPracticesTests.swift; sourceTree = "<group>"; };
+		F4C27FF61D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C27FFB1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiDaIOSSwiftPracticesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C27FFF1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiDaIOSSwiftPracticesUITests.swift; sourceTree = "<group>"; };
+		F4C280011D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D386731D91A91A0009B4D5 /* SecondLevelMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLevelMenuTableViewCell.swift; path = YiDaIOSSwiftPractices/Menu/SecondLevelMenuTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		F4E40AA31D824DF500609D4F /* Mudox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mudox.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C27FD91D81A106006E1487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE84531D08A770A42A999222 /* Pods_YiDaIOSSwiftPractices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C27FED1D81A106006E1487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B48108124AA3A82457C3A2 /* Pods_YiDaIOSSwiftPracticesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C27FF81D81A106006E1487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20872FE0916A41C12D51E10 /* Pods_YiDaIOSSwiftPracticesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1801E39B4C409EC71DB1A8CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FEDA13FE5B58EC1DB630AD2 /* Pods_YiDaIOSSwiftPractices.framework */,
+				B087A248BB17FD47F5DFF70D /* Pods_YiDaIOSSwiftPracticesTests.framework */,
+				A0B636D437D6B7DF3A225AB2 /* Pods_YiDaIOSSwiftPracticesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C800F15775C66EF8B825152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07FB07B4A9FA1FDCF35BCA60 /* Pods-YiDaIOSSwiftPractices.debug.xcconfig */,
+				24C09EA493B19C532F91D0CF /* Pods-YiDaIOSSwiftPractices.release.xcconfig */,
+				866AF6623CAB75B5962A3586 /* Pods-YiDaIOSSwiftPracticesTests.debug.xcconfig */,
+				0083B1C7B0C36867AA340D3C /* Pods-YiDaIOSSwiftPracticesTests.release.xcconfig */,
+				E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */,
+				C0C4B04E601AD63BC652274C /* Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F46085101D9465A1008B3078 /* View Basics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Basics";
+			sourceTree = "<group>";
+		};
+		F46085111D9465C1008B3078 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		F46085121D9465FD008B3078 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				F46085101D9465A1008B3078 /* View Basics */,
+				F46085111D9465C1008B3078 /* Button */,
+			);
+			name = Practice;
+			sourceTree = "<group>";
+		};
+		F46085191D94EB4A008B3078 /* Mudox */ = {
+			isa = PBXGroup;
+			children = (
+				F4E40AA31D824DF500609D4F /* Mudox.swift */,
+			);
+			name = Mudox;
+			sourceTree = "<group>";
+		};
+		F4C27FD31D81A106006E1487 = {
+			isa = PBXGroup;
+			children = (
+				F4C27FDE1D81A106006E1487 /* Src */,
+				F4C27FF31D81A106006E1487 /* Unit Test */,
+				F4C27FFE1D81A106006E1487 /* UI Test */,
+				F4C27FDD1D81A106006E1487 /* Products */,
+				8C800F15775C66EF8B825152 /* Pods */,
+				1801E39B4C409EC71DB1A8CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C27FDD1D81A106006E1487 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */,
+				F4C27FF01D81A106006E1487 /* YiDaIOSSwiftPracticesTests.xctest */,
+				F4C27FFB1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C27FDE1D81A106006E1487 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				F46085121D9465FD008B3078 /* Practice */,
+				F4D386751D91ADD90009B4D5 /* Menu */,
+				F46085191D94EB4A008B3078 /* Mudox */,
+				F4C27FDF1D81A106006E1487 /* AppDelegate.swift */,
+				F4C27FE31D81A106006E1487 /* Main.storyboard */,
+				F4C27FE61D81A106006E1487 /* Assets.xcassets */,
+				F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */,
+				F4C27FEB1D81A106006E1487 /* Info.plist */,
+			);
+			name = Src;
+			path = YiDaIOSSwiftPractices;
+			sourceTree = "<group>";
+		};
+		F4C27FF31D81A106006E1487 /* Unit Test */ = {
+			isa = PBXGroup;
+			children = (
+				F4C27FF41D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift */,
+				F4C27FF61D81A106006E1487 /* Info.plist */,
+			);
+			name = "Unit Test";
+			path = YiDaIOSSwiftPracticesTests;
+			sourceTree = "<group>";
+		};
+		F4C27FFE1D81A106006E1487 /* UI Test */ = {
+			isa = PBXGroup;
+			children = (
+				F4C27FFF1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift */,
+				F4C280011D81A106006E1487 /* Info.plist */,
+			);
+			name = "UI Test";
+			path = YiDaIOSSwiftPracticesUITests;
+			sourceTree = "<group>";
+		};
+		F4D386751D91ADD90009B4D5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F4AC75C41D91623000B5882D /* RootMenuViewController.swift */,
+				F47C9AF61D94396000E437DC /* RootNavigationController.swift */,
+				F48BA1551D93D23F0085A203 /* YDTintedLabel.swift */,
+				F403EF4F1D917CB100D61629 /* SecondLevelMenuTableViewController.swift */,
+				F4D386731D91A91A0009B4D5 /* SecondLevelMenuTableViewCell.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C27FDB1D81A106006E1487 /* YiDaIOSSwiftPractices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C280041D81A106006E1487 /* Build configuration list for PBXNativeTarget "YiDaIOSSwiftPractices" */;
+			buildPhases = (
+				D020D37D78531DDE4AD07A4C /* [CP] Check Pods Manifest.lock */,
+				F4C27FD81D81A106006E1487 /* Sources */,
+				F4C27FD91D81A106006E1487 /* Frameworks */,
+				F4C27FDA1D81A106006E1487 /* Resources */,
+				A4BB8532101594D085073B87 /* [CP] Embed Pods Frameworks */,
+				85D6D6CF3709837877F8626B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YiDaIOSSwiftPractices;
+			productName = YiDaIOSSwiftPractices;
+			productReference = F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4C27FEF1D81A106006E1487 /* YiDaIOSSwiftPracticesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C280071D81A106006E1487 /* Build configuration list for PBXNativeTarget "YiDaIOSSwiftPracticesTests" */;
+			buildPhases = (
+				0C2B55C7EE0BF74FB0EB3084 /* [CP] Check Pods Manifest.lock */,
+				F4C27FEC1D81A106006E1487 /* Sources */,
+				F4C27FED1D81A106006E1487 /* Frameworks */,
+				F4C27FEE1D81A106006E1487 /* Resources */,
+				EDF8ABB8C9BB106A5DEBFE39 /* [CP] Embed Pods Frameworks */,
+				5F0AA5D4A53069A9FE75F2EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4C27FF21D81A106006E1487 /* PBXTargetDependency */,
+			);
+			name = YiDaIOSSwiftPracticesTests;
+			productName = YiDaIOSSwiftPracticesTests;
+			productReference = F4C27FF01D81A106006E1487 /* YiDaIOSSwiftPracticesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4C27FFA1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C2800A1D81A106006E1487 /* Build configuration list for PBXNativeTarget "YiDaIOSSwiftPracticesUITests" */;
+			buildPhases = (
+				6EE412DF1DC1496E1F56F594 /* [CP] Check Pods Manifest.lock */,
+				F4C27FF71D81A106006E1487 /* Sources */,
+				F4C27FF81D81A106006E1487 /* Frameworks */,
+				F4C27FF91D81A106006E1487 /* Resources */,
+				52F846935AD778FDBE84F580 /* [CP] Embed Pods Frameworks */,
+				58C52F1C2B0046F84B0CAD74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4C27FFD1D81A106006E1487 /* PBXTargetDependency */,
+			);
+			name = YiDaIOSSwiftPracticesUITests;
+			productName = YiDaIOSSwiftPracticesUITests;
+			productReference = F4C27FFB1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C27FD41D81A106006E1487 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Mudox;
+				TargetAttributes = {
+					F4C27FDB1D81A106006E1487 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = YSQ5ZCLFSD;
+						LastSwiftMigration = 0800;
+					};
+					F4C27FEF1D81A106006E1487 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = YSQ5ZCLFSD;
+						LastSwiftMigration = 0800;
+						TestTargetID = F4C27FDB1D81A106006E1487;
+					};
+					F4C27FFA1D81A106006E1487 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = YSQ5ZCLFSD;
+						LastSwiftMigration = 0800;
+						TestTargetID = F4C27FDB1D81A106006E1487;
+					};
+				};
+			};
+			buildConfigurationList = F4C27FD71D81A106006E1487 /* Build configuration list for PBXProject "YiDaIOSSwiftPractices" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4C27FD31D81A106006E1487;
+			productRefGroup = F4C27FDD1D81A106006E1487 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C27FDB1D81A106006E1487 /* YiDaIOSSwiftPractices */,
+				F4C27FEF1D81A106006E1487 /* YiDaIOSSwiftPracticesTests */,
+				F4C27FFA1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4C27FDA1D81A106006E1487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */,
+				F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */,
+				F4C27FE51D81A106006E1487 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C27FEE1D81A106006E1487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C27FF91D81A106006E1487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C2B55C7EE0BF74FB0EB3084 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		52F846935AD778FDBE84F580 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58C52F1C2B0046F84B0CAD74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F0AA5D4A53069A9FE75F2EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesTests/Pods-YiDaIOSSwiftPracticesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EE412DF1DC1496E1F56F594 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85D6D6CF3709837877F8626B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YiDaIOSSwiftPractices/Pods-YiDaIOSSwiftPractices-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BB8532101594D085073B87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YiDaIOSSwiftPractices/Pods-YiDaIOSSwiftPractices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D020D37D78531DDE4AD07A4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF8ABB8C9BB106A5DEBFE39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesTests/Pods-YiDaIOSSwiftPracticesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C27FD81D81A106006E1487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48BA1561D93D23F0085A203 /* YDTintedLabel.swift in Sources */,
+				F47C9AF71D94396000E437DC /* RootNavigationController.swift in Sources */,
+				F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */,
+				F403EF501D917CB100D61629 /* SecondLevelMenuTableViewController.swift in Sources */,
+				F4D386741D91A91A0009B4D5 /* SecondLevelMenuTableViewCell.swift in Sources */,
+				F4E40AA41D824DF500609D4F /* Mudox.swift in Sources */,
+				F4AC75C51D91623000B5882D /* RootMenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C27FEC1D81A106006E1487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C27FF51D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C27FF71D81A106006E1487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C280001D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4C27FF21D81A106006E1487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4C27FDB1D81A106006E1487 /* YiDaIOSSwiftPractices */;
+			targetProxy = F4C27FF11D81A106006E1487 /* PBXContainerItemProxy */;
+		};
+		F4C27FFD1D81A106006E1487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4C27FDB1D81A106006E1487 /* YiDaIOSSwiftPractices */;
+			targetProxy = F4C27FFC1D81A106006E1487 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4C27FE31D81A106006E1487 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C27FE41D81A106006E1487 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C27FE91D81A106006E1487 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4C280021D81A106006E1487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4C280031D81A106006E1487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4C280051D81A106006E1487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07FB07B4A9FA1FDCF35BCA60 /* Pods-YiDaIOSSwiftPractices.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YiDaIOSSwiftPractices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPractices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4C280061D81A106006E1487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C09EA493B19C532F91D0CF /* Pods-YiDaIOSSwiftPractices.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YiDaIOSSwiftPractices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPractices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F4C280081D81A106006E1487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866AF6623CAB75B5962A3586 /* Pods-YiDaIOSSwiftPracticesTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YiDaIOSSwiftPracticesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPracticesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YiDaIOSSwiftPractices.app/YiDaIOSSwiftPractices";
+			};
+			name = Debug;
+		};
+		F4C280091D81A106006E1487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0083B1C7B0C36867AA340D3C /* Pods-YiDaIOSSwiftPracticesTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YiDaIOSSwiftPracticesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPracticesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YiDaIOSSwiftPractices.app/YiDaIOSSwiftPractices";
+			};
+			name = Release;
+		};
+		F4C2800B1D81A106006E1487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = YiDaIOSSwiftPracticesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPracticesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YiDaIOSSwiftPractices;
+			};
+			name = Debug;
+		};
+		F4C2800C1D81A106006E1487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C4B04E601AD63BC652274C /* Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = YiDaIOSSwiftPracticesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPracticesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YiDaIOSSwiftPractices;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C27FD71D81A106006E1487 /* Build configuration list for PBXProject "YiDaIOSSwiftPractices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C280021D81A106006E1487 /* Debug */,
+				F4C280031D81A106006E1487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C280041D81A106006E1487 /* Build configuration list for PBXNativeTarget "YiDaIOSSwiftPractices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C280051D81A106006E1487 /* Debug */,
+				F4C280061D81A106006E1487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C280071D81A106006E1487 /* Build configuration list for PBXNativeTarget "YiDaIOSSwiftPracticesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C280081D81A106006E1487 /* Debug */,
+				F4C280091D81A106006E1487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C2800A1D81A106006E1487 /* Build configuration list for PBXNativeTarget "YiDaIOSSwiftPracticesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C2800B1D81A106006E1487 /* Debug */,
+				F4C2800C1D81A106006E1487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4C27FD41D81A106006E1487 /* Project object */;
+}
