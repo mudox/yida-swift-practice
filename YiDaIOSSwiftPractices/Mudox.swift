@@ -15,8 +15,8 @@ struct Mudox {
     let formatter = MyLoggerFormatter()
 
     // Xcode debug area
-    let ttyLogger = DDTTYLogger.sharedInstance()
-    ttyLogger?.logFormatter = formatter
+    let ttyLogger = DDTTYLogger.sharedInstance()!
+    ttyLogger.logFormatter = formatter
     DDLog.add(ttyLogger)
 
     // Log to file
@@ -27,49 +27,68 @@ struct Mudox {
     DDLog.add(fileLogger)
 
     Jack.info("\(ProcessInfo.processInfo.processName) --- \(Date())")
-    Jack.error(">> Hi")
-    Jack.warn(">> Jack")
-    Jack.info(">> at")
-    Jack.debug(">> your")
-    Jack.verbose(">> service")
+    Jack.error("Hi")
+    Jack.warn("Jack")
+    Jack.info("at")
+    Jack.debug("your")
+    Jack.verbose("service\n\n\n")
   }
 }
 
 struct Jack {
 
-  static func error(_ message: String, _ file: String = #file, _ function: String = #function) {
-    let fileName = URL(fileURLWithPath: file).lastPathComponent as NSString
-    let name = fileName.substring(to: fileName.length - 5)
-
-    DDLogError("\(name) \(function)] \(message)")
+  enum Prefix {
+    case appName, fileFunctionName
   }
 
-  static func warn(_ message: String, _ file: String = #file, _ function: String = #function) {
-    let fileName = URL(fileURLWithPath: file).lastPathComponent as NSString
-    let name = fileName.substring(to: fileName.length - 5)
+  static let appName = ProcessInfo.processInfo.processName
 
-    DDLogWarn("\(name) \(function)] \(message)")
+  static let indentRegex = try! NSRegularExpression(pattern: "\\n[^\\n ]{2}", options: [])
+
+  private static func logFor(_ message: String, _ prefix: Prefix = .fileFunctionName,
+                             _ file: String = #file, _ function: String = #function) -> String {
+    // prefix uncontinued successive lines witb `>> `
+    var log = indentRegex.stringByReplacingMatches(
+      in: message, options: [], range: NSMakeRange(0, (message as NSString).length), withTemplate: "\n>> ")
+
+    if prefix == .fileFunctionName {
+      let fileName = URL(fileURLWithPath: file).lastPathComponent as NSString
+      let name = fileName.substring(to: fileName.length - 5)
+
+      log = "\(name) \(function)]" + log
+    } else {
+      log = "\(appName):" + log
+    }
+
+    return log
   }
 
-  static func info(_ message: String, _ file: String = #file, _ function: String = #function) {
-    let fileName = URL(fileURLWithPath: file).lastPathComponent as NSString
-    let name = fileName.substring(to: fileName.length - 5)
+  static func error(_ message: String, withPrefix prefix: Prefix = .fileFunctionName,
+                    _ file: String = #file, _ function: String = #function) {
 
-    DDLogInfo("\(name) \(function)] \(message)")
+    DDLogError(logFor(message, prefix, file, function))
   }
 
-  static func debug(_ message: String, _ file: String = #file, _ function: String = #function) {
-    let fileName = URL(fileURLWithPath: file).lastPathComponent as NSString
-    let name = fileName.substring(to: fileName.length - 5)
+  static func warn(_ message: String, withPrefix prefix: Prefix = .fileFunctionName,
+                    _ file: String = #file, _ function: String = #function) {
 
-    DDLogDebug("\(name) \(function)] \(message)")
+    DDLogWarn(logFor(message, prefix, file, function))
   }
 
-  static func verbose(_ message: String, _ file: String = #file, _ function: String = #function) {
-    let fileName = URL(fileURLWithPath: file).lastPathComponent as NSString
-    let name = fileName.substring(to: fileName.length - 5)
+  static func info(_ message: String, withPrefix prefix: Prefix = .fileFunctionName,
+                    _ file: String = #file, _ function: String = #function) {
 
-    DDLogVerbose("\(name) \(function)] \(message)")
+    DDLogInfo(logFor(message, prefix, file, function))
+  }
+
+  static func debug(_ message: String, withPrefix prefix: Prefix = .fileFunctionName,
+                    _ file: String = #file, _ function: String = #function) {
+    DDLogDebug(logFor(message, prefix, file, function))
+  }
+
+  static func verbose(_ message: String, withPrefix prefix: Prefix = .fileFunctionName,
+                    _ file: String = #file, _ function: String = #function) {
+    DDLogVerbose(logFor(message, prefix, file, function))
   }
 }
 
