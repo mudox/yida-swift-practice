@@ -7,12 +7,11 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class SecondLevelMenuTableViewCell: UITableViewCell {
-  @IBOutlet weak var title: YDTintedLabel!
-  @IBOutlet weak var subtitle: UILabel!
-
-  var level: YiDaIOSPracticeLevel = .Basics
+  @IBOutlet weak var titleLabel: YDTintedLabel!
+  @IBOutlet weak var subtitleLabel: UILabel!
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -25,8 +24,8 @@ class SecondLevelMenuTableViewCell: UITableViewCell {
     // Configure the view for the selected state
   }
 
-  func set(withInfo info: SecondLevelMenuCellInfo) {
-    title.text = info.title
-    subtitle.text = info.subTitle
+  func set(withJSONItem item: JSON) {
+    titleLabel.text = item["title"].stringValue
+    subtitleLabel.text = item["subtitle"].stringValue
   }
 }

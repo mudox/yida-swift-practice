@@ -11,10 +11,11 @@
 		F20872FE0916A41C12D51E10 /* Pods_YiDaIOSSwiftPracticesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B636D437D6B7DF3A225AB2 /* Pods_YiDaIOSSwiftPracticesUITests.framework */; };
 		F403EF501D917CB100D61629 /* SecondLevelMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403EF4F1D917CB100D61629 /* SecondLevelMenuTableViewController.swift */; };
 		F47C9AF71D94396000E437DC /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C9AF61D94396000E437DC /* RootNavigationController.swift */; };
+		F483A29A1DA2BFCA00198D59 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = F483A2991DA2BFCA00198D59 /* Menu.json */; };
 		F48BA1561D93D23F0085A203 /* YDTintedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48BA1551D93D23F0085A203 /* YDTintedLabel.swift */; };
 		F4AC75C51D91623000B5882D /* RootMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC75C41D91623000B5882D /* RootMenuViewController.swift */; };
+		F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */; };
 		F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FDF1D81A106006E1487 /* AppDelegate.swift */; };
-		F4C27FE51D81A106006E1487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE31D81A106006E1487 /* Main.storyboard */; };
 		F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE61D81A106006E1487 /* Assets.xcassets */; };
 		F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */; };
 		F4C27FF51D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FF41D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift */; };
@@ -53,11 +54,12 @@
 		E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F403EF4F1D917CB100D61629 /* SecondLevelMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLevelMenuTableViewController.swift; path = YiDaIOSSwiftPractices/Menu/SecondLevelMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		F47C9AF61D94396000E437DC /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootNavigationController.swift; path = YiDaIOSSwiftPractices/Menu/RootNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		F483A2991DA2BFCA00198D59 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Menu.json; path = Menu/Menu.json; sourceTree = "<group>"; };
 		F48BA1551D93D23F0085A203 /* YDTintedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YDTintedLabel.swift; path = YiDaIOSSwiftPractices/Menu/YDTintedLabel.swift; sourceTree = SOURCE_ROOT; };
 		F4AC75C41D91623000B5882D /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootMenuViewController.swift; path = YiDaIOSSwiftPractices/Menu/RootMenuViewController.swift; sourceTree = SOURCE_ROOT; };
+		F4ADC17B1DA2CD5400C5E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiDaIOSSwiftPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FDF1D81A106006E1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4C27FE41D81A106006E1487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C27FE61D81A106006E1487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C27FE91D81A106006E1487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4C27FEB1D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,8 +184,8 @@
 				F4D386751D91ADD90009B4D5 /* Menu */,
 				F46085191D94EB4A008B3078 /* Mudox */,
 				F4C27FDF1D81A106006E1487 /* AppDelegate.swift */,
-				F4C27FE31D81A106006E1487 /* Main.storyboard */,
 				F4C27FE61D81A106006E1487 /* Assets.xcassets */,
+				F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */,
 				F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */,
 				F4C27FEB1D81A106006E1487 /* Info.plist */,
 			);
@@ -214,6 +216,7 @@
 		F4D386751D91ADD90009B4D5 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				F483A2991DA2BFCA00198D59 /* Menu.json */,
 				F4AC75C41D91623000B5882D /* RootMenuViewController.swift */,
 				F47C9AF61D94396000E437DC /* RootNavigationController.swift */,
 				F48BA1551D93D23F0085A203 /* YDTintedLabel.swift */,
@@ -221,7 +224,8 @@
 				F4D386731D91A91A0009B4D5 /* SecondLevelMenuTableViewCell.swift */,
 			);
 			name = Menu;
-			sourceTree = "<group>";
+			path = YiDaIOSSwiftPractices;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -342,9 +346,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */,
 				F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */,
+				F483A29A1DA2BFCA00198D59 /* Menu.json in Resources */,
 				F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */,
-				F4C27FE51D81A106006E1487 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,10 +554,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F4C27FE31D81A106006E1487 /* Main.storyboard */ = {
+		F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F4C27FE41D81A106006E1487 /* Base */,
+				F4ADC17B1DA2CD5400C5E7E1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
