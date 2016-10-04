@@ -30,6 +30,8 @@ class SecondLevelMenuTableViewCell: UITableViewCell {
     subtitleLabel.text = item["subtitle"].stringValue
 
     if item["storyboardName"].stringValue == "" {
+      selectionStyle = .none
+
       titleLabel.textColor = subtitleLabel.textColor
 
       stateLabel.text = " N/A "
@@ -41,6 +43,8 @@ class SecondLevelMenuTableViewCell: UITableViewCell {
 
       accessoryType = .none
     } else {
+      selectionStyle = .default
+
       stateLabel.isHidden = true
       accessoryType = .disclosureIndicator
     }

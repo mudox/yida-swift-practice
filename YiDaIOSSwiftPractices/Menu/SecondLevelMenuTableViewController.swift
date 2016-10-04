@@ -42,7 +42,7 @@ class SecondLevelMenuTableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "2nd Level Menu Cell", for: indexPath) as! SecondLevelMenuTableViewCell
 
-    let item = menu[level, indexPath.section, "items", indexPath.row]
+    let item = menuItem(forIndexPath: indexPath)
     cell.set(withJSONItem: item)
 
     return cell
@@ -52,9 +52,28 @@ class SecondLevelMenuTableViewController: UITableViewController {
     return menu[level, section, "headerText"].stringValue
   }
 
+  // MARK: - Table delegate
+
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    let item = menuItem(forIndexPath: indexPath)
+    let storyboardName = item["storyboardName"].stringValue
+    let viewControllerReferenceID = item["viewControllerReferenceID"].stringValue
+
+    let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+    let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerReferenceID)
+
+    navigationController?.pushViewController(viewController, animated: true)
+  }
+
   // MARK: - Navigation
   override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
 
     return true
+  }
+
+  // MARK: - Helper methods
+  func menuItem(forIndexPath indexPath: IndexPath) -> JSON {
+    return menu[level, indexPath.section, "items", indexPath.row]
   }
 }

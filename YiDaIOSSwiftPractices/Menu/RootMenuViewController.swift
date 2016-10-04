@@ -79,6 +79,4 @@ class RootMenuViewController: UIViewController {
       assertionFailure("Invalid segue identifier \(segue.identifier!)")
     }
   }
-
-  // MARK: - Actions
 }

@@ -2,33 +2,48 @@
   "basic": [
 
     {
-      "headerText": "视图与控件（VIEW AND CONTROL）",
+      "headerText": "视图与基本控件",
       "items": [{
-        "title": "视图基础",
-        "subtitle": "UIView layout & basic animation",
+        "title": "视图基础（UIView）",
+        "subtitle": "UIView，视图动画",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "按钮控件",
-        "subtitle": "UIButton, a simple calculator",
+        "title": "按钮控件（UIButton）",
+        "subtitle": "一个简单的计算器",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }]
     },
 
     {
-      "headerText": "按钮控件",
+      "headerText": "视图进阶",
       "items": [{
-        "title": "视图基础",
-        "subtitle": "UIView layout & basic animation",
+        "title": "滚动视图（UIScrollView）",
+        "subtitle": "内容滑动，缩放, 滚动视图嵌套布局",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-
-        "title": "按钮控件",
-        "subtitle": "UIButton, a simple calculator",
+        "title": "表格视图（UITableView）",
+        "subtitle": "表格数据显示，编辑，移动, 表格单元自定义",
         "storyboardName": "",
         "viewControllerReferenceID": ""
+      }]
+
+    },
+
+    {
+      "headerText": "常用视图控制器",
+      "items": [{
+        "title": "视图控制器（UIViewController）",
+        "subtitle": "视图控制基础, 旋转控制",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "导航控制器（UINavigationController)",
+        "subtitle": "子试图控制器管理，导航栏自定义",
+        "storyboardName": "NavigationController",
+        "viewControllerReferenceID": "Navigation Content View Controller"
       }]
 
     }
