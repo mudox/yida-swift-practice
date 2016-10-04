@@ -90,10 +90,10 @@
                         <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="2nd Level Menu Cell" rowHeight="44" id="Zo1-5H-IcL" customClass="SecondLevelMenuTableViewCell" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="119.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zo1-5H-IcL" id="Bh5-ZF-mpP">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视图基础" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-LB-2Rx" customClass="YDTintedLabel" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
@@ -106,15 +106,26 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHc-7f-EiQ" customClass="YDTintedLabel" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="HK4-MB-aat"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.74509805439999999" green="0.15686275059999999" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="4Ke-LB-2Rx" firstAttribute="top" secondItem="Bh5-ZF-mpP" secondAttribute="topMargin" id="4ya-NG-X1b"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PHc-7f-EiQ" secondAttribute="trailing" id="7sq-dE-Ibb"/>
                                         <constraint firstItem="edd-g3-jxD" firstAttribute="top" secondItem="4Ke-LB-2Rx" secondAttribute="bottom" constant="2" id="FSj-Mq-ltp"/>
                                         <constraint firstItem="4Ke-LB-2Rx" firstAttribute="leading" secondItem="Bh5-ZF-mpP" secondAttribute="leadingMargin" id="Ra8-f2-pRC"/>
+                                        <constraint firstItem="PHc-7f-EiQ" firstAttribute="centerY" secondItem="Bh5-ZF-mpP" secondAttribute="centerY" id="kpH-oj-nlg"/>
                                         <constraint firstItem="edd-g3-jxD" firstAttribute="leading" secondItem="4Ke-LB-2Rx" secondAttribute="leading" id="u3K-Qt-aRi"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="stateLabel" destination="PHc-7f-EiQ" id="Run-U8-M7A"/>
                                     <outlet property="subtitleLabel" destination="edd-g3-jxD" id="IPQ-j3-JBc"/>
                                     <outlet property="titleLabel" destination="4Ke-LB-2Rx" id="TXf-vX-1LV"/>
                                 </connections>
