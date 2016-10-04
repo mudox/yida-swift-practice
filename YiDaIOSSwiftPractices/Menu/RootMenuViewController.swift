@@ -48,35 +48,39 @@ class RootMenuViewController: UIViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let vc = segue.destination as! SecondLevelMenuTableViewController
 
-    let bar = UINavigationBar.appearance()
+    var baseColor: UIColor = .black
 
     switch segue.identifier! {
     case "Show iOS Basic Second Menu":
+      baseColor = basicTintColor
+
       vc.navigationItem.title = "iOS 基础"
       vc.level = "basic"
-
-      let baseColor = basicTintColor
-      UIApplication.shared.keyWindow!.tintColor = baseColor
-      bar.barTintColor = baseColor
-      bar.tintColor = .white
-      bar.titleTextAttributes = [
-        NSForegroundColorAttributeName: UIColor.white
-      ]
+      vc.baseThemeColor = baseColor
 
     case "Show iOS Advanced Second Menu":
+      baseColor = advancedTintColor
+
       vc.navigationItem.title = "iOS 进阶"
       vc.level = "advanced"
-
-      let baseColor = advancedTintColor
-      UIApplication.shared.keyWindow!.tintColor = baseColor
-      bar.barTintColor = baseColor
-      bar.tintColor = .white
-      bar.titleTextAttributes = [
-        NSForegroundColorAttributeName: UIColor.white
-      ]
+      vc.baseThemeColor = baseColor
 
     default:
       assertionFailure("Invalid segue identifier \(segue.identifier!)")
     }
+
+    setAppTheme(withBaseColor: baseColor)
+  }
+
+  func setAppTheme(withBaseColor baseColor: UIColor) {
+    let navBar = UINavigationBar.appearance()
+
+    UIApplication.shared.keyWindow!.tintColor = baseColor
+
+    navBar.barTintColor = baseColor
+    navBar.tintColor = .white
+    navBar.titleTextAttributes = [
+      NSForegroundColorAttributeName: UIColor.white
+    ]
   }
 }

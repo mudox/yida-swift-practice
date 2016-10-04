@@ -55,9 +55,9 @@ struct Jack {
       let fileName = URL(fileURLWithPath: file).lastPathComponent as NSString
       let name = fileName.substring(to: fileName.length - 5)
 
-      log = "\(name) \(function)]" + log
+      log = "\(name) \(function)] " + log
     } else {
-      log = "\(appName):" + log
+      log = "\(appName): " + log
     }
 
     return log

@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--内容视图 #A-->
+        <!--第 # 级视图-->
         <scene sceneID="6F2-pv-G9t">
             <objects>
                 <viewController storyboardIdentifier="Navigation Content View Controller" id="WMs-3W-wzF" customClass="NavigationContentViewController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,15 +17,33 @@
                     <view key="view" contentMode="scaleToFill" id="ABt-wV-05v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFj-dm-vQN">
+                                <color key="backgroundColor" red="0.83470532720000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nFj-dm-vQN" firstAttribute="top" secondItem="gnt-sj-Few" secondAttribute="bottom" id="QOQ-y2-6Zv"/>
+                            <constraint firstItem="gpu-Ca-C2y" firstAttribute="top" secondItem="nFj-dm-vQN" secondAttribute="bottom" id="Rem-sE-UeC"/>
+                            <constraint firstAttribute="trailing" secondItem="nFj-dm-vQN" secondAttribute="trailing" id="bDG-G8-rTs"/>
+                            <constraint firstItem="nFj-dm-vQN" firstAttribute="leading" secondItem="ABt-wV-05v" secondAttribute="leading" id="hX4-TU-rJG"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="内容视图 #A" id="Sbv-Np-v59">
+                    <navigationItem key="navigationItem" title="第 # 级视图" id="Sbv-Np-v59">
+                        <barButtonItem key="backBarButtonItem" title=" " id="884-nL-6fd"/>
                         <barButtonItem key="rightBarButtonItem" title="跳转" id="qKO-Vq-bHH">
                             <connections>
                                 <action selector="jumpButtonTapped:" destination="WMs-3W-wzF" id="gK0-2M-z8x"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="indexLabel" destination="nFj-dm-vQN" id="muC-To-gxi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwZ-qE-8o9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,8 +11,13 @@ import SwiftyJSON
 
 class SecondLevelMenuTableViewController: UITableViewController {
 
-  var level: String!
   let menu = (UIApplication.shared.delegate as! AppDelegate).menuJSON!
+
+  var baseThemeColor: UIColor!
+
+  var level: String!
+
+  // MARK: - Overrides
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,6 +27,22 @@ class SecondLevelMenuTableViewController: UITableViewController {
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    restoreTheme()
+  }
+
+  func restoreTheme() {
+    let navBar = navigationController!.navigationBar
+    UIApplication.shared.keyWindow!.tintColor = baseThemeColor
+
+    navBar.barTintColor = baseThemeColor
+    navBar.tintColor = .white
+    navBar.titleTextAttributes = [
+      NSForegroundColorAttributeName: UIColor.white
+    ]
   }
 
   override func didReceiveMemoryWarning() {
@@ -57,8 +78,15 @@ class SecondLevelMenuTableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
     let item = menuItem(forIndexPath: indexPath)
-    let storyboardName = item["storyboardName"].stringValue
-    let viewControllerReferenceID = item["viewControllerReferenceID"].stringValue
+
+    guard
+      let storyboardName = item["storyboardName"].string,
+      storyboardName != "",
+      let viewControllerReferenceID = item["viewControllerReferenceID"].string,
+      viewControllerReferenceID != ""
+      else {
+        return
+    }
 
     let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
     let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerReferenceID)
