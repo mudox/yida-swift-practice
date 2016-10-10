@@ -28,6 +28,7 @@ class SecondLevelMenuTableViewCell: UITableViewCell {
   func set(withJSONItem item: JSON) {
     titleLabel.text = item["title"].stringValue
     subtitleLabel.text = item["subtitle"].stringValue
+    accessibilityIdentifier = item["viewControllerReferenceID"].stringValue
 
     if item["storyboardName"].stringValue == "" {
       selectionStyle = .none

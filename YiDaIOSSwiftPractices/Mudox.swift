@@ -20,10 +20,9 @@ struct Mudox {
     DDLog.add(ttyLogger)
 
     // Log to file
-    let logFileManager = DDLogFileManagerDefault(logsDirectory: "/tmp/CocoaLumberJack")
+    let logFileManager = DDLogFileManagerDefault(logsDirectory: "/tmp/mudox/log/Xcode/CocoaLumberjack")
     let fileLogger = DDFileLogger(logFileManager: logFileManager)!
     fileLogger.logFormatter = formatter
-
     DDLog.add(fileLogger)
 
     Jack.info("\(ProcessInfo.processInfo.processName) --- \(Date())")

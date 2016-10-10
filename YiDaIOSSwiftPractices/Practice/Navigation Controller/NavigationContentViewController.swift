@@ -8,10 +8,10 @@
 
 import UIKit
 
-let kNavigationContentViewControllerIdentifier = "Navigation Content View Controller"
+private let thisViewControllerIdentifier = "Navigation Controller Manages Content View Controllers"
 
 class NavigationContentViewController: UIViewController {
-  static let colors = [#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)]
+  static let colors = [#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)]
   static var instanceCount: Int = 0
 
   @IBOutlet weak var indexLabel: UILabel!
@@ -68,7 +68,7 @@ class NavigationContentViewController: UIViewController {
 
     setTheme()
 
-    navigationItem.title = "第\(navigationController!.viewControllers.count)级视图"
+    navigationItem.title = "第\(navigationController!.viewControllers.count)级子视图控制器"
     navigationItem.backBarButtonItem?.title = ""
     indexLabel.text = "\(instanceIndex + 1)"
   }
@@ -87,8 +87,8 @@ class NavigationContentViewController: UIViewController {
     var action: UIAlertAction
 
     if NavigationContentViewController.instanceCount < 4 {
-      action = UIAlertAction(title: "压入新的试图控制器", style: .default, handler: { (action: UIAlertAction) in
-        let newContentViewController = self.storyboard!.instantiateViewController(withIdentifier: kNavigationContentViewControllerIdentifier)
+      action = UIAlertAction(title: "压入新的视图控制器", style: .default, handler: { (action: UIAlertAction) in
+        let newContentViewController = self.storyboard!.instantiateViewController(withIdentifier: thisViewControllerIdentifier)
         self.navigationController!.pushViewController(newContentViewController, animated: true)
       })
       alert.addAction(action)

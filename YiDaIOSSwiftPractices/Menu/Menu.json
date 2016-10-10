@@ -33,17 +33,33 @@
     },
 
     {
-      "headerText": "常用视图控制器",
+      "headerText": "导航控制器（UINavigationController）",
       "items": [{
-        "title": "视图控制器（UIViewController）",
-        "subtitle": "视图控制基础, 旋转控制",
+        "title": "子视图管理",
+        "subtitle": "推入，弹出指定的子视图",
+        "storyboardName": "NavigationController",
+        "viewControllerReferenceID": "Navigation Controller Manages Content View Controllers"
+      }, {
+        "title": "自定义导航控制器",
+        "subtitle": "自定义导航栏，工具栏",
+        "storyboardName": "NavigationController",
+        "viewControllerReferenceID": "Customize Navigation Controller"
+      }]
+
+    },
+
+    {
+      "headerText": "标签栏控制器（UITabBarController）",
+      "items": [{
+        "title": "子视图管理",
+        "subtitle": "推入，弹出指定的子视图",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "导航控制器（UINavigationController)",
-        "subtitle": "子试图控制器管理，导航栏自定义",
-        "storyboardName": "NavigationController",
-        "viewControllerReferenceID": "Navigation Content View Controller"
+        "title": "自定义标签栏控制器",
+        "subtitle": "自定义导航栏，工具栏",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
       }]
 
     }

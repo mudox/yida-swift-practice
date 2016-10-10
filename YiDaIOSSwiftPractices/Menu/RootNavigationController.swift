@@ -10,6 +10,7 @@ import UIKit
 
 class RootNavigationController: UINavigationController {
 
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -22,7 +23,13 @@ class RootNavigationController: UINavigationController {
   }
 
   override var preferredStatusBarStyle: UIStatusBarStyle {
-    return .lightContent
+    if navigationBar.barTintColor != nil ||
+      navigationBar.barStyle == .black ||
+      navigationBar.backgroundImage(for: .default) != nil {
+      return .lightContent
+    } else {
+      return .default
+    }
   }
 
   /*

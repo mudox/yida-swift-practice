@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       Jack.error(menuJSON.error!.localizedDescription)
       return false
     }
+
     return true
   }
 

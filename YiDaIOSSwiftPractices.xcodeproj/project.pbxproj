@@ -24,6 +24,7 @@
 		F4EABB2B1DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */; };
 		F4EABB2C1DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */; };
 		F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */; };
+		F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */; };
 		FE84531D08A770A42A999222 /* Pods_YiDaIOSSwiftPractices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEDA13FE5B58EC1DB630AD2 /* Pods_YiDaIOSSwiftPractices.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLevelMenuTableViewCell.swift; path = Menu/SecondLevelMenuTableViewCell.swift; sourceTree = "<group>"; };
 		F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLevelMenuTableViewController.swift; path = Menu/SecondLevelMenuTableViewController.swift; sourceTree = "<group>"; };
 		F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YDTintedLabel.swift; path = Menu/YDTintedLabel.swift; sourceTree = "<group>"; };
+		F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomNavigationControllerViewController.swift; path = "Practice/Navigation Controller/CustomNavigationControllerViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			children = (
 				F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */,
 				F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */,
+				F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */,
 			);
 			name = "Navigation Controller";
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */,
 				F4A211C01DA3475F009E5FDF /* Mudox.swift in Sources */,
 				F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */,
+				F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */,
 				F4EABB2B1DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift in Sources */,
 				F4EABB2A1DA3AD2000FDB826 /* RootNavigationController.swift in Sources */,
 				F4EABB291DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,

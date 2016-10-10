@@ -32,17 +32,25 @@ class SecondLevelMenuTableViewController: UITableViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     restoreTheme()
+
+    // hide tool bar
+    navigationController?.setToolbarHidden(true, animated: true)
   }
 
   func restoreTheme() {
-    let navBar = navigationController!.navigationBar
+    // theme color
     UIApplication.shared.keyWindow!.tintColor = baseThemeColor
 
+    // restore navigation bar theme
+    let navBar = navigationController!.navigationBar
+    navBar.setBackgroundImage(nil, for: .default)
     navBar.barTintColor = baseThemeColor
     navBar.tintColor = .white
     navBar.titleTextAttributes = [
       NSForegroundColorAttributeName: UIColor.white
     ]
+
+    setNeedsStatusBarAppearanceUpdate()
   }
 
   override func didReceiveMemoryWarning() {

@@ -73,8 +73,8 @@ class RootMenuViewController: UIViewController {
   }
 
   func setAppTheme(withBaseColor baseColor: UIColor) {
+    // navigation bar
     let navBar = UINavigationBar.appearance()
-
     UIApplication.shared.keyWindow!.tintColor = baseColor
 
     navBar.barTintColor = baseColor
@@ -82,5 +82,8 @@ class RootMenuViewController: UIViewController {
     navBar.titleTextAttributes = [
       NSForegroundColorAttributeName: UIColor.white
     ]
+
+    // switch control
+    UISwitch.appearance().onTintColor = baseColor
   }
 }
