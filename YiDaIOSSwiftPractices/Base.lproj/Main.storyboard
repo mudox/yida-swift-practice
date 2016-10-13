@@ -40,19 +40,27 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="D75-gV-4tK">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raE-GP-D7h">
-                                        <color key="backgroundColor" red="0.35995176169999998" green="0.71594484059999997" blue="0.64883074659999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.27450981740000002" green="0.48627451059999999" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                                         <state key="normal" title="基 础"/>
                                         <connections>
-                                            <segue destination="h6K-2J-QjW" kind="show" identifier="Show iOS Basic Second Menu" id="SkW-WU-jEV"/>
+                                            <segue destination="h6K-2J-QjW" kind="show" identifier="Show iOS Basic Second Level Menu" id="SkW-WU-jEV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-Y8-xxP">
-                                        <color key="backgroundColor" red="0.80784314869999996" green="0.027450980619999999" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                                         <state key="normal" title="进 阶"/>
                                         <connections>
-                                            <segue destination="h6K-2J-QjW" kind="show" identifier="Show iOS Advanced Second Menu" id="L8E-wt-S1C"/>
+                                            <segue destination="h6K-2J-QjW" kind="show" identifier="Show iOS Advanced Second Level Menu" id="L8E-wt-S1C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioh-7W-M1H">
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
+                                        <state key="normal" title="框 架"/>
+                                        <connections>
+                                            <segue destination="h6K-2J-QjW" kind="show" identifier="Show iOS 3rd Party Frameworks Second Level Menu" id="TzJ-Jf-6R8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -73,6 +81,7 @@
                     <connections>
                         <outlet property="advancedButton" destination="5dC-Y8-xxP" id="z0X-pL-Ff8"/>
                         <outlet property="basicButton" destination="raE-GP-D7h" id="8ZF-84-5sz"/>
+                        <outlet property="frameworksButton" destination="ioh-7W-M1H" id="kGb-8f-545"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMF-Z4-LsP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="119.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zo1-5H-IcL" id="Bh5-ZF-mpP">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视图基础" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-LB-2Rx" customClass="YDTintedLabel" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
@@ -146,10 +155,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rs-3N-uOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562" y="106"/>
+            <point key="canvasLocation" x="2505" y="106"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="L8E-wt-S1C"/>
+        <segue reference="TzJ-Jf-6R8"/>
     </inferredMetricsTieBreakers>
 </document>

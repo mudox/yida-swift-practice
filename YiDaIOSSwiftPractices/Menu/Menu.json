@@ -33,6 +33,21 @@
     },
 
     {
+      "headerText": "视图控制器（UIViewController)",
+      "items": [{
+        "title": "标题未定",
+        "subtitle": "副标题未定",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "自定义展现与过渡动画",
+        "subtitle": "自定义试图控制器展现样式和动画过渡样式",
+        "storyboardName": "ViewController",
+        "viewControllerReferenceID": "Customize View Controller Presentation And Transition"
+      }]
+    },
+
+    {
       "headerText": "导航控制器（UINavigationController）",
       "items": [{
         "title": "子视图管理",
@@ -61,10 +76,8 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }]
-
     }
   ],
-
 
 
   "advanced": [
@@ -100,5 +113,38 @@
       }]
 
     }
+  ],
+
+  "3rd party frameworks": [
+    {
+      "headerText": "段落",
+      "items": [{
+        "title": "标题",
+        "subtitle": "副标题",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "标题",
+        "subtitle": "副标题",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
+      }]
+    },
+
+    {
+      "headerText": "段落",
+      "items": [{
+        "title": "标题",
+        "subtitle": "副标题",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "标题",
+        "subtitle": "副标题",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
+      }]
+    }
+
   ]
 }

@@ -15,17 +15,21 @@ enum YiDaPracticeLevel {
 class RootMenuViewController: UIViewController {
   @IBOutlet weak var basicButton: UIButton!
   @IBOutlet weak var advancedButton: UIButton!
+  @IBOutlet weak var frameworksButton: UIButton!
 
-  let basicTintColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
-  let advancedTintColor = #colorLiteral(red: 0.745098114, green: 0.258823514, blue: 0.2392157018, alpha: 1)
+  var basicTintColor = UIColor.white
+  var advancedTintColor = UIColor.white
+  var frameworksTintColor = UIColor.white
 
   // MARK: - Overrides
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    basicButton.backgroundColor = basicTintColor
-    advancedButton.backgroundColor = advancedTintColor
+    // background setted in storyboard will become the theme color of each part
+    basicTintColor = basicButton.backgroundColor!
+    advancedTintColor = advancedButton.backgroundColor!
+    frameworksTintColor = frameworksButton.backgroundColor!
   }
 
   override func didReceiveMemoryWarning() {
@@ -51,32 +55,37 @@ class RootMenuViewController: UIViewController {
     var baseColor: UIColor = .black
 
     switch segue.identifier! {
-    case "Show iOS Basic Second Menu":
+    case "Show iOS Basic Second Level Menu":
       baseColor = basicTintColor
 
       vc.navigationItem.title = "iOS 基础"
       vc.level = "basic"
-      vc.baseThemeColor = baseColor
 
-    case "Show iOS Advanced Second Menu":
+    case "Show iOS Advanced Second Level Menu":
       baseColor = advancedTintColor
 
       vc.navigationItem.title = "iOS 进阶"
       vc.level = "advanced"
-      vc.baseThemeColor = baseColor
+
+    case "Show iOS 3rd Party Frameworks Second Level Menu":
+      baseColor = frameworksTintColor
+
+      vc.navigationItem.title = "开源框架"
+      vc.level = "3rd party frameworks"
 
     default:
       assertionFailure("Invalid segue identifier \(segue.identifier!)")
     }
 
+    vc.baseThemeColor = baseColor
     setAppTheme(withBaseColor: baseColor)
   }
 
   func setAppTheme(withBaseColor baseColor: UIColor) {
     // navigation bar
-    let navBar = UINavigationBar.appearance()
     UIApplication.shared.keyWindow!.tintColor = baseColor
 
+    let navBar = UINavigationBar.appearance()
     navBar.barTintColor = baseColor
     navBar.tintColor = .white
     navBar.titleTextAttributes = [
