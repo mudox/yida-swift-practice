@@ -13,9 +13,10 @@
 		F44517971DAD3CE800924485 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44517961DAD3CE800924485 /* ViewController.storyboard */; };
 		F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */; };
 		F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */; };
-		F44517A11DAE64F000924485 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517A01DAE64F000924485 /* SlideInAnimator.swift */; };
 		F44517A31DAE8CA800924485 /* Mudox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517A21DAE8CA800924485 /* Mudox.swift */; };
 		F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */; };
+		F49EE6EF1DB5BFC700538A61 /* OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EE6EE1DB5BFC700538A61 /* OCUITests.m */; };
+		F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */; };
 		F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */; };
 		F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FDF1D81A106006E1487 /* AppDelegate.swift */; };
 		F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE61D81A106006E1487 /* Assets.xcassets */; };
@@ -65,9 +66,11 @@
 		F44517961DAD3CE800924485 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentationTableViewController.swift; path = "Practice/View Controller/CustomPresentationTableViewController.swift"; sourceTree = "<group>"; };
 		F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentedViewController.swift; path = "Practice/View Controller/CustomPresentedViewController.swift"; sourceTree = "<group>"; };
-		F44517A01DAE64F000924485 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInAnimator.swift; sourceTree = "<group>"; };
 		F44517A21DAE8CA800924485 /* Mudox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mudox.swift; path = "../../../../xcode-project-startup-files/Swift/Mudox.swift"; sourceTree = "<group>"; };
 		F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "Practice/View Controller/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
+		F49EE6ED1DB5BFC700538A61 /* YiDaIOSSwiftPracticesUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiDaIOSSwiftPracticesUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F49EE6EE1DB5BFC700538A61 /* OCUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCUITests.m; sourceTree = "<group>"; };
+		F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInAnimator.swift; path = "Practice/View Controller/SlideInAnimator.swift"; sourceTree = "<group>"; };
 		F4ADC17B1DA2CD5400C5E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiDaIOSSwiftPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FDF1D81A106006E1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,7 +172,7 @@
 		F46AA5141DACD45B00DBC3A2 /* CustomPresentation */ = {
 			isa = PBXGroup;
 			children = (
-				F44517A01DAE64F000924485 /* SlideInAnimator.swift */,
+				F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */,
 				F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */,
 				F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */,
 				F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */,
@@ -229,8 +232,10 @@
 		F4C27FFE1D81A106006E1487 /* UI Test */ = {
 			isa = PBXGroup;
 			children = (
+				F49EE6EE1DB5BFC700538A61 /* OCUITests.m */,
 				F4C27FFF1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift */,
 				F4C280011D81A106006E1487 /* Info.plist */,
+				F49EE6ED1DB5BFC700538A61 /* YiDaIOSSwiftPracticesUITests-Bridging-Header.h */,
 			);
 			name = "UI Test";
 			path = YiDaIOSSwiftPracticesUITests;
@@ -569,7 +574,7 @@
 				F4EABB291DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
 				F4EABB2C1DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift in Sources */,
 				F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */,
-				F44517A11DAE64F000924485 /* SlideInAnimator.swift in Sources */,
+				F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C280001D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift in Sources */,
+				F49EE6EF1DB5BFC700538A61 /* OCUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,10 +780,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YiDaIOSSwiftPracticesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPracticesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YiDaIOSSwiftPracticesUITests/YiDaIOSSwiftPracticesUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = YiDaIOSSwiftPractices;
 			};
@@ -787,10 +796,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0C4B04E601AD63BC652274C /* Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YiDaIOSSwiftPracticesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yidahulian.mudox.YiDaIOSSwiftPracticesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YiDaIOSSwiftPracticesUITests/YiDaIOSSwiftPracticesUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = YiDaIOSSwiftPractices;
 			};

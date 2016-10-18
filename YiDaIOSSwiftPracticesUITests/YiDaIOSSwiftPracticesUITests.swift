@@ -202,5 +202,15 @@ extension YiDaIOSSwiftPracticesUITests {
 
     popCurrentViewController()
   }
+  
+  func testSwipeToReturn() {
+    enterBasicPartIfNeeded()
+    let from = app.tables.element.coordinate(withNormalizedOffset: CGVector(dx: 0.01, dy: 0.5))
+    let to = from.withOffset(CGVector(dx: 100, dy: 0))
+    from.press(forDuration: 1, thenDragTo: to)
+    to.press(forDuration: 1, thenDragTo: from)
+    sleep(3)
+//    popCurrentViewController()
+  }
 }
 

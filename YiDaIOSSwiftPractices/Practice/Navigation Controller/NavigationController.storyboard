@@ -51,12 +51,12 @@
             </objects>
             <point key="canvasLocation" x="1060" y="-167"/>
         </scene>
-        <!--标题-->
+        <!--导航栏-->
         <scene sceneID="K9h-bx-j3V">
             <objects>
                 <tableViewController storyboardIdentifier="Customize Navigation Controller" id="h4j-Pm-O5G" customClass="CustomNavigationControllerTableViewController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="NvJ-ch-KU0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -88,28 +88,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AXJ-EV-Tfa">
-                                        <rect key="frame" x="0.0" y="163.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AXJ-EV-Tfa" id="MdD-vO-22L">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlN-2G-yH6">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="YlN-2G-yH6" firstAttribute="leading" secondItem="MdD-vO-22L" secondAttribute="leading" constant="20" id="CJC-hg-cRX"/>
-                                                <constraint firstAttribute="bottom" secondItem="YlN-2G-yH6" secondAttribute="bottom" constant="4" id="KUt-f9-JYN"/>
-                                                <constraint firstItem="YlN-2G-yH6" firstAttribute="top" secondItem="MdD-vO-22L" secondAttribute="top" id="hZn-V8-WxW"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Gox-Rs-Dhl">
-                                        <rect key="frame" x="0.0" y="207.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="163.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gox-Rs-Dhl" id="FQx-ff-Cg9">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -138,34 +118,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dDw-uC-fjv">
-                                        <rect key="frame" x="0.0" y="251.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dDw-uC-fjv" id="qdk-sC-TDI">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vb-3k-vqh">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="1vb-3k-vqh" firstAttribute="top" secondItem="qdk-sC-TDI" secondAttribute="top" id="09l-Gw-Rm3"/>
-                                                <constraint firstItem="1vb-3k-vqh" firstAttribute="leading" secondItem="qdk-sC-TDI" secondAttribute="leading" constant="20" id="GMW-YX-Gch"/>
-                                                <constraint firstAttribute="bottom" secondItem="1vb-3k-vqh" secondAttribute="bottom" constant="4" id="aJL-iq-vbs"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="REq-gG-E3X">
-                                        <rect key="frame" x="0.0" y="295.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="207.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="REq-gG-E3X" id="tDE-tQ-5a3">
                                             <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bMu-uN-Ukf">
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="bMu-uN-Ukf">
                                                     <segments>
                                                         <segment title="默认"/>
                                                         <segment title="颜色"/>
@@ -189,34 +149,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gJU-Fe-q2U">
-                                        <rect key="frame" x="0.0" y="339.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJU-Fe-q2U" id="bvX-PU-mH8">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-b9-3eZ">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="dSa-b9-3eZ" secondAttribute="bottom" constant="4" id="8Ie-So-lkn"/>
-                                                <constraint firstItem="dSa-b9-3eZ" firstAttribute="top" secondItem="bvX-PU-mH8" secondAttribute="top" id="lBT-zR-mSO"/>
-                                                <constraint firstItem="dSa-b9-3eZ" firstAttribute="leading" secondItem="bvX-PU-mH8" secondAttribute="leading" constant="20" id="pd9-Se-OEW"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4dI-zG-5BD">
-                                        <rect key="frame" x="0.0" y="383.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="251.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4dI-zG-5BD" id="fea-i4-Khd">
                                             <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1Wi-OK-4sf">
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="1Wi-OK-4sf">
                                                     <segments>
                                                         <segment title="文字"/>
                                                         <segment title="图片"/>
@@ -240,31 +180,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RZt-nv-4he">
-                                        <rect key="frame" x="0.0" y="427.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RZt-nv-4he" id="grP-Ub-Upi">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6si-FQ-sSp">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="6si-FQ-sSp" firstAttribute="leading" secondItem="grP-Ub-Upi" secondAttribute="leading" constant="20" id="WeK-iL-YDR"/>
-                                                <constraint firstItem="6si-FQ-sSp" firstAttribute="top" secondItem="grP-Ub-Upi" secondAttribute="top" id="cTi-E7-QE3"/>
-                                                <constraint firstAttribute="bottom" secondItem="6si-FQ-sSp" secondAttribute="bottom" constant="4" id="fHr-Zv-JdR"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="jyj-yt-YTx">
-                                        <rect key="frame" x="0.0" y="471.5" width="375" height="190"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="191" id="jyj-yt-YTx">
+                                        <rect key="frame" x="0.0" y="295.5" width="375" height="191"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyj-yt-YTx" id="Lfw-tZ-d75">
-                                            <frame key="frameInset" width="375" height="190"/>
+                                            <frame key="frameInset" width="375" height="191"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导航栏按钮项：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQn-EX-EVm">
@@ -287,7 +207,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-rb-d7g">
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-rb-d7g">
                                                     <segments>
                                                         <segment title="系统"/>
                                                         <segment title="文字"/>
@@ -298,11 +218,11 @@
                                                         <action selector="navbarLeftButtonItemStyleChanged:" destination="h4j-Pm-O5G" eventType="valueChanged" id="qaS-g9-afk"/>
                                                     </connections>
                                                 </segmentedControl>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BSc-dV-f0H">
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="BSc-dV-f0H">
                                                     <segments>
                                                         <segment title="0" width="28"/>
                                                         <segment title="1" width="28"/>
-                                                        <segment title="2" width="28" enabled="NO"/>
+                                                        <segment title="2" width="28"/>
                                                     </segments>
                                                     <connections>
                                                         <action selector="navbarLeftButtonItemCountChanged:" destination="h4j-Pm-O5G" eventType="valueChanged" id="DM5-5M-Phc"/>
@@ -313,7 +233,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DEO-Fa-dwK">
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="DEO-Fa-dwK">
                                                     <segments>
                                                         <segment title="系统"/>
                                                         <segment title="文字"/>
@@ -334,11 +254,11 @@
                                                         <action selector="navbarCoexistsWithBackButtonChanged:" destination="h4j-Pm-O5G" eventType="valueChanged" id="YeJ-v7-cX5"/>
                                                     </connections>
                                                 </switch>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VUD-tk-M6Q">
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="VUD-tk-M6Q">
                                                     <segments>
                                                         <segment title="0" width="28"/>
                                                         <segment title="1" width="28"/>
-                                                        <segment title="2" width="28" enabled="NO"/>
+                                                        <segment title="2" width="28"/>
                                                     </segments>
                                                     <connections>
                                                         <action selector="navbarRightBarButtonItemCountChanged:" destination="h4j-Pm-O5G" eventType="valueChanged" id="DVq-qx-7mQ"/>
@@ -371,33 +291,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ESn-Rl-dcp">
-                                        <rect key="frame" x="0.0" y="661.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ESn-Rl-dcp" id="Hio-CJ-XiK">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePY-UZ-QAO">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ePY-UZ-QAO" firstAttribute="top" secondItem="Hio-CJ-XiK" secondAttribute="top" id="2ol-zT-TTm"/>
-                                                <constraint firstItem="ePY-UZ-QAO" firstAttribute="leading" secondItem="Hio-CJ-XiK" secondAttribute="leading" constant="20" id="3iq-oz-cNq"/>
-                                                <constraint firstAttribute="bottom" secondItem="ePY-UZ-QAO" secondAttribute="bottom" constant="4" id="Mow-8l-eLf"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ePY-UZ-QAO" secondAttribute="trailing" id="fPC-SJ-ju1"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="自定义工具栏" id="4FB-wp-Su7">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="coG-uV-2yy">
-                                        <rect key="frame" x="0.0" y="761.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="542.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="coG-uV-2yy" id="VFA-37-XgR">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -428,34 +327,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="1AG-Kh-cVU">
-                                        <rect key="frame" x="0.0" y="805.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1AG-Kh-cVU" id="osQ-Wh-dtc">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coJ-oL-21S">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="coJ-oL-21S" secondAttribute="bottom" constant="4" id="5xQ-xh-6qV"/>
-                                                <constraint firstItem="coJ-oL-21S" firstAttribute="leading" secondItem="osQ-Wh-dtc" secondAttribute="leading" constant="20" id="dNq-eu-uNX"/>
-                                                <constraint firstItem="coJ-oL-21S" firstAttribute="top" secondItem="osQ-Wh-dtc" secondAttribute="top" id="fh3-oO-nEX"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="b44-B9-rbK">
-                                        <rect key="frame" x="0.0" y="849.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="586.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b44-B9-rbK" id="ydZ-Sz-Bfw">
                                             <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sdb-pN-6a2">
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="sdb-pN-6a2">
                                                     <segments>
                                                         <segment title="默认"/>
                                                         <segment title="颜色"/>
@@ -479,31 +358,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="C45-oS-1mT">
-                                        <rect key="frame" x="0.0" y="893.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C45-oS-1mT" id="ygY-cs-dQB">
-                                            <frame key="frameInset" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP5-8l-SCY">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="yP5-8l-SCY" firstAttribute="leading" secondItem="ygY-cs-dQB" secondAttribute="leading" constant="20" id="HtF-aa-bxm"/>
-                                                <constraint firstItem="yP5-8l-SCY" firstAttribute="top" secondItem="ygY-cs-dQB" secondAttribute="top" id="TgO-Op-khL"/>
-                                                <constraint firstAttribute="bottom" secondItem="yP5-8l-SCY" secondAttribute="bottom" constant="4" id="f7z-X0-RL5"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="w6c-yc-4Fk">
-                                        <rect key="frame" x="0.0" y="937.5" width="375" height="130"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="w6c-yc-4Fk">
+                                        <rect key="frame" x="0.0" y="630.5" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w6c-yc-4Fk" id="51Z-ne-chA">
-                                            <frame key="frameInset" width="375" height="130"/>
+                                            <frame key="frameInset" width="375" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="frs-sf-4Ha">
@@ -557,26 +416,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="20" id="Spq-Fx-X0u">
-                                        <rect key="frame" x="0.0" y="1067.5" width="375" height="20"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Spq-Fx-X0u" id="Hfg-Qz-xfU">
-                                            <frame key="frameInset" width="375" height="20"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-vG-wSU">
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="pKz-vG-wSU" firstAttribute="top" secondItem="Hfg-Qz-xfU" secondAttribute="top" id="KnS-xe-g0d"/>
-                                                <constraint firstItem="pKz-vG-wSU" firstAttribute="leading" secondItem="Hfg-Qz-xfU" secondAttribute="leading" constant="20" id="dIq-Nl-0Nn"/>
-                                                <constraint firstAttribute="bottom" secondItem="pKz-vG-wSU" secondAttribute="bottom" constant="4" id="qjD-nM-Q0C"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -586,33 +425,25 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="标题" id="K1b-f5-r3Z"/>
+                    <navigationItem key="navigationItem" title="导航栏" id="K1b-f5-r3Z"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1300"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="navbarBackgroundDetailLabel" destination="dSa-b9-3eZ" id="G0D-Dv-8jt"/>
                         <outlet property="navbarBackgroundSegmentedControl" destination="bMu-uN-Ukf" id="KuF-ip-Vzs"/>
-                        <outlet property="navbarButtonItemDetailLabel" destination="ePY-UZ-QAO" id="uHT-mr-FXd"/>
                         <outlet property="navbarCoexistsWithBackButtonSwitch" destination="MIo-is-zq1" id="FQR-mU-YlL"/>
                         <outlet property="navbarHideBackButtonSwitch" destination="y0n-Hj-xSb" id="1jq-k1-lmb"/>
                         <outlet property="navbarLeftButtonItemCountSegmentedControl" destination="BSc-dV-f0H" id="l46-eB-pfQ"/>
                         <outlet property="navbarLeftButtonItemStyleSegmentedControl" destination="cJW-rb-d7g" id="HR3-Oq-UYb"/>
                         <outlet property="navbarRightButtonItemCountSegmentedControl" destination="VUD-tk-M6Q" id="68Y-xd-6cQ"/>
                         <outlet property="navbarRightButtonItemStyleSegmentedControl" destination="DEO-Fa-dwK" id="pvv-i1-NqH"/>
-                        <outlet property="navbarStyleDetailLabel" destination="1vb-3k-vqh" id="cdy-82-l2B"/>
                         <outlet property="navbarStyleSegmentedControl" destination="UNV-y0-K5N" id="eql-wb-tp3"/>
-                        <outlet property="navbarTitleDetailLabel" destination="6si-FQ-sSp" id="inF-QR-ZBD"/>
                         <outlet property="navbarTitleSegmentedControl" destination="1Wi-OK-4sf" id="6l3-FI-9Ht"/>
-                        <outlet property="promptDetailLabel" destination="YlN-2G-yH6" id="bjC-O1-xbu"/>
                         <outlet property="promptSwitch" destination="9z8-L7-1k9" id="LEn-H6-qtP"/>
-                        <outlet property="toolbarBackgroundDetailLabel" destination="yP5-8l-SCY" id="1JJ-Ba-8d3"/>
                         <outlet property="toolbarBackgroundSegmentedControl" destination="sdb-pN-6a2" id="HpN-8f-5YC"/>
                         <outlet property="toolbarItemLayoutSegmentedControl" destination="YXU-8l-5h4" id="CBu-uY-sAf"/>
                         <outlet property="toolbarItemStyleSegmentedControl" destination="frs-sf-4Ha" id="XBy-wF-KPo"/>
-                        <outlet property="toolbarItemsDetailLabel" destination="pKz-vG-wSU" id="A8W-4a-cmQ"/>
-                        <outlet property="toolbarStyleDetailLabel" destination="coJ-oL-21S" id="GUI-om-Lm1"/>
                         <outlet property="toolbarStyleSegmentedControl" destination="peI-bW-iOb" id="9na-jB-8hn"/>
                     </connections>
                 </tableViewController>

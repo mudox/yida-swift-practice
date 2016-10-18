@@ -20,18 +20,9 @@ class CustomNavigationControllerTableViewController: UITableViewController {
   // MARK: - Outlets
 
   @IBOutlet weak var promptSwitch: UISwitch!
-  @IBOutlet weak var promptDetailLabel: UILabel!
-
   @IBOutlet weak var navbarStyleSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var navbarStyleDetailLabel: UILabel!
-
   @IBOutlet weak var navbarBackgroundSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var navbarBackgroundDetailLabel: UILabel!
-
   @IBOutlet weak var navbarTitleSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var navbarTitleDetailLabel: UILabel!
-
-  @IBOutlet weak var navbarButtonItemDetailLabel: UILabel!
 
   // left bar button item
   @IBOutlet weak var navbarLeftButtonItemStyleSegmentedControl: UISegmentedControl!
@@ -46,12 +37,10 @@ class CustomNavigationControllerTableViewController: UITableViewController {
 
   // tool bar
   @IBOutlet weak var toolbarStyleSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var toolbarStyleDetailLabel: UILabel!
   @IBOutlet weak var toolbarBackgroundSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var toolbarBackgroundDetailLabel: UILabel!
   @IBOutlet weak var toolbarItemStyleSegmentedControl: UISegmentedControl!
   @IBOutlet weak var toolbarItemLayoutSegmentedControl: UISegmentedControl!
-  @IBOutlet weak var toolbarItemsDetailLabel: UILabel!
+
   // MARK: - Actions
   enum navbarItemSide {
     case leftSide, rightSide
@@ -59,7 +48,7 @@ class CustomNavigationControllerTableViewController: UITableViewController {
 
   lazy var barButtonItems = initBarButtonItems()
 
-  func updatenavbarIems(of side: navbarItemSide) {
+  func updateNavbarItems(of side: navbarItemSide) {
     let itemCount = (side == .leftSide)
       ? navbarLeftButtonItemCountSegmentedControl.selectedSegmentIndex
       : navbarRightButtonItemCountSegmentedControl.selectedSegmentIndex
@@ -85,105 +74,14 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     }
   }
 
-  func updatenavbarButtonItemDetailLabel() {
-    var detail = ""
-
-    let leftItemCount = navbarLeftButtonItemCountSegmentedControl.selectedSegmentIndex
-    if leftItemCount > 0 {
-      switch navbarLeftButtonItemStyleSegmentedControl.selectedSegmentIndex {
-      case 0:
-        detail +=
-          "let item = UIBarButtonItem(barButtonSystemItem: .action ...)\n"
-          + "navigationItem.setLeftBarButtonItem(item, animated: true)"
-      case 1:
-        detail +=
-          "var items = [UIBarButtonItem]()\n"
-          + "for _ in 0..<\(leftItemCount) {\n"
-          + "  let item = UIBarButtonItem(title: \"1\" ...)\n"
-          + "  items.append(item)\n"
-          + "}\n"
-          + "navigationItem.setLeftBarButtonItems(items, animated: true)"
-      case 2:
-        detail +=
-          "var items = [UIBarButtonItem]()\n"
-          + "for _ in 0..<\(leftItemCount) {\n"
-          + "  let item = UIBarButtonItem(customView: UIImageView(...) ...)\n"
-          + "  items.append(item)\n"
-          + "}\n"
-          + "navigationItem.setLeftBarButtonItems(items, animated: true)"
-      case 3:
-        detail +=
-          "var items = [UIBarButtonItem]()\n"
-          + "for _ in 0..<\(leftItemCount) {\n"
-          + "  let button = UIButton(...)\n"
-          + "  button.frame = CGRect(...)\n"
-          + "  button.setTitle(...)\n"
-          + "  let item = UIBarButtonItem(customView: UIButton(...) ...)\n"
-          + "  items.append(item)\n"
-          + "}\n"
-          + "navigationItem.setLeftBarButtonItems(items, animated: true)"
-      default:
-        assertionFailure()
-      }
-    }
-
-    detail += "\n\n"
-      + "navigationItem.setHidesBackButton(\(navbarHideBackButtonSwitch.isOn), animedted: true)\n"
-      + "navigationItem.leftItemsSupplementBackButton = \(navigationItem.leftItemsSupplementBackButton)\n\n"
-
-    let rightItemCount = navbarRightButtonItemCountSegmentedControl.selectedSegmentIndex
-    if rightItemCount > 0 {
-      switch navbarRightButtonItemStyleSegmentedControl.selectedSegmentIndex {
-      case 0:
-        detail +=
-          "let item = UIBarButtonItem(barButtonSystemItem: .action ...)\n"
-          + "navigationItem.setRightBarButtonItem(item, animated: true)"
-      case 1:
-        detail +=
-          "var items = [UIBarButtonItem]()\n"
-          + "for _ in 0..<\(rightItemCount) {\n"
-          + "  let item = UIBarButtonItem(title: \"1\" ...)\n"
-          + "  items.append(item)\n"
-          + "}\n"
-          + "navigationItem.setRightBarButtonItems(items, animated: true)"
-      case 2:
-        detail +=
-          "var items = [UIBarButtonItem]()\n"
-          + "for _ in 0..<\(rightItemCount) {\n"
-          + "  let item = UIBarButtonItem(image: UIImage(...) ...)\n"
-          + "  items.append(item)\n"
-          + "}\n"
-          + "navigationItem.setRightBarButtonItems(items, animated: true)"
-      case 3:
-        detail +=
-          "var items = [UIBarButtonItem]()\n"
-          + "for _ in 0..<\(rightItemCount) {\n"
-          + "  let button = UIButton(...)\n"
-          + "  button.frame = CGRect(...)\n"
-          + "  button.setTitle(...)\n"
-          + "  let item = UIBarButtonItem(customView: UIButton(...) ...)\n"
-          + "  items.append(item)\n"
-          + "}\n"
-          + "navigationItem.setRightBarButtonItems(items, animated: true)"
-      default:
-        assertionFailure()
-      }
-    }
-
-    navbarButtonItemDetailLabel.text = detail
-    tableView.reloadData()
-  }
-
   // MARK: Customize navigation bar
 
   @IBAction func promptSwitchChanged(_ sender: UISwitch) {
     if sender.isOn {
       navigationItem.prompt = "宜达互联 SWIFT"
-      promptDetailLabel.text = "navigationItem.prompt = \"宜达互联 SWIFT\""
       Jack.verbose("navigation bar with prompt, height: \(navigationBar.frame.height)")
     } else {
       navigationItem.prompt = nil
-      promptDetailLabel.text = "navigationItem.prompt = nil"
       Jack.verbose("navigation bar without prompt, height: \(navigationBar.frame.height)")
     }
   }
@@ -197,19 +95,16 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     case 0: // default
       navigationBar.barStyle = .default
       navigationBar.tintColor = nil
-      navbarStyleDetailLabel.text = "navigationController!.navigationBar.barStyle = .default"
     case 1: // black
       navigationBar.barStyle = .black
       navigationBar.tintColor = .white
-      navbarStyleDetailLabel.text = "navigationController!.navigationBar.barStyle = .black"
     default:
       assertionFailure()
     }
 
     setNeedsStatusBarAppearanceUpdate()
-    updatenavbarIems(of: .leftSide)
-    updatenavbarIems(of: .rightSide)
-    tableView.reloadData()
+    updateNavbarItems(of: .leftSide)
+    updateNavbarItems(of: .rightSide)
   }
 
   @IBAction func navbarBackgroundChanged(_ sender: UISegmentedControl) {
@@ -222,39 +117,25 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       navigationBar.tintColor = (navigationBar.barStyle == .default) ? nil : .white
       navigationBar.titleTextAttributes = nil
 
-      navbarBackgroundDetailLabel.text =
-        "navigationBar.barTintColor = nil\n"
-        + "navigationBar.tintColor = nil\n"
-        + "navigationBar.titleTextAttributes = nil"
-
     case 1: // color background
       navigationBar.setBackgroundImage(nil, for: .default)
 
-      navigationBar.barTintColor = view.window?.tintColor
+      navigationBar.barTintColor = theWindow.tintColor
       navigationBar.tintColor = .white
       navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-
-      navbarBackgroundDetailLabel.text =
-        "navigationBar.barTintColor = view.window?.tintColor\n"
-        + "navigationBar.tintColor = .white\n"
-        + "navigationBar.titleTextAttributes = [\n"
-        + "  NSForegroundColorAttributeName: UIColor.white\n"
-        + "]"
 
     case 2: // image background
       navigationBar.tintColor = .white
       navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
       navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Navbar"), for: .default)
-      navbarBackgroundDetailLabel.text = "navigationBar.setBackgroundImage(aImage, for: .default)"
 
     default:
       assertionFailure()
     }
 
     setNeedsStatusBarAppearanceUpdate()
-    updatenavbarIems(of: .leftSide)
-    updatenavbarIems(of: .rightSide)
-    tableView.reloadData()
+    updateNavbarItems(of: .leftSide)
+    updateNavbarItems(of: .rightSide)
   }
 
   @IBAction func navbarTitleChanged(_ sender: UISegmentedControl) {
@@ -264,20 +145,15 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     case 0: // text title
       navigationItem.titleView = nil
       navigationItem.title = "标题"
-      navbarTitleDetailLabel.text =
-        "navigationItem.titleView = nil\n"
-        + "navigationItem.title = \"标题\""
 
     case 1: // image title
       navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "NavbarTitle"))
-      navbarTitleDetailLabel.text = "navigationItem.titleView = UIImageView(image: aImage)"
 
     case 2: // custom view
       let control = UISegmentedControl(items: ["左", "右"])
       control.selectedSegmentIndex = 0
       navigationBar.setTitleVerticalPositionAdjustment(-1, for: .default)
       navigationItem.titleView = control
-      navbarTitleDetailLabel.text = "navigationItem.titleView = aControl"
 
     default:
       assertionFailure()
@@ -294,13 +170,11 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       navbarLeftButtonItemCountSegmentedControl.setEnabled(true, forSegmentAt: 2)
     }
 
-    updatenavbarIems(of: .leftSide)
-    updatenavbarButtonItemDetailLabel()
+    updateNavbarItems(of: .leftSide)
   }
 
   @IBAction func navbarLeftButtonItemCountChanged(_ sender: UISegmentedControl) {
-    updatenavbarIems(of: .leftSide)
-    updatenavbarButtonItemDetailLabel()
+    updateNavbarItems(of: .leftSide)
   }
 
   @IBAction func navbarHideBackButtonChanged(_ sender: UISwitch) {
@@ -311,17 +185,14 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     }
 
     navigationItem.setHidesBackButton(sender.isOn, animated: true)
-    updatenavbarButtonItemDetailLabel()
   }
 
   @IBAction func navbarCoexistsWithBackButtonChanged(_ sender: UISwitch) {
     navigationItem.leftItemsSupplementBackButton = sender.isOn
-    updatenavbarButtonItemDetailLabel()
   }
 
   @IBAction func navbarRightBarButtonItemCountChanged(_ sender: UISegmentedControl) {
-    updatenavbarIems(of: .rightSide)
-    updatenavbarButtonItemDetailLabel()
+    updateNavbarItems(of: .rightSide)
   }
 
   @IBAction func navRightBarButtonItemStyleChanged(_ sender: UISegmentedControl) {
@@ -334,15 +205,14 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       navbarRightButtonItemCountSegmentedControl.setEnabled(true, forSegmentAt: 2)
     }
 
-    updatenavbarIems(of: .rightSide)
-    updatenavbarButtonItemDetailLabel()
+    updateNavbarItems(of: .rightSide)
   }
 
   // MARK: Customize tool bar
 
   lazy var toolbarButtonItems = inittoolbarBarButtonItems()
 
-  private func updatetoolbarItems() {
+  private func updateToolbarItems() {
     var items = [UIBarButtonItem](toolbarButtonItems[toolbarItemStyleSegmentedControl.selectedSegmentIndex])
     let fixedSpace = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
     fixedSpace.width = 5
@@ -372,65 +242,6 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     }
   }
 
-  private func updateToolbarItemsDetail() {
-    var itemCreation = ""
-    var itemLayout = ""
-
-    itemCreation +=
-      "let fixedSpace = UIBarButtonItem("
-      + "\n  barButtonSystemItem: .fixedSpace, ...)"
-      + "\nlet flexibleSpace = UIBarButtonItem("
-      + "\nbarButtonSystemItem: .flexibleSpace, ...)"
-
-    switch toolbarItemStyleSegmentedControl.selectedSegmentIndex {
-    case 0: // system
-      itemCreation +=
-        "\nlet item1 = UIBarButtonItem(barButtonSystemItem: .rewind, ...)"
-        + "\nlet item2 = UIBarButtonItem(barButtonSystemItem: .pause, ...)"
-        + "\nlet item3 = UIBarButtonItem(barButtonSystemItem: .fastForward, ...)"
-    case 1: // with title
-      itemCreation +=
-        "\nlet item1 = UIBarButtonItem(title: \"左边\", ...)"
-        + "\nlet item2 = UIBarButtonItem(title: \"中间\", ...)"
-        + "\nlet item3 = UIBarButtonItem(title: \"右边\", ...)"
-    case 2: // with image
-      itemCreation +=
-        "\nlet item1 = UIBarButtonItem(image: ...)"
-        + "\nlet item2 = UIBarButtonItem(image: ...)"
-        + "\nlet item3 = UIBarButtonItem(image: ...)"
-    case 3: // with custom view
-      itemCreation +=
-        "\nlet item1 = UIBarButtonItem(customView: view1, ...)"
-        + "\nlet item2 = UIBarButtonItem(customView: view2, ...)"
-        + "\nlet item3 = UIBarButtonItem(customView: view3, ...)"
-    default:
-      assertionFailure()
-    }
-
-    switch toolbarItemLayoutSegmentedControl.selectedSegmentIndex {
-    case 0:
-      itemLayout =
-        "let items = [flexibleSpace, item1, flexibleSpace,"
-        + "\n  item2, flexibleSpace, item3, flexibleSpace]"
-    case 1:
-      itemLayout =
-        "let items = [fixedSpace, item1, flexibleSpace,"
-        + "\n  item2, flexibleSpace, item3, fixedSpace]"
-    case 2:
-      itemLayout =
-        "let items = [flexibleSpace, item1, fixedSpace,"
-        + "\n  item2, fixedSpace, item3, flexibleSpace]"
-    default:
-      assertionFailure()
-    }
-
-    let detail = "\(itemCreation)\n\n\(itemLayout)"
-      + "\n\nsetToolbarItems(items, animated: true)"
-
-    toolbarItemsDetailLabel.text = detail
-    tableView.reloadData()
-  }
-
   @IBAction func toolbarStyleChanged(_ sender: UISegmentedControl) {
     toolbarBackgroundSegmentedControl.selectedSegmentIndex = 0
     toolbarBackgroundChanged(toolbarBackgroundSegmentedControl)
@@ -446,10 +257,7 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       assertionFailure()
     }
 
-    updatetoolbarItems()
-
-    toolbarStyleDetailLabel.text = "navigationController?.toolbar.barStyle = \((sender.selectedSegmentIndex == 0) ? ".default" : ".black")"
-    tableView.reloadData()
+    updateToolbarItems()
   }
 
   @IBAction func toolbarBackgroundChanged(_ sender: UISegmentedControl) {
@@ -458,54 +266,36 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       toolbar.barTintColor = nil
       toolbar.setBackgroundImage(nil, forToolbarPosition: .any, barMetrics: .default)
 
-      toolbarBackgroundDetailLabel.text =
-        "navigationController!.toolbar.setbackgroundImage("
-        + "\n  nil, forToolbarPosition: .any, barMetrics: .default)"
-        + "\nnavigationController!.toolbar.barTintColor = nil"
     case 1: // color
       toolbar.setBackgroundImage(nil, forToolbarPosition: .any, barMetrics: .default)
-      toolbar.barTintColor = view.window!.tintColor
+      toolbar.barTintColor = theWindow.tintColor
       toolbar.tintColor = .white
 
-      toolbarBackgroundDetailLabel.text =
-        "navigationController!.toolbar.setbackgroundImage("
-        + "\n  nil, forToolbarPosition: .any, barMetrics: .default)"
-        + "\nnavigationController!.toolbar.barTintColor = aColor"
-        + "\nnavigationController!.toolbar.tintColor = .white"
     case 2:
       toolbar.setBackgroundImage(#imageLiteral(resourceName: "Toolbar"), forToolbarPosition: .any, barMetrics: .default)
       toolbar.tintColor = .white
 
-      toolbarBackgroundDetailLabel.text =
-        "navigationController!.toolbar.setbackgroundImage("
-        + "\n  aImage, forToolbarPosition: .any, barMetrics: .default)"
-        + "\nnavigationController!.toolbar.tintColor = .white"
     default:
       assertionFailure()
     }
 
-    updatetoolbarItems()
-    tableView.reloadData()
+    updateToolbarItems()
   }
 
   @IBAction func toolbarItemStyleChanged(_ sender: UISegmentedControl) {
-    updatetoolbarItems()
-    updateToolbarItemsDetail()
+    updateToolbarItems()
   }
 
   @IBAction func toolbarItemLayoutChanged(_ sender: UISegmentedControl) {
-    updatetoolbarItems()
-    updateToolbarItemsDetail()
+    updateToolbarItems()
   }
 
-  // MARK: - Overrides
+  // MARK: - as UIViewController
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    tableView.estimatedRowHeight = 50
-
-    // controll UI testable
+    // UI testable
     promptSwitch.accessibilityIdentifier = "prompt"
 
     navbarStyleSegmentedControl.accessibilityIdentifier = "navbarStyle"
@@ -530,7 +320,6 @@ class CustomNavigationControllerTableViewController: UITableViewController {
 
     // update navigation bar appearence
     promptSwitchChanged(promptSwitch)
-    navbarStyleChanged(navbarStyleSegmentedControl)
     navbarBackgroundChanged(navbarBackgroundSegmentedControl)
     navbarTitleChanged(navbarTitleSegmentedControl)
 
@@ -539,27 +328,21 @@ class CustomNavigationControllerTableViewController: UITableViewController {
 
     // update tool bar appearence
     navigationController?.setToolbarHidden(false, animated: true)
-    updateToolbarItemsDetail()
-    toolbarStyleChanged(toolbarStyleSegmentedControl)
+    updateToolbarItems()
     toolbarBackgroundChanged(toolbarBackgroundSegmentedControl)
     toolbarItemStyleChanged(toolbarItemStyleSegmentedControl)
     toolbarItemLayoutChanged(toolbarItemLayoutSegmentedControl)
   }
 
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+
+    navigationController?.setToolbarHidden(true, animated: false)
+  }
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-  }
-
-  // MARK: - Table view delegate
-  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    let height = super.tableView(tableView, heightForRowAt: indexPath)
-
-    if indexPath.row % 2 == 1 {
-      return UITableViewAutomaticDimension
-    } else {
-      return height
-    }
   }
 
   /*
