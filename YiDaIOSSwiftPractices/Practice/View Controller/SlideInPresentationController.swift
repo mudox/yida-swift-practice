@@ -33,20 +33,27 @@ class SlideInPresentationController: UIPresentationController {
     NSLayoutConstraint.activate(
       NSLayoutConstraint.constraints(withVisualFormat: "V:|[dimmingView]|", options: [], metrics: nil, views: ["dimmingView": dimmingView]))
 
-    let coordinator = presentedViewController.transitionCoordinator!
-
-    coordinator.animate(alongsideTransition: { _ in
-      self.dimmingView.alpha = 1
-      }, completion: nil)
+    if let coordinator = presentedViewController.transitionCoordinator {
+      coordinator.animate(alongsideTransition: { _ in
+        self.dimmingView.alpha = 1
+        }, completion: nil)
+    } else {
+      dimmingView.alpha = 1
+    }
   }
 
   // tear down chrome view along with dismissal transition if possible
   override func dismissalTransitionWillBegin() {Jack.debug("▣")
-    let coordinator = presentedViewController.transitionCoordinator!
-
-    coordinator.animate(alongsideTransition: { _ in
-      self.dimmingView.alpha = 0
-      }, completion: nil)
+    // dismissal transition fired because of tansition ot use adaptive presentatioin style
+    // the cooridnator will be nil, means the tear of current presentation controller happens
+    // immediately
+    if let coordinator = presentedViewController.transitionCoordinator {
+      coordinator.animate(alongsideTransition: { _ in
+        self.dimmingView.alpha = 0
+        }, completion: nil)
+    } else {
+      dimmingView.alpha = 0
+    }
   }
 
   override func dismissalTransitionDidEnd(_ completed: Bool) {
@@ -56,7 +63,7 @@ class SlideInPresentationController: UIPresentationController {
 
   // manage size of presented view
   override func size(forChildContentContainer container: UIContentContainer,
-                     withParentContainerSize parentSize: CGSize) -> CGSize {Jack.debug("▣")
+                     withParentContainerSize parentSize: CGSize) -> CGSize {
     switch direction {
     case .left, .right:
       return CGSize(width: parentSize.width * (2.0 / 3.0), height: parentSize.height)
@@ -88,11 +95,9 @@ class SlideInPresentationController: UIPresentationController {
     return frame
   }
 
-
   override func containerViewWillLayoutSubviews() {Jack.debug("▣")
     presentedView!.frame = frameOfPresentedViewInContainerView
   }
-
 }
 
 extension SlideInPresentationController {

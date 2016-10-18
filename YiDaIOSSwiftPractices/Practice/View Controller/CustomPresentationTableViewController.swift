@@ -10,8 +10,16 @@ import UIKit
 
 class CustomPresentationTableViewController: UITableViewController {
 
+  // slide in presentation
   @IBOutlet weak var slideInDirectionSegmentedControl: UISegmentedControl!
   lazy var slideInTransitioningDelegate = SlideInPresentationManager()
+
+  // adaption
+  @IBOutlet weak var adaptToLandscapeSwitch: UISwitch!
+  @IBOutlet weak var embedInNavigationControllerSwitch: UISwitch!
+  @IBOutlet weak var embedInNavigationControllerLabel: UILabel!
+
+  // MARK: - as UIViewController
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,6 +36,14 @@ class CustomPresentationTableViewController: UITableViewController {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+
+  override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+    return .portrait
+  }
+
+  override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    return .portrait
   }
 
   // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -83,5 +99,15 @@ class CustomPresentationTableViewController: UITableViewController {
     default:
       assertionFailure()
     }
+  }
+
+  @IBAction func adaptToLandscapeChanged(_ sender: UISwitch) {
+    slideInTransitioningDelegate.adaptToLandscape = sender.isOn
+    embedInNavigationControllerLabel.isEnabled = sender.isOn
+    embedInNavigationControllerSwitch.isEnabled = sender.isOn
+  }
+
+  @IBAction func embedInNavigationControllerChanged(_ sender: UISwitch) {
+    slideInTransitioningDelegate.embedInNavigationControllerOnAdaption = sender.isOn
   }
 }

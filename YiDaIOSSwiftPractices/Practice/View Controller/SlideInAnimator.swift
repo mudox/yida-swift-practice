@@ -77,7 +77,7 @@ extension SlideInAnimator: UIViewControllerAnimatedTransitioning {
     }
 
     UIView.animate(withDuration: animationDuration, delay: 0,
-      usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8,
+      usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8,
       options: [], animations: {
         presentedView.frame = toFrame
         presentedView.transform = .identity
