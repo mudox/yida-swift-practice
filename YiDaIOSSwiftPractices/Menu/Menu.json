@@ -83,39 +83,39 @@
   "advanced": [
 
     {
-      "headerText": "视图与控件（VIEW AND CONTROL）",
+      "headerText": "段落",
       "items": [{
-        "title": "视图基础",
-        "subtitle": "UIView layout & basic animation",
+        "title": "标题",
+        "subtitle": "副标题",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "按钮控件",
-        "subtitle": "UIButton, a simple calculator",
+        "title": "标题",
+        "subtitle": "副标题",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }]
     },
 
     {
-      "headerText": "按钮控件",
+      "headerText": "段落",
       "items": [{
-        "title": "视图基础",
-        "subtitle": "UIView layout & basic animation",
+        "title": "标题",
+        "subtitle": "副标题",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-
-        "title": "按钮控件",
-        "subtitle": "UIButton, a simple calculator",
+        "title": "标题",
+        "subtitle": "副标题",
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }]
-
     }
+
   ],
 
   "3rd party frameworks": [
+
     {
       "headerText": "段落",
       "items": [{

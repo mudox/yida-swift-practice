@@ -15,6 +15,20 @@ class RootNavigationController: UINavigationController {
     super.viewDidLoad()
 
     // Do any additional setup after loading the view.
+//    interactivePopGestureRecognizer!.isEnabled = true
+    interactivePopGestureRecognizer!.delegate = self
+  }
+
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    let bar = navigationBar
+
+    if bar.barTintColor != nil ||
+      bar.barStyle != .default ||
+      bar.backgroundImage(for: .default) != nil {
+      return .lightContent
+    } else {
+      return .default
+    }
   }
 
   override func didReceiveMemoryWarning() {
@@ -22,14 +36,13 @@ class RootNavigationController: UINavigationController {
     // Dispose of any resources that can be recreated.
   }
 
-  override var preferredStatusBarStyle: UIStatusBarStyle {
-    if navigationBar.barTintColor != nil ||
-      navigationBar.barStyle == .black ||
-      navigationBar.backgroundImage(for: .default) != nil {
-      return .lightContent
-    } else {
-      return .default
-    }
+  // hand over interface orirentation decision to top view controller on the stack
+  override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+    return topViewController!.preferredInterfaceOrientationForPresentation
+  }
+
+  override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    return topViewController!.supportedInterfaceOrientations
   }
 
   /*
@@ -41,4 +54,10 @@ class RootNavigationController: UINavigationController {
    // Pass the selected object to the new view controller.
    }
   */
+}
+
+extension RootNavigationController: UIGestureRecognizerDelegate {
+  func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    return viewControllers.count > 1
+  }
 }

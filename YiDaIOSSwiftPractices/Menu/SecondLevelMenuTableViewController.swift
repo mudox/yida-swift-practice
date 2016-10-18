@@ -17,7 +17,19 @@ class SecondLevelMenuTableViewController: UITableViewController {
 
   var level: String!
 
-  // MARK: - Overrides
+  // MARK: - as UIViewController
+
+  override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+    return .portrait
+  }
+
+  override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    return .portrait
+  }
+
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -32,33 +44,29 @@ class SecondLevelMenuTableViewController: UITableViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     restoreTheme()
-
-    // hide tool bar
-    navigationController?.setToolbarHidden(true, animated: true)
   }
 
-  func restoreTheme() {
-    // theme color
-    UIApplication.shared.keyWindow!.tintColor = baseThemeColor
+  /*
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
 
-    // restore navigation bar theme
-    let navBar = navigationController!.navigationBar
-    navBar.setBackgroundImage(nil, for: .default)
-    navBar.barTintColor = baseThemeColor
-    navBar.tintColor = .white
-    navBar.titleTextAttributes = [
-      NSForegroundColorAttributeName: UIColor.white
-    ]
+  }
 
-    setNeedsStatusBarAppearanceUpdate()
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+  }
+
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  */
 
-  // MARK: - Table view data source
+  // MARK: - as UITableViewDataSource
 
   override func numberOfSections(in tableView: UITableView) -> Int {
     return menu[level].arrayValue.count
@@ -81,7 +89,7 @@ class SecondLevelMenuTableViewController: UITableViewController {
     return menu[level, section, "headerText"].stringValue
   }
 
-  // MARK: - Table delegate
+  // MARK: - as UITableViewDelegate
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
@@ -112,4 +120,23 @@ class SecondLevelMenuTableViewController: UITableViewController {
   func menuItem(forIndexPath indexPath: IndexPath) -> JSON {
     return menu[level, indexPath.section, "items", indexPath.row]
   }
+
+  func restoreTheme() {
+    // theme color
+    theWindow.tintColor = baseThemeColor
+
+    // restore navigation bar theme
+    let navBar = navigationController!.navigationBar
+
+    navBar.setBackgroundImage(nil, for: .default)
+
+    navBar.barTintColor = baseThemeColor
+    navBar.tintColor = .white
+    navBar.titleTextAttributes = [
+      NSForegroundColorAttributeName: UIColor.white
+    ]
+
+    setNeedsStatusBarAppearanceUpdate()
+  }
+
 }
