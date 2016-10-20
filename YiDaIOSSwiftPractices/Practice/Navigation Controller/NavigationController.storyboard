@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gpu-Ca-C2y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ABt-wV-05v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFj-dm-vQN">
@@ -25,13 +25,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按住视图中间任意处并向右平移可弹出当前视图" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAB-fj-rG0">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="0.79633989726027399" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nFj-dm-vQN" firstAttribute="top" secondItem="gnt-sj-Few" secondAttribute="bottom" id="QOQ-y2-6Zv"/>
                             <constraint firstItem="gpu-Ca-C2y" firstAttribute="top" secondItem="nFj-dm-vQN" secondAttribute="bottom" id="Rem-sE-UeC"/>
                             <constraint firstAttribute="trailing" secondItem="nFj-dm-vQN" secondAttribute="trailing" id="bDG-G8-rTs"/>
+                            <constraint firstItem="nAB-fj-rG0" firstAttribute="leading" secondItem="ABt-wV-05v" secondAttribute="leadingMargin" constant="30" id="eMv-vI-C6g"/>
                             <constraint firstItem="nFj-dm-vQN" firstAttribute="leading" secondItem="ABt-wV-05v" secondAttribute="leading" id="hX4-TU-rJG"/>
+                            <constraint firstItem="nAB-fj-rG0" firstAttribute="top" secondItem="gnt-sj-Few" secondAttribute="bottom" constant="60" id="jCs-1L-Jgp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nAB-fj-rG0" secondAttribute="trailing" constant="30" id="xkD-EZ-R6L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="第 # 级视图" id="Sbv-Np-v59">
@@ -49,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwZ-qE-8o9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="-167"/>
+            <point key="canvasLocation" x="1060" y="-167.76611694152925"/>
         </scene>
         <!--导航栏-->
         <scene sceneID="K9h-bx-j3V">
@@ -63,7 +71,7 @@
                             <tableViewSection headerTitle="自定义导航栏" id="ygf-gE-Q28">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qMg-2U-gXE">
-                                        <rect key="frame" x="0.0" y="119.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qMg-2U-gXE" id="ytP-Zn-ksB">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -89,7 +97,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Gox-Rs-Dhl">
-                                        <rect key="frame" x="0.0" y="163.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="164" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gox-Rs-Dhl" id="FQx-ff-Cg9">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -119,7 +127,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="REq-gG-E3X">
-                                        <rect key="frame" x="0.0" y="207.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="208" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="REq-gG-E3X" id="tDE-tQ-5a3">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -150,7 +158,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4dI-zG-5BD">
-                                        <rect key="frame" x="0.0" y="251.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="252" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4dI-zG-5BD" id="fea-i4-Khd">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -181,7 +189,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="191" id="jyj-yt-YTx">
-                                        <rect key="frame" x="0.0" y="295.5" width="375" height="191"/>
+                                        <rect key="frame" x="0.0" y="296" width="375" height="191"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyj-yt-YTx" id="Lfw-tZ-d75">
                                             <frame key="frameInset" width="375" height="191"/>
@@ -296,7 +304,7 @@
                             <tableViewSection headerTitle="自定义工具栏" id="4FB-wp-Su7">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="coG-uV-2yy">
-                                        <rect key="frame" x="0.0" y="542.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="544" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="coG-uV-2yy" id="VFA-37-XgR">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -328,7 +336,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="b44-B9-rbK">
-                                        <rect key="frame" x="0.0" y="586.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="588" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b44-B9-rbK" id="ydZ-Sz-Bfw">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -359,7 +367,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="w6c-yc-4Fk">
-                                        <rect key="frame" x="0.0" y="630.5" width="375" height="106"/>
+                                        <rect key="frame" x="0.0" y="632" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w6c-yc-4Fk" id="51Z-ne-chA">
                                             <frame key="frameInset" width="375" height="106"/>

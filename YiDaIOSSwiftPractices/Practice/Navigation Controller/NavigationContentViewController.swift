@@ -11,31 +11,29 @@ import UIKit
 private let thisViewControllerIdentifier = "Navigation Controller Manages Content View Controllers"
 
 class NavigationContentViewController: UIViewController {
+
   static let colors = [#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)]
   static var instanceCount: Int = 0
 
   @IBOutlet weak var indexLabel: UILabel!
 
   var navigationBarTintColor: UIColor?
-  var instanceIndex: Int
-
-  required init?(coder aCoder: NSCoder) {
-    instanceIndex = NavigationContentViewController.instanceCount
+  var instanceIndex: Int = {
     NavigationContentViewController.instanceCount += 1
-    Jack.verbose("\(NavigationContentViewController.instanceCount) instance instantiated")
-
-    super.init(coder: aCoder)
-  }
+    return NavigationContentViewController.instanceCount - 1
+  }()
 
   deinit {
     NavigationContentViewController.instanceCount -= 1
-    Jack.verbose("\(NavigationContentViewController.instanceCount) instance remain")
   }
 
   func setTheme() {
     let baseColor = NavigationContentViewController.colors[instanceIndex]
+
+    // baseColor
     UIApplication.shared.keyWindow!.tintColor = baseColor
 
+    // navigation bar
     let navBar = navigationController!.navigationBar
     navBar.barTintColor = baseColor
     navBar.tintColor = .white
@@ -43,6 +41,7 @@ class NavigationContentViewController: UIViewController {
       NSForegroundColorAttributeName: UIColor.white
     ]
 
+    // content view
     var red: CGFloat = 0
     var green: CGFloat = 0
     var blue: CGFloat = 0
@@ -53,8 +52,10 @@ class NavigationContentViewController: UIViewController {
     red += (1.0 - red) * degree
     green += (1.0 - green) * degree
     blue += (1.0 - blue) * degree
-    let lightendColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
-    indexLabel.backgroundColor = lightendColor
+    let lightenedColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
+
+    indexLabel.backgroundColor = lightenedColor
+
   }
 
   override func viewDidLoad() {
@@ -117,15 +118,5 @@ class NavigationContentViewController: UIViewController {
     alert.addAction(action)
     self.present(alert, animated: true, completion: nil)
   }
-
-  /*
-   // MARK: - Navigation
-
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
 
 }

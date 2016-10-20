@@ -79,10 +79,8 @@ class CustomNavigationControllerTableViewController: UITableViewController {
   @IBAction func promptSwitchChanged(_ sender: UISwitch) {
     if sender.isOn {
       navigationItem.prompt = "宜达互联 SWIFT"
-      Jack.verbose("navigation bar with prompt, height: \(navigationBar.frame.height)")
     } else {
       navigationItem.prompt = nil
-      Jack.verbose("navigation bar without prompt, height: \(navigationBar.frame.height)")
     }
   }
 
@@ -337,7 +335,7 @@ class CustomNavigationControllerTableViewController: UITableViewController {
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
 
-    navigationController?.setToolbarHidden(true, animated: false)
+    navigationController!.setToolbarHidden(true, animated: false)
   }
 
   override func didReceiveMemoryWarning() {
@@ -345,15 +343,6 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  /*
-   // MARK: - Navigation
-
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-  */
 }
 
 private func initBarButtonItems() -> [CustomNavigationControllerTableViewController.navbarItemSide: [[UIBarButtonItem]]] {
