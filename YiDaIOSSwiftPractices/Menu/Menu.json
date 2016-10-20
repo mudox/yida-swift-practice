@@ -64,12 +64,13 @@
     },
 
     {
-      "headerText": "标签栏控制器（UITabBarController）",
+      "headerText": "分栏控制器（UITabBarController）",
       "items": [{
         "title": "子视图管理",
-        "subtitle": "推入，弹出指定的子视图",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+        "subtitle": "管理，切换子视图",
+        "storyboardName": "TabBarController",
+        "viewControllerReferenceID": "Tab Bar Controller Manages Content View Controller",
+        "presenting": "Cross Dissolve"
       }, {
         "title": "自定义标签栏控制器",
         "subtitle": "自定义导航栏，工具栏",

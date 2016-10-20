@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class SecondLevelMenuTableViewController: UITableViewController {
 
-  let menu = (UIApplication.shared.delegate as! AppDelegate).menuJSON!
+  let menu = theAppDelegate.menuJSON!
 
   var baseThemeColor: UIColor!
 
@@ -47,24 +47,24 @@ class SecondLevelMenuTableViewController: UITableViewController {
   }
 
   /*
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
+   override func viewDidAppear(_ animated: Bool) {
+   super.viewDidAppear(animated)
 
-  }
+   }
 
-  override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-  }
+   override func viewWillDisappear(_ animated: Bool) {
+   super.viewWillDisappear(animated)
+   }
 
-  override func viewDidDisappear(_ animated: Bool) {
-    super.viewDidDisappear(animated)
-  }
+   override func viewDidDisappear(_ animated: Bool) {
+   super.viewDidDisappear(animated)
+   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  */
+   override func didReceiveMemoryWarning() {
+   super.didReceiveMemoryWarning()
+   // Dispose of any resources that can be recreated.
+   }
+   */
 
   // MARK: - as UITableViewDataSource
 
@@ -96,18 +96,32 @@ class SecondLevelMenuTableViewController: UITableViewController {
     let item = menuItem(forIndexPath: indexPath)
 
     guard
-      let storyboardName = item["storyboardName"].string,
-      storyboardName != "",
-      let viewControllerReferenceID = item["viewControllerReferenceID"].string,
-      viewControllerReferenceID != ""
+      let storyboardName = item["storyboardName"].string, storyboardName != "",
+      let viewControllerReferenceID = item["viewControllerReferenceID"].string, viewControllerReferenceID != ""
       else {
-        return
+        Jack.error("found invalid menu item: \(item)")
+      return
     }
 
     let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
     let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerReferenceID)
 
-    navigationController?.pushViewController(viewController, animated: true)
+    if let presenting = item["presenting"].string {
+      switch presenting {
+        case "Cross Dissolve":
+          viewController.modalTransitionStyle = .crossDissolve
+        case "Cover Vertical":
+          viewController.modalTransitionStyle = .coverVertical
+        case "Flip Horizontal":
+          viewController.modalTransitionStyle = .flipHorizontal
+      default:
+        assertionFailure()
+      }
+
+      present(viewController, animated: true, completion: nil)
+    } else {
+      navigationController?.pushViewController(viewController, animated: true)
+    }
   }
 
   // MARK: - Navigation
@@ -133,10 +147,9 @@ class SecondLevelMenuTableViewController: UITableViewController {
     navBar.barTintColor = baseThemeColor
     navBar.tintColor = .white
     navBar.titleTextAttributes = [
-      NSForegroundColorAttributeName: UIColor.white
+      NSForegroundColorAttributeName: UIColor.white,
     ]
 
     setNeedsStatusBarAppearanceUpdate()
   }
-
 }
