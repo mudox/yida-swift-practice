@@ -10,14 +10,18 @@ import UIKit
 
 class RootNavigationController: UINavigationController {
 
-
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
-//    interactivePopGestureRecognizer!.isEnabled = true
-    interactivePopGestureRecognizer!.delegate = self
+    enablePanInAnywhereToPop()
   }
+
+
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+
+  // MARK: Manage status bar
 
   override var preferredStatusBarStyle: UIStatusBarStyle {
     let bar = navigationBar
@@ -31,10 +35,7 @@ class RootNavigationController: UINavigationController {
     }
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
+  // MARK: Manage interface orirentation
 
   // hand over interface orirentation decision to top view controller on the stack
   override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
@@ -45,18 +46,23 @@ class RootNavigationController: UINavigationController {
     return topViewController!.supportedInterfaceOrientations
   }
 
-  /*
-   // MARK: - Navigation
-
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-  */
 }
 
+// MARK: - Pan to Pop Feature
 extension RootNavigationController: UIGestureRecognizerDelegate {
+
+  func enablePanInAnywhereToPop() {
+    interactivePopGestureRecognizer!.isEnabled = false
+    let target = interactivePopGestureRecognizer!.delegate!
+    let panGesture = UIPanGestureRecognizer(target: target, action: Selector("handleNavigationTransition:"))
+    panGesture.delegate = self
+    view.addGestureRecognizer(panGesture)
+  }
+
+  func enableEdgePanToPopAlways() {
+    interactivePopGestureRecognizer!.delegate = self
+  }
+
   func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
     return viewControllers.count > 1
   }
