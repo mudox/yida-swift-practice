@@ -37,7 +37,9 @@ static XCUIApplication *app = nil;
 
 - (void)testExample {
   [app.buttons[@"基 础"] tap];
-  [app.navigationBars.buttons[@"Back"] tap];
+  XCUICoordinate *from = [app.tables.element coordinateWithNormalizedOffset:CGVectorMake(0.01, 0.5)];
+  XCUICoordinate *to   = [from coordinateWithOffset: CGVectorMake(200, 0)];
+  [from pressForDuration:1 thenDragToCoordinate:to];
 }
 
 @end

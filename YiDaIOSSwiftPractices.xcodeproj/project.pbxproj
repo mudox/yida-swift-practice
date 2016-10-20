@@ -15,6 +15,10 @@
 		F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */; };
 		F44517A31DAE8CA800924485 /* Mudox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517A21DAE8CA800924485 /* Mudox.swift */; };
 		F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */; };
+		F48DF9C01DB73DF900014B1E /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */; };
+		F48DF9C21DB7442C00014B1E /* CustomTabBarControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C11DB7442C00014B1E /* CustomTabBarControllerTableViewController.swift */; };
+		F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */; };
+		F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */; };
 		F49EE6EF1DB5BFC700538A61 /* OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49EE6EE1DB5BFC700538A61 /* OCUITests.m */; };
 		F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */; };
 		F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */; };
@@ -23,6 +27,8 @@
 		F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */; };
 		F4C27FF51D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FF41D81A106006E1487 /* YiDaIOSSwiftPracticesTests.swift */; };
 		F4C280001D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FFF1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift */; };
+		F4DDE19D1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE19C1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift */; };
+		F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */; };
 		F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */; };
 		F4EABB211DA3A20A00FDB826 /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */; };
 		F4EABB281DA3AD2000FDB826 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = F4EABB221DA3AD2000FDB826 /* Menu.json */; };
@@ -68,6 +74,10 @@
 		F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentedViewController.swift; path = "Practice/View Controller/CustomPresentedViewController.swift"; sourceTree = "<group>"; };
 		F44517A21DAE8CA800924485 /* Mudox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mudox.swift; path = "../../../../xcode-project-startup-files/Swift/Mudox.swift"; sourceTree = "<group>"; };
 		F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "Practice/View Controller/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
+		F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		F48DF9C11DB7442C00014B1E /* CustomTabBarControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarControllerTableViewController.swift; sourceTree = "<group>"; };
+		F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTabBarController.swift; sourceTree = "<group>"; };
+		F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarContentViewController.swift; sourceTree = "<group>"; };
 		F49EE6ED1DB5BFC700538A61 /* YiDaIOSSwiftPracticesUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiDaIOSSwiftPracticesUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F49EE6EE1DB5BFC700538A61 /* OCUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCUITests.m; sourceTree = "<group>"; };
 		F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInAnimator.swift; path = "Practice/View Controller/SlideInAnimator.swift"; sourceTree = "<group>"; };
@@ -83,6 +93,8 @@
 		F4C27FFB1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiDaIOSSwiftPracticesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FFF1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiDaIOSSwiftPracticesUITests.swift; sourceTree = "<group>"; };
 		F4C280011D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DDE19C1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerAnimator.swift; sourceTree = "<group>"; };
+		F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationContentViewController.swift; path = "Practice/Navigation Controller/NavigationContentViewController.swift"; sourceTree = "<group>"; };
 		F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NavigationController.storyboard; path = "Practice/Navigation Controller/NavigationController.storyboard"; sourceTree = "<group>"; };
 		F4EABB221DA3AD2000FDB826 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Menu.json; path = Menu/Menu.json; sourceTree = "<group>"; };
@@ -165,9 +177,16 @@
 		F46AA5111DACD21200DBC3A2 /* Tab Bar Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F48DF9C11DB7442C00014B1E /* CustomTabBarControllerTableViewController.swift */,
+				F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */,
+				F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */,
+				F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */,
+				F4DDE19C1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift */,
+				F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */,
 			);
 			name = "Tab Bar Controller";
-			sourceTree = "<group>";
+			path = "YiDaIOSSwiftPractices/Practice/Tab Bar Controller";
+			sourceTree = SOURCE_ROOT;
 		};
 		F46AA5141DACD45B00DBC3A2 /* CustomPresentation */ = {
 			isa = PBXGroup;
@@ -267,8 +286,8 @@
 		F4EABB1B1DA3A1DB00FDB826 /* Navigation Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */,
 				F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */,
+				F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */,
 				F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */,
 			);
 			name = "Navigation Controller";
@@ -393,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48DF9C01DB73DF900014B1E /* TabBarController.storyboard in Resources */,
 				F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */,
 				F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */,
 				F4EABB281DA3AD2000FDB826 /* Menu.json in Resources */,
@@ -561,11 +581,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DDE19D1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift in Sources */,
 				F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */,
+				F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */,
 				F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */,
 				F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */,
 				F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */,
+				F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */,
 				F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */,
+				F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */,
 				F44517A31DAE8CA800924485 /* Mudox.swift in Sources */,
 				F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */,
 				F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */,
@@ -574,6 +598,7 @@
 				F4EABB291DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
 				F4EABB2C1DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift in Sources */,
 				F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */,
+				F48DF9C21DB7442C00014B1E /* CustomTabBarControllerTableViewController.swift in Sources */,
 				F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
