@@ -63,27 +63,43 @@ extension SlideInAnimator: UIViewControllerAnimatedTransitioning {
     let fromFrame = isPresentation ? offStageFrame : onStageFrame
     let toFrame = isPresentation ? onStageFrame : offStageFrame
 
-    Jack.debug("\(direction)"
-      + "\nfrom: \(fromFrame)"
-      + "\nto:   \(toFrame)")
-
     let animationDuration = transitionDuration(using: transitionContext)
 
     // animate
     presentedView.frame = fromFrame
+    presentedView.alpha = isPresentation ? 0 : 1
     if direction == .center {
       presentedView.transform = CGAffineTransform(rotationAngle: CGFloat(180 * (M_PI / 180)))
-      presentedView.alpha = isPresentation ? 0 : 1
     }
 
-    UIView.animate(withDuration: animationDuration, delay: 0,
-      usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8,
-      options: [], animations: {
+    if direction == .center {
+
+      UIView.animate(withDuration: animationDuration,
+                     delay: 0,
+                     usingSpringWithDamping: 0.5,
+                     initialSpringVelocity: 0.8,
+                     options: [],
+                     animations: {
         presentedView.frame = toFrame
         presentedView.transform = .identity
         presentedView.alpha = self.isPresentation ? 1 : 0
-    }) { _ in
-      transitionContext.completeTransition(true)
+      }) { _ in
+        transitionContext.completeTransition(true)
+      }
+
+    } else {
+
+      UIView.animate(withDuration: animationDuration,
+                     delay: 0,
+                     options: .curveEaseOut,
+                     animations: {
+          presentedView.frame = toFrame
+          presentedView.transform = .identity
+          presentedView.alpha = self.isPresentation ? 1 : 0
+        },
+                     completion: { _ in
+          transitionContext.completeTransition(true)
+      })
     }
   }
 }
