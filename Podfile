@@ -6,9 +6,9 @@ target 'YiDaIOSSwiftPractices' do
   use_frameworks!
 
   # Pods for YiDaIOSSwiftPractices
-  #pod 'SwiftyBeaver', :git => 'https://github.com/SwiftyBeaver/SwiftyBeaver.git'
   pod 'CocoaLumberjack/Swift'
   pod 'SwiftyJSON'
+  pod 'Gloss', '~> 1.0'
 
   target 'YiDaIOSSwiftPracticesTests' do
     inherit! :search_paths
@@ -19,4 +19,5 @@ target 'YiDaIOSSwiftPractices' do
     inherit! :search_paths
     # Pods for testing
   end
+
 end

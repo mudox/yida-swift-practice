@@ -9,10 +9,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "按钮控件（UIButton）",
-        "subtitle": "一个简单的计算器",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+      "title": "按钮控件（UIButton）",
+      "subtitle": "一个简单的计算器",
+      "storyboardName": "",
+      "viewControllerReferenceID": ""
       }]
     },
 
@@ -24,10 +24,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "表格视图（UITableView）",
-        "subtitle": "表格数据显示，编辑，移动, 表格单元自定义",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+      "title": "表格视图（UITableView）",
+      "subtitle": "表格数据显示，编辑，移动, 表格单元自定义",
+      "storyboardName": "",
+      "viewControllerReferenceID": ""
       }]
 
     },
@@ -40,10 +40,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "自定义展现与过渡动画",
-        "subtitle": "自定义试图控制器展现样式和动画过渡样式",
-        "storyboardName": "ViewController",
-        "viewControllerReferenceID": "Customize View Controller Presentation And Transition"
+      "title": "自定义展现与过渡动画",
+      "subtitle": "自定义试图控制器展现样式和动画过渡样式",
+      "storyboardName": "ViewController",
+      "viewControllerReferenceID": "Customize View Controller Presentation And Transition"
       }]
     },
 
@@ -55,10 +55,10 @@
         "storyboardName": "NavigationController",
         "viewControllerReferenceID": "Navigation Controller Manages Content View Controllers"
       }, {
-        "title": "自定义导航控制器",
-        "subtitle": "自定义导航栏，工具栏",
-        "storyboardName": "NavigationController",
-        "viewControllerReferenceID": "Customize Navigation Controller"
+      "title": "自定义导航控制器",
+      "subtitle": "自定义导航栏，工具栏",
+      "storyboardName": "NavigationController",
+      "viewControllerReferenceID": "Customize Navigation Controller"
       }]
 
     },
@@ -72,11 +72,18 @@
         "viewControllerReferenceID": "Tab Bar Controller Manages Content View Controller",
         "presenting": "Cross Dissolve"
       }, {
-        "title": "自定义标签栏控制器",
-        "subtitle": "自定义导航栏，工具栏",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
-      }]
+      "title": "自定义分栏控制器",
+      "subtitle": "自定义分栏，以及子视图控制器的切换过渡动画",
+      "storyboardName": "TabBarController",
+      "viewControllerReferenceID": "Custom Tab Bar Controller",
+      "presenting": "Cross Dissolve"
+      }, {
+      "title": "综合练习",
+      "subtitle": "新闻，相册，音乐播放器，浏览器，联系人",
+      "storyboardName": "TabBarController",
+      "viewControllerReferenceID": "Tab Bar Controller In Reality",
+      "presenting": "Cross Dissolve"
+      }],
     }
   ],
 
@@ -91,10 +98,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "标题",
-        "subtitle": "副标题",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+      "title": "标题",
+      "subtitle": "副标题",
+      "storyboardName": "",
+      "viewControllerReferenceID": ""
       }]
     },
 
@@ -106,10 +113,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "标题",
-        "subtitle": "副标题",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+      "title": "标题",
+      "subtitle": "副标题",
+      "storyboardName": "",
+      "viewControllerReferenceID": ""
       }]
     }
 
@@ -125,10 +132,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "标题",
-        "subtitle": "副标题",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+      "title": "标题",
+      "subtitle": "副标题",
+      "storyboardName": "",
+      "viewControllerReferenceID": ""
       }]
     },
 
@@ -140,10 +147,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-        "title": "标题",
-        "subtitle": "副标题",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+      "title": "标题",
+      "subtitle": "副标题",
+      "storyboardName": "",
+      "viewControllerReferenceID": ""
       }]
     }
 

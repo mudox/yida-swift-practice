@@ -6,16 +6,19 @@ PODS:
     - CocoaLumberjack/Default
   - CocoaLumberjack/Swift (3.0.0):
     - CocoaLumberjack/Extensions
+  - Gloss (1.0.0)
   - SwiftyJSON (3.1.0)
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift
+  - Gloss (~> 1.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  Gloss: '014789e9e69ca18f127eacca999f4c9b0bff6d58'
   SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
 
-PODFILE CHECKSUM: 7b0ec1959e6a966d1cec8571b5ac816b9c889d51
+PODFILE CHECKSUM: ed60174bef04e8f54790f580e1df34beaea79d54
 
 COCOAPODS: 1.1.0.beta.2
