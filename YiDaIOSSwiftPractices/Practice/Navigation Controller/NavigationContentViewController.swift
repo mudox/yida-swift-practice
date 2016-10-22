@@ -17,7 +17,6 @@ class NavigationContentViewController: UIViewController {
 
   @IBOutlet weak var indexLabel: UILabel!
 
-  var navigationBarTintColor: UIColor?
   var instanceIndex: Int = {
     NavigationContentViewController.instanceCount += 1
     return NavigationContentViewController.instanceCount - 1
@@ -30,16 +29,7 @@ class NavigationContentViewController: UIViewController {
   func setTheme() {
     let baseColor = NavigationContentViewController.colors[instanceIndex]
 
-    // baseColor
-    UIApplication.shared.keyWindow!.tintColor = baseColor
-
-    // navigation bar
-    let navBar = navigationController!.navigationBar
-    navBar.barTintColor = baseColor
-    navBar.tintColor = .white
-    navBar.titleTextAttributes = [
-      NSForegroundColorAttributeName: UIColor.white
-    ]
+    theAppDelegate.themeColor = baseColor
 
     // content view
     var red: CGFloat = 0
@@ -55,7 +45,6 @@ class NavigationContentViewController: UIViewController {
     let lightenedColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
 
     indexLabel.backgroundColor = lightenedColor
-
   }
 
   override func viewDidLoad() {

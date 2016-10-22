@@ -18,7 +18,6 @@ class SecondLevelMenuTableViewController: UITableViewController {
   var level: String!
 
   // MARK: - as UIViewController
-
   override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
     return .portrait
   }
@@ -27,47 +26,11 @@ class SecondLevelMenuTableViewController: UITableViewController {
     return .portrait
   }
 
-  override var preferredStatusBarStyle: UIStatusBarStyle {
-    return .lightContent
-  }
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = false
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-  }
-
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    restoreTheme()
   }
 
-  /*
-   override func viewDidAppear(_ animated: Bool) {
-   super.viewDidAppear(animated)
-
-   }
-
-   override func viewWillDisappear(_ animated: Bool) {
-   super.viewWillDisappear(animated)
-   }
-
-   override func viewDidDisappear(_ animated: Bool) {
-   super.viewDidDisappear(animated)
-   }
-
-   override func didReceiveMemoryWarning() {
-   super.didReceiveMemoryWarning()
-   // Dispose of any resources that can be recreated.
-   }
-   */
-
   // MARK: - as UITableViewDataSource
-
   override func numberOfSections(in tableView: UITableView) -> Int {
     return menu[level].arrayValue.count
   }
@@ -100,7 +63,7 @@ class SecondLevelMenuTableViewController: UITableViewController {
       let viewControllerReferenceID = item["viewControllerReferenceID"].string, viewControllerReferenceID != ""
       else {
         Jack.error("found invalid menu item: \(item)")
-      return
+        return
     }
 
     let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
@@ -108,12 +71,12 @@ class SecondLevelMenuTableViewController: UITableViewController {
 
     if let presenting = item["presenting"].string {
       switch presenting {
-        case "Cross Dissolve":
-          viewController.modalTransitionStyle = .crossDissolve
-        case "Cover Vertical":
-          viewController.modalTransitionStyle = .coverVertical
-        case "Flip Horizontal":
-          viewController.modalTransitionStyle = .flipHorizontal
+      case "Cross Dissolve":
+        viewController.modalTransitionStyle = .crossDissolve
+      case "Cover Vertical":
+        viewController.modalTransitionStyle = .coverVertical
+      case "Flip Horizontal":
+        viewController.modalTransitionStyle = .flipHorizontal
       default:
         assertionFailure()
       }
@@ -133,23 +96,5 @@ class SecondLevelMenuTableViewController: UITableViewController {
   // MARK: - Helper methods
   func menuItem(forIndexPath indexPath: IndexPath) -> JSON {
     return menu[level, indexPath.section, "items", indexPath.row]
-  }
-
-  func restoreTheme() {
-    // theme color
-    theWindow.tintColor = baseThemeColor
-
-    // restore navigation bar theme
-    let navBar = navigationController!.navigationBar
-
-    navBar.setBackgroundImage(nil, for: .default)
-
-    navBar.barTintColor = baseThemeColor
-    navBar.tintColor = .white
-    navBar.titleTextAttributes = [
-      NSForegroundColorAttributeName: UIColor.white,
-    ]
-
-    setNeedsStatusBarAppearanceUpdate()
   }
 }

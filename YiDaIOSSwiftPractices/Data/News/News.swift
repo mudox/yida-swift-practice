@@ -13,8 +13,6 @@ import struct Gloss.JSON
 
 import struct SwiftyJSON.JSON
 
-// lazy var News: [NewsItem] = nil
-
 private var dateFormatter: DateFormatter = {
   let formatter = DateFormatter()
   formatter.locale = Locale(identifier: "zh_Hans_CN")
@@ -80,7 +78,7 @@ struct NewsItem: Decodable {
     self.url = url
   }
 
-  func timePassed() -> String {
+  var timePassedDescription: String {
     let calendar = Calendar(identifier: .gregorian)
     let components = calendar.dateComponents(
       [.year, .month, .day, .hour, .minute, .second], from: date, to: Date())
@@ -103,7 +101,7 @@ struct NewsItem: Decodable {
     return text
   }
 
-  func dateText() -> String {
+  var dateString: String {
     let formatter = DateFormatter()
     formatter.locale = Locale(identifier: "zh_Hans_CN")
     formatter.timeZone = NSTimeZone.local
@@ -113,6 +111,13 @@ struct NewsItem: Decodable {
   }
 }
 
+/**
+ Read from News.json in main bunble, parse and return a array of NewsItem objects.
+ The performance is, by a rough profiling, clearly slower than Gloss. So using gloss
+ vertion of this method is preferred.
+
+ - returns: [NewsItems]
+ */
 func loadNewsUsingSwiftyJSON() -> [NewsItem] {
   guard let url = theMainBundle.url(forResource: "News", withExtension: "json") else {
     fatalError("can not found url for News.json")
@@ -150,6 +155,13 @@ func loadNewsUsingSwiftyJSON() -> [NewsItem] {
   return newsList
 }
 
+
+/**
+ Read from News.json in main bunble, parse and return a array of NewsItem objects.
+ The performance is, by a rough profiling, nearly 2 times faster than SwiftyJSON.
+
+ - returns: [NewsItems]
+ */
 func loadNewsUsingGloss() -> [NewsItem] {
   guard let url = theMainBundle.url(forResource: "News", withExtension: "json") else {
     fatalError("can not found url for News.json")

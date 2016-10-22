@@ -14,6 +14,11 @@
 		F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */; };
 		F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */; };
 		F44517A31DAE8CA800924485 /* Mudox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517A21DAE8CA800924485 /* Mudox.swift */; };
+		F46100101DBB320F006743E5 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */; };
+		F46100121DBB327B006743E5 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100111DBB327B006743E5 /* DataSource.swift */; };
+		F46100141DBB36A2006743E5 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */; };
+		F46100161DBB479C006743E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100151DBB479C006743E5 /* Extensions.swift */; };
+		F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100171DBB59FB006743E5 /* BrowserViewController.swift */; };
 		F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */; };
 		F48DF9C01DB73DF900014B1E /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */; };
 		F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */; };
@@ -83,6 +88,11 @@
 		F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentationTableViewController.swift; path = "Practice/View Controller/CustomPresentationTableViewController.swift"; sourceTree = "<group>"; };
 		F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentedViewController.swift; path = "Practice/View Controller/CustomPresentedViewController.swift"; sourceTree = "<group>"; };
 		F44517A21DAE8CA800924485 /* Mudox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mudox.swift; path = "../../../../xcode-project-startup-files/Swift/Mudox.swift"; sourceTree = "<group>"; };
+		F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		F46100111DBB327B006743E5 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
+		F46100151DBB479C006743E5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Practice/Extensions.swift; sourceTree = "<group>"; };
+		F46100171DBB59FB006743E5 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "Practice/View Controller/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
 		F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTabBarController.swift; sourceTree = "<group>"; };
@@ -202,6 +212,9 @@
 				F4DDE19C1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift */,
 				F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */,
 				F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */,
+				F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */,
+				F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */,
+				F46100171DBB59FB006743E5 /* BrowserViewController.swift */,
 			);
 			name = "Tab Bar Controller";
 			path = "YiDaIOSSwiftPractices/Practice/Tab Bar Controller";
@@ -282,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				F4DDE1BC1DBA1A350068A2B0 /* News */,
+				F46100111DBB327B006743E5 /* DataSource.swift */,
 			);
 			name = Data;
 			path = YiDaIOSSwiftPractices/Data;
@@ -332,6 +346,7 @@
 				F46AA5101DACD20A00DBC3A2 /* View Controller */,
 				F4EABB1B1DA3A1DB00FDB826 /* Navigation Controller */,
 				F46AA5111DACD21200DBC3A2 /* Tab Bar Controller */,
+				F46100151DBB479C006743E5 /* Extensions.swift */,
 			);
 			name = Practice;
 			sourceTree = "<group>";
@@ -648,6 +663,7 @@
 				F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */,
 				F4DDE1A11DB8F2D00068A2B0 /* CustomTabBarController.swift in Sources */,
 				F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */,
+				F46100141DBB36A2006743E5 /* NewsListTableViewCell.swift in Sources */,
 				F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */,
 				F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */,
 				F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */,
@@ -660,9 +676,13 @@
 				F4EABB2B1DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift in Sources */,
 				F4EABB2A1DA3AD2000FDB826 /* RootNavigationController.swift in Sources */,
 				F4EABB291DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
+				F46100101DBB320F006743E5 /* NewsListTableViewController.swift in Sources */,
 				F4EABB2C1DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift in Sources */,
+				F46100161DBB479C006743E5 /* Extensions.swift in Sources */,
 				F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */,
 				F4DDE2071DBA22380068A2B0 /* News.swift in Sources */,
+				F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */,
+				F46100121DBB327B006743E5 /* DataSource.swift in Sources */,
 				F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

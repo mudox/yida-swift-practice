@@ -23,17 +23,7 @@ class TabBarContentViewController: UIViewController {
     let baseColor = TabBarContentViewController.colors[index]
 
     // theme color
-    UIApplication.shared.keyWindow!.tintColor = baseColor
-
-    // navigation bar
-    let navBar = navigationController!.navigationBar
-    navBar.barTintColor = baseColor
-    navBar.tintColor = .white
-    navBar.titleTextAttributes = [
-      NSForegroundColorAttributeName: UIColor.white
-    ]
-
-    setNeedsStatusBarAppearanceUpdate()
+    theAppDelegate.themeColor = baseColor
 
     // content view
     var red: CGFloat = 0
@@ -49,11 +39,6 @@ class TabBarContentViewController: UIViewController {
     let lightenedColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
 
     view.backgroundColor = lightenedColor
-
-    // tab bar
-    let tabBar = tabBarController!.tabBar
-    tabBar.barTintColor = baseColor
-    tabBar.tintColor = .white
   }
 
   // MARK: - as UIViewController
@@ -74,6 +59,11 @@ class TabBarContentViewController: UIViewController {
     set {
       super.tabBarItem = newValue
     }
+  }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    installDismissButtonOnNavigationBar()
   }
 
   override func viewWillAppear(_ animated: Bool) {

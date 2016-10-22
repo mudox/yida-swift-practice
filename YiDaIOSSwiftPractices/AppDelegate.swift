@@ -55,3 +55,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
 }
+
+// MARK: - App color scheme changeable
+extension AppDelegate {
+  /// Setting this property will change the whole app's color scheme automatically
+  var themeColor: UIColor? {
+    get {
+      return window?.tintColor
+    }
+
+    set {
+      guard let win = window else {
+        Jack.warn("window is nil")
+        return
+      }
+
+      guard win.tintColor != newValue else {
+        Jack.warn("reseting the same theme color")
+        return
+      }
+
+      let color = newValue
+
+      // theme color
+      win.tintColor = color
+
+      // navigation bar
+      let navBar = UINavigationBar.appearance()
+      navBar.setBackgroundImage(nil, for: .default)
+
+      navBar.barTintColor = color
+      navBar.tintColor = .white
+      navBar.titleTextAttributes = [
+        NSForegroundColorAttributeName: UIColor.white,
+      ]
+
+      // tool bar
+      let toolBar = UIToolbar.appearance()
+      toolBar.barTintColor = color
+      toolBar.tintColor = .white
+
+      // tab bar
+      let tabBar = UITabBar.appearance()
+      tabBar.barTintColor = color
+      tabBar.tintColor = .white
+
+      // switch control
+      UISwitch.appearance().onTintColor = color
+
+      // refresh
+      win.rootViewController?.setNeedsStatusBarAppearanceUpdate()
+      for view in win.subviews {
+        view.removeFromSuperview()
+        win.addSubview(view)
+      }
+    }
+  }
+}

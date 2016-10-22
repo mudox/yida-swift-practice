@@ -39,28 +39,13 @@ class RootMenuViewController: UIViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-
-    let navBar = navigationController!.navigationBar
-    navBar.barTintColor = nil
-    navBar.barStyle = .default
-    navBar.setBackgroundImage(nil, for: .default)
-    setNeedsStatusBarAppearanceUpdate()
-
     navigationController?.navigationBar.isHidden = true
   }
-
-//  override func viewDidAppear(_ animated: Bool) {
-//    super.viewDidAppear(animated)
-//  }
 
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     navigationController?.navigationBar.isHidden = false
   }
-
-//  override func viewDidDisappear(_ animated: Bool) {
-//    super.viewDidDisappear(animated)
-//  }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let vc = segue.destination as! SecondLevelMenuTableViewController
@@ -90,22 +75,6 @@ class RootMenuViewController: UIViewController {
       assertionFailure("Invalid segue identifier \(segue.identifier!)")
     }
 
-    vc.baseThemeColor = baseColor
-    setAppTheme(withBaseColor: baseColor)
-  }
-
-  func setAppTheme(withBaseColor baseColor: UIColor) {
-    // navigation bar
-    theWindow.tintColor = baseColor
-
-    let navBar = UINavigationBar.appearance()
-    navBar.barTintColor = baseColor
-    navBar.tintColor = .white
-    navBar.titleTextAttributes = [
-      NSForegroundColorAttributeName: UIColor.white
-    ]
-
-    // switch control
-    UISwitch.appearance().onTintColor = baseColor
+    theAppDelegate.themeColor = baseColor
   }
 }
