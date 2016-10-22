@@ -32,15 +32,16 @@ struct NewsItem: Decodable {
 
 
   init?(json: Gloss.JSON) {
-    guard let title: String = "title" <~~ json,
-    let description: String = "description" <~~ json,
-    let source: String = "source" <~~ json,
-    let imageName: String = "image" <~~ json,
-    let dateString: String = "date" <~~ json,
-    let readCount: UInt = "read count" <~~ json,
-    let urlString: String = "url" <~~ json
-    else {
-      return nil
+    guard
+      let title: String = "title" <~~ json,
+      let description: String = "description" <~~ json,
+      let source: String = "source" <~~ json,
+      let imageName: String = "image" <~~ json,
+      let dateString: String = "date" <~~ json,
+      let readCount: UInt = "read count" <~~ json,
+      let urlString: String = "url" <~~ json
+      else {
+        return nil
     }
 
     self.title = title
@@ -167,13 +168,13 @@ func loadNewsUsingGloss() -> [NewsItem] {
     fatalError("can not found url for News.json")
   }
 
-  let newsJSONObject: Any
+  let any: Any
   do {
     let newsData = try Data(contentsOf: url)
-    newsJSONObject = try JSONSerialization.jsonObject(with: newsData, options: [])
+    any = try JSONSerialization.jsonObject(with: newsData, options: [])
   } catch {
     fatalError(error.localizedDescription)
   }
 
-  return [NewsItem].from(jsonArray: newsJSONObject as! [Gloss.JSON])!
+  return [NewsItem].from(jsonArray: any as! [Gloss.JSON])!
 }

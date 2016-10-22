@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D2B48108124AA3A82457C3A2 /* Pods_YiDaIOSSwiftPracticesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B087A248BB17FD47F5DFF70D /* Pods_YiDaIOSSwiftPracticesTests.framework */; };
 		F20872FE0916A41C12D51E10 /* Pods_YiDaIOSSwiftPracticesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B636D437D6B7DF3A225AB2 /* Pods_YiDaIOSSwiftPracticesUITests.framework */; };
+		F4407AFD1DBBD35300BDF930 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4407AFC1DBBD35300BDF930 /* Menu.swift */; };
 		F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517941DAD335200924485 /* SlideInPresentationController.swift */; };
 		F44517971DAD3CE800924485 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44517961DAD3CE800924485 /* ViewController.storyboard */; };
 		F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */; };
@@ -83,6 +84,7 @@
 		B087A248BB17FD47F5DFF70D /* Pods_YiDaIOSSwiftPracticesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiDaIOSSwiftPracticesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C4B04E601AD63BC652274C /* Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4407AFC1DBBD35300BDF930 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F44517941DAD335200924485 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationController.swift; path = "Practice/View Controller/SlideInPresentationController.swift"; sourceTree = "<group>"; };
 		F44517961DAD3CE800924485 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentationTableViewController.swift; path = "Practice/View Controller/CustomPresentationTableViewController.swift"; sourceTree = "<group>"; };
@@ -126,12 +128,12 @@
 		F4DDE2121DBA22760068A2B0 /* News.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = News.json; sourceTree = "<group>"; };
 		F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationContentViewController.swift; path = "Practice/Navigation Controller/NavigationContentViewController.swift"; sourceTree = "<group>"; };
 		F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NavigationController.storyboard; path = "Practice/Navigation Controller/NavigationController.storyboard"; sourceTree = "<group>"; };
-		F4EABB221DA3AD2000FDB826 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Menu.json; path = Menu/Menu.json; sourceTree = "<group>"; };
-		F4EABB231DA3AD2000FDB826 /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootMenuViewController.swift; path = Menu/RootMenuViewController.swift; sourceTree = "<group>"; };
-		F4EABB241DA3AD2000FDB826 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootNavigationController.swift; path = Menu/RootNavigationController.swift; sourceTree = "<group>"; };
-		F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLevelMenuTableViewCell.swift; path = Menu/SecondLevelMenuTableViewCell.swift; sourceTree = "<group>"; };
-		F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLevelMenuTableViewController.swift; path = Menu/SecondLevelMenuTableViewController.swift; sourceTree = "<group>"; };
-		F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YDTintedLabel.swift; path = Menu/YDTintedLabel.swift; sourceTree = "<group>"; };
+		F4EABB221DA3AD2000FDB826 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
+		F4EABB231DA3AD2000FDB826 /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuViewController.swift; sourceTree = "<group>"; };
+		F4EABB241DA3AD2000FDB826 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondLevelMenuTableViewCell.swift; sourceTree = "<group>"; };
+		F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondLevelMenuTableViewController.swift; sourceTree = "<group>"; };
+		F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTintedLabel.swift; sourceTree = "<group>"; };
 		F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomNavigationControllerViewController.swift; path = "Practice/Navigation Controller/CustomNavigationControllerViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,9 +338,11 @@
 				F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */,
 				F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */,
 				F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */,
+				F4407AFC1DBBD35300BDF930 /* Menu.swift */,
 			);
 			name = Menu;
-			sourceTree = "<group>";
+			path = YiDaIOSSwiftPractices/Menu;
+			sourceTree = SOURCE_ROOT;
 		};
 		F4EABB1A1DA3A1C900FDB826 /* Practice */ = {
 			isa = PBXGroup;
@@ -664,6 +668,7 @@
 				F4DDE1A11DB8F2D00068A2B0 /* CustomTabBarController.swift in Sources */,
 				F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */,
 				F46100141DBB36A2006743E5 /* NewsListTableViewCell.swift in Sources */,
+				F4407AFD1DBBD35300BDF930 /* Menu.swift in Sources */,
 				F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */,
 				F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */,
 				F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */,

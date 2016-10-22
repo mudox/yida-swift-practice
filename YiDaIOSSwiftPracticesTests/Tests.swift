@@ -25,16 +25,22 @@ class DataTests: XCTestCase {
     let newsList1 = loadNewsUsingSwiftyJSON()
     var log = newsList1.reduce("") { (lines, newsItem) -> String in
       
-      return lines + "\n\(newsItem.dateText()) (\(newsItem.timePassed()))"
+      return lines + "\n\(newsItem.dateString) (\(newsItem.timePassedDescription))"
     }
     Jack.debug(log)
     
     let newsList2 = loadNewsUsingGloss()
     log = newsList2.reduce("") { (lines, newsItem) -> String in
       
-      return lines + "\n\(newsItem.dateText()) (\(newsItem.timePassed()))"
+      return lines + "\n\(newsItem.dateString) (\(newsItem.timePassedDescription))"
     }
     Jack.debug(log)
+  }
+  
+  func testMenu() {
+    let menu = Menu.shared
+    Jack.debug(menu.basicPart[4].headerText)
+    XCTAssert(menu.basicPart[4].items[0].presenting != nil)
   }
 
   func testSwiftyJSONPerformance() {
