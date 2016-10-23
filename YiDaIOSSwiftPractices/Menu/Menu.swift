@@ -68,6 +68,10 @@ struct MenuItem: Decodable {
   let viewControllerReferenceID: String
   var presenting: String?
 
+  var isAvailable: Bool {
+    return storyboardName != "" && viewControllerReferenceID != ""
+  }
+
   init?(json: JSON) {
     guard
       let title: String = "title" <~~ json,

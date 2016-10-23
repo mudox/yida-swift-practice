@@ -19,17 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
 
     Jack.wakeUp()
-
-    // load menu data
-    let menuURL = Bundle.main.url(forResource: "Menu", withExtension: "json")!
-    let data = try! Data(contentsOf: menuURL)
-    menuJSON = JSON(data: data)
-
-    if menuJSON.error != nil {
-      Jack.error(menuJSON.error!.localizedDescription)
-      return false
-    }
-
     return true
   }
 
@@ -67,11 +56,6 @@ extension AppDelegate {
     set {
       guard let win = window else {
         Jack.warn("window is nil")
-        return
-      }
-
-      guard win.tintColor != newValue else {
-        Jack.warn("reseting the same theme color")
         return
       }
 

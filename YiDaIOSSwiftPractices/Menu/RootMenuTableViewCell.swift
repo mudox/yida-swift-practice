@@ -1,5 +1,5 @@
 //
-//  SecondLevelMenuTableViewCell.swift
+//  RootMenuTableViewCell.swift
 //  YiDaIOSSwiftPractices
 //
 //  Created by Mudox on 9/21/16.
@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class SecondLevelMenuTableViewCell: UITableViewCell {
+class RootMenuTableViewCell: UITableViewCell {
   @IBOutlet weak var titleLabel: YDTintedLabel!
   @IBOutlet weak var subtitleLabel: UILabel!
   @IBOutlet weak var stateLabel: UILabel!
@@ -19,18 +19,12 @@ class SecondLevelMenuTableViewCell: UITableViewCell {
     // Initialization code
   }
 
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
+  func setup(withMenuItem item: MenuItem) {
+    titleLabel.text = item.title
+    subtitleLabel.text = item.subtitle
+    accessibilityIdentifier = item.viewControllerReferenceID
 
-    // Configure the view for the selected state
-  }
-
-  func set(withJSONItem item: JSON) {
-    titleLabel.text = item["title"].stringValue
-    subtitleLabel.text = item["subtitle"].stringValue
-    accessibilityIdentifier = item["viewControllerReferenceID"].stringValue
-
-    if item["storyboardName"].stringValue == "" {
+    if !item.isAvailable {
       selectionStyle = .none
       accessoryType = .none
 

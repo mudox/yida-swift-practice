@@ -48,10 +48,9 @@
 		F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */; };
 		F4EABB211DA3A20A00FDB826 /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */; };
 		F4EABB281DA3AD2000FDB826 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = F4EABB221DA3AD2000FDB826 /* Menu.json */; };
-		F4EABB291DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB231DA3AD2000FDB826 /* RootMenuViewController.swift */; };
 		F4EABB2A1DA3AD2000FDB826 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB241DA3AD2000FDB826 /* RootNavigationController.swift */; };
-		F4EABB2B1DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */; };
-		F4EABB2C1DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */; };
+		F4EABB2B1DA3AD2000FDB826 /* RootMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB251DA3AD2000FDB826 /* RootMenuTableViewCell.swift */; };
+		F4EABB2C1DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB261DA3AD2000FDB826 /* RootMenuViewController.swift */; };
 		F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */; };
 		F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */; };
 		FE84531D08A770A42A999222 /* Pods_YiDaIOSSwiftPractices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEDA13FE5B58EC1DB630AD2 /* Pods_YiDaIOSSwiftPractices.framework */; };
@@ -129,10 +128,9 @@
 		F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationContentViewController.swift; path = "Practice/Navigation Controller/NavigationContentViewController.swift"; sourceTree = "<group>"; };
 		F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NavigationController.storyboard; path = "Practice/Navigation Controller/NavigationController.storyboard"; sourceTree = "<group>"; };
 		F4EABB221DA3AD2000FDB826 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
-		F4EABB231DA3AD2000FDB826 /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuViewController.swift; sourceTree = "<group>"; };
 		F4EABB241DA3AD2000FDB826 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
-		F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondLevelMenuTableViewCell.swift; sourceTree = "<group>"; };
-		F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondLevelMenuTableViewController.swift; sourceTree = "<group>"; };
+		F4EABB251DA3AD2000FDB826 /* RootMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuTableViewCell.swift; sourceTree = "<group>"; };
+		F4EABB261DA3AD2000FDB826 /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuViewController.swift; sourceTree = "<group>"; };
 		F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTintedLabel.swift; sourceTree = "<group>"; };
 		F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomNavigationControllerViewController.swift; path = "Practice/Navigation Controller/CustomNavigationControllerViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -333,10 +331,9 @@
 			isa = PBXGroup;
 			children = (
 				F4EABB221DA3AD2000FDB826 /* Menu.json */,
-				F4EABB231DA3AD2000FDB826 /* RootMenuViewController.swift */,
 				F4EABB241DA3AD2000FDB826 /* RootNavigationController.swift */,
-				F4EABB251DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift */,
-				F4EABB261DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift */,
+				F4EABB251DA3AD2000FDB826 /* RootMenuTableViewCell.swift */,
+				F4EABB261DA3AD2000FDB826 /* RootMenuViewController.swift */,
 				F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */,
 				F4407AFC1DBBD35300BDF930 /* Menu.swift */,
 			);
@@ -678,11 +675,10 @@
 				F44517A31DAE8CA800924485 /* Mudox.swift in Sources */,
 				F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */,
 				F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */,
-				F4EABB2B1DA3AD2000FDB826 /* SecondLevelMenuTableViewCell.swift in Sources */,
+				F4EABB2B1DA3AD2000FDB826 /* RootMenuTableViewCell.swift in Sources */,
 				F4EABB2A1DA3AD2000FDB826 /* RootNavigationController.swift in Sources */,
-				F4EABB291DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
 				F46100101DBB320F006743E5 /* NewsListTableViewController.swift in Sources */,
-				F4EABB2C1DA3AD2000FDB826 /* SecondLevelMenuTableViewController.swift in Sources */,
+				F4EABB2C1DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
 				F46100161DBB479C006743E5 /* Extensions.swift in Sources */,
 				F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */,
 				F4DDE2071DBA22380068A2B0 /* News.swift in Sources */,
