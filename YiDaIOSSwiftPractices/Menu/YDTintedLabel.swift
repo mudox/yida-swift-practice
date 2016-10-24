@@ -8,9 +8,3 @@
 
 import UIKit
 
-class YDTintedLabel: UILabel {
-
-  override func tintColorDidChange() {
-    textColor = tintColor
-  }
-}

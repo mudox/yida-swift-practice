@@ -10,15 +10,17 @@ import UIKit
 class CustomNavigationControllerTableViewController: UITableViewController {
 
   var navigationBar: UINavigationBar {
-    return navigationController!.navigationBar
+    return navigationController.navigationBar
   }
 
   var toolbar: UIToolbar {
-    return navigationController!.toolbar
+    return navigationController.toolbar
   }
-
-  // MARK: - Outlets
-
+  
+  override var navigationController: RootNavigationController {
+    return super.navigationController as! RootNavigationController
+  }
+  
   @IBOutlet weak var promptSwitch: UISwitch!
   @IBOutlet weak var navbarStyleSegmentedControl: UISegmentedControl!
   @IBOutlet weak var navbarBackgroundSegmentedControl: UISegmentedControl!
@@ -91,16 +93,17 @@ class CustomNavigationControllerTableViewController: UITableViewController {
 
     switch sender.selectedSegmentIndex {
     case 0: // default
+      navigationController.statusBarStyle = .default
       navigationBar.barStyle = .default
       navigationBar.tintColor = nil
     case 1: // black
+      navigationController.statusBarStyle = .lightContent
       navigationBar.barStyle = .black
       navigationBar.tintColor = .white
     default:
       assertionFailure()
     }
 
-    setNeedsStatusBarAppearanceUpdate()
     updateNavbarItems(of: .leftSide)
     updateNavbarItems(of: .rightSide)
   }
@@ -111,6 +114,7 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     case 0: // default
       navigationBar.setBackgroundImage(nil, for: .default)
 
+      navigationController.statusBarStyle = .default
       navigationBar.barTintColor = nil
       navigationBar.tintColor = (navigationBar.barStyle == .default) ? nil : .white
       navigationBar.titleTextAttributes = nil
@@ -118,11 +122,13 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     case 1: // color background
       navigationBar.setBackgroundImage(nil, for: .default)
 
-      navigationBar.barTintColor = theWindow.tintColor
+      navigationController.statusBarStyle = .lightContent
       navigationBar.tintColor = .white
+      navigationBar.barTintColor = theWindow.tintColor
       navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
 
     case 2: // image background
+      navigationController.statusBarStyle = .lightContent
       navigationBar.tintColor = .white
       navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
       navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Navbar"), for: .default)
@@ -131,7 +137,6 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       assertionFailure()
     }
 
-    setNeedsStatusBarAppearanceUpdate()
     updateNavbarItems(of: .leftSide)
     updateNavbarItems(of: .rightSide)
   }
@@ -222,22 +227,20 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       items.insert(flexibleSpace, at: 2)
       items.insert(flexibleSpace, at: 4)
       items.insert(flexibleSpace, at: 6)
-      setToolbarItems(items, animated: true)
     case 1:
       items.insert(fixedSpace, at: 0)
       items.insert(flexibleSpace, at: 2)
       items.insert(flexibleSpace, at: 4)
       items.insert(fixedSpace, at: 6)
-      setToolbarItems(items, animated: true)
     case 2:
       items.insert(flexibleSpace, at: 0)
       items.insert(fixedSpace, at: 2)
       items.insert(fixedSpace, at: 4)
       items.append(flexibleSpace)
-      setToolbarItems(items, animated: true)
     default:
       assertionFailure()
     }
+    setToolbarItems(items, animated: true)
   }
 
   @IBAction func toolbarStyleChanged(_ sender: UISegmentedControl) {
@@ -261,6 +264,7 @@ class CustomNavigationControllerTableViewController: UITableViewController {
   @IBAction func toolbarBackgroundChanged(_ sender: UISegmentedControl) {
     switch sender.selectedSegmentIndex {
     case 0: // default
+      toolbar.tintColor = nil
       toolbar.barTintColor = nil
       toolbar.setBackgroundImage(nil, forToolbarPosition: .any, barMetrics: .default)
 
@@ -270,8 +274,8 @@ class CustomNavigationControllerTableViewController: UITableViewController {
       toolbar.tintColor = .white
 
     case 2:
-      toolbar.setBackgroundImage(#imageLiteral(resourceName: "Toolbar"), forToolbarPosition: .any, barMetrics: .default)
       toolbar.tintColor = .white
+      toolbar.setBackgroundImage(#imageLiteral(resourceName: "Toolbar"), forToolbarPosition: .any, barMetrics: .default)
 
     default:
       assertionFailure()
@@ -325,7 +329,7 @@ class CustomNavigationControllerTableViewController: UITableViewController {
     navRightBarButtonItemStyleChanged(navbarRightButtonItemStyleSegmentedControl)
 
     // update tool bar appearence
-    navigationController?.setToolbarHidden(false, animated: true)
+    navigationController.setToolbarHidden(false, animated: true)
     updateToolbarItems()
     toolbarBackgroundChanged(toolbarBackgroundSegmentedControl)
     toolbarItemStyleChanged(toolbarItemStyleSegmentedControl)
@@ -335,7 +339,7 @@ class CustomNavigationControllerTableViewController: UITableViewController {
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
 
-    navigationController!.setToolbarHidden(true, animated: false)
+    navigationController.setToolbarHidden(true, animated: false)
   }
 
   override func didReceiveMemoryWarning() {

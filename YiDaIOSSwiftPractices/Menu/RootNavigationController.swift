@@ -16,16 +16,15 @@ class RootNavigationController: UINavigationController {
   }
 
   // MARK: Manage status bar
-  override var preferredStatusBarStyle: UIStatusBarStyle {
-    let bar = navigationBar
-
-    if bar.barTintColor != nil ||
-      bar.barStyle != .default ||
-      bar.backgroundImage(for: .default) != nil {
-      return .lightContent
-    } else {
-      return .default
+  
+  var statusBarStyle: UIStatusBarStyle = .lightContent {
+    didSet {
+      setNeedsStatusBarAppearanceUpdate()
     }
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return statusBarStyle
   }
 
   // MARK: Manage interface orirentation

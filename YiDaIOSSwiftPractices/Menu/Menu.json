@@ -75,7 +75,7 @@
       "title": "自定义分栏控制器",
       "subtitle": "自定义分栏，以及子视图控制器的切换过渡动画",
       "storyboardName": "TabBarController",
-      "viewControllerReferenceID": "Custom Tab Bar Controller",
+      "viewControllerReferenceID": "",
       "presenting": "Cross Dissolve"
       }, {
       "title": "综合练习",

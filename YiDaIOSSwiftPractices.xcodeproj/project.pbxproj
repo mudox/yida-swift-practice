@@ -25,13 +25,13 @@
 		F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */; };
 		F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */; };
 		F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */; };
+		F4A1A2F61DBE039C00C7D89A /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A2F51DBE039C00C7D89A /* AppTheme.swift */; };
 		F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */; };
 		F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FDF1D81A106006E1487 /* AppDelegate.swift */; };
 		F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE61D81A106006E1487 /* Assets.xcassets */; };
 		F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */; };
 		F4C27FF51D81A106006E1487 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FF41D81A106006E1487 /* Tests.swift */; };
 		F4C280001D81A106006E1487 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FFF1D81A106006E1487 /* UITests.swift */; };
-		F4DDE19D1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE19C1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift */; };
 		F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */; };
 		F4DDE1A11DB8F2D00068A2B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */; };
 		F4DDE1B31DBA1A1F0068A2B0 /* News-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DDE1AA1DBA1A1F0068A2B0 /* News-1.jpg */; };
@@ -92,13 +92,14 @@
 		F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		F46100111DBB327B006743E5 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
-		F46100151DBB479C006743E5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Practice/Extensions.swift; sourceTree = "<group>"; };
+		F46100151DBB479C006743E5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F46100171DBB59FB006743E5 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "Practice/View Controller/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
 		F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTabBarController.swift; sourceTree = "<group>"; };
 		F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarContentViewController.swift; sourceTree = "<group>"; };
 		F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInAnimator.swift; path = "Practice/View Controller/SlideInAnimator.swift"; sourceTree = "<group>"; };
+		F4A1A2F51DBE039C00C7D89A /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		F4ADC17B1DA2CD5400C5E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiDaIOSSwiftPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FDF1D81A106006E1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		F4C27FFB1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiDaIOSSwiftPracticesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FFF1D81A106006E1487 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		F4C280011D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4DDE19C1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerAnimator.swift; sourceTree = "<group>"; };
 		F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		F4DDE1AA1DBA1A1F0068A2B0 /* News-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-1.jpg"; sourceTree = "<group>"; };
@@ -209,7 +209,6 @@
 				F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */,
 				F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */,
 				F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */,
-				F4DDE19C1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift */,
 				F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */,
 				F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */,
 				F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */,
@@ -230,6 +229,15 @@
 				F44517941DAD335200924485 /* SlideInPresentationController.swift */,
 			);
 			name = CustomPresentation;
+			sourceTree = "<group>";
+		};
+		F4A1A2F41DBE02EB00C7D89A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F46100151DBB479C006743E5 /* Extensions.swift */,
+				F4A1A2F51DBE039C00C7D89A /* AppTheme.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F4C27FD31D81A106006E1487 = {
@@ -257,6 +265,7 @@
 		F4C27FDE1D81A106006E1487 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F4A1A2F41DBE02EB00C7D89A /* Shared */,
 				F4DDE1A21DB9BAD30068A2B0 /* Data */,
 				F4EABB1A1DA3A1C900FDB826 /* Practice */,
 				F4EABB191DA3A1C200FDB826 /* Menu */,
@@ -347,7 +356,6 @@
 				F46AA5101DACD20A00DBC3A2 /* View Controller */,
 				F4EABB1B1DA3A1DB00FDB826 /* Navigation Controller */,
 				F46AA5111DACD21200DBC3A2 /* Tab Bar Controller */,
-				F46100151DBB479C006743E5 /* Extensions.swift */,
 			);
 			name = Practice;
 			sourceTree = "<group>";
@@ -660,9 +668,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DDE19D1DB80A0D0068A2B0 /* TabBarControllerAnimator.swift in Sources */,
 				F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */,
 				F4DDE1A11DB8F2D00068A2B0 /* CustomTabBarController.swift in Sources */,
+				F4A1A2F61DBE039C00C7D89A /* AppTheme.swift in Sources */,
 				F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */,
 				F46100141DBB36A2006743E5 /* NewsListTableViewCell.swift in Sources */,
 				F4407AFD1DBBD35300BDF930 /* Menu.swift in Sources */,

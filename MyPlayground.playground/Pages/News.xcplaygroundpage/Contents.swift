@@ -1,11 +1,20 @@
 //: [Previous](@previous)
 
-import Foundation
+import UIKit
 
-let url = Bundle.main.url(forResource: "News", withExtension: "json")!
-let data = try! Data(contentsOf: url)
-let list = try! JSONSerialization.jsonObject(with: data, options: [])
-print(list)
+let a: UIView = UILabel()
 
+extension UINavigationBar {
+  open override func tintColorDidChange() {
+    print("new tint color: \(tintColor)")
+  }
+}
+
+let win = UIWindow()
+let navBar = UINavigationBar()
+win.addSubview(navBar)
+
+win.tintColor = .blue
+win.addSubview(UINavigationBar())
 
 //: [Next](@next)

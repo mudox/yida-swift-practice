@@ -28,8 +28,7 @@ class NavigationContentViewController: UIViewController {
 
   func setTheme() {
     let baseColor = NavigationContentViewController.colors[instanceIndex]
-
-    theAppDelegate.themeColor = baseColor
+    theWindow.tintColor = baseColor
 
     // content view
     var red: CGFloat = 0
@@ -47,12 +46,6 @@ class NavigationContentViewController: UIViewController {
     indexLabel.backgroundColor = lightenedColor
   }
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
-  }
-
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
@@ -62,12 +55,7 @@ class NavigationContentViewController: UIViewController {
     navigationItem.backBarButtonItem?.title = ""
     indexLabel.text = "\(instanceIndex + 1)"
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
+  
   @IBAction func jumpButtonTapped(_ sender: AnyObject) {
     let title = "导航控制器"
     let message = "请选择跳转到："

@@ -57,8 +57,11 @@ extension RootMenuViewController {
     }
     
     baseThemeColor = sender.superview!.backgroundColor
-    theAppDelegate.themeColor = baseThemeColor
+    assert(baseThemeColor != nil)
+    theWindow.tintColor = baseThemeColor
+    
     tableView.reloadData()
+    tableView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height: 1), animated: false)
     
     pullUpMenu(withTopMostDiv: topMostDiv)
   }
@@ -114,7 +117,7 @@ extension RootMenuViewController {
   fileprivate func expandMenu() {
     
     overlayDivs.forEach {
-      $0.isHidden = false
+      theWindow.addSubview($0)
     }
     
     UIView.animateKeyframes(
@@ -160,7 +163,7 @@ extension RootMenuViewController {
         self.navigationController!.setNavigationBarHidden(false, animated: false)
         
         self.overlayDivs.forEach {
-          $0.isHidden = true
+          $0.removeFromSuperview()
         }
       }
     )
@@ -188,21 +191,17 @@ extension RootMenuViewController {
     
     overlayDivs.forEach {
       $0.translatesAutoresizingMaskIntoConstraints = false
-//      $0.layer.zPosition = 100
       theWindow.addSubview($0)
     }
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    setNeedsStatusBarAppearanceUpdate()
-    if baseThemeColor != nil {
-      theAppDelegate.themeColor = baseThemeColor
-    }
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
+    theWindow.tintColor = baseThemeColor
+    
+    navigationController?.navigationBar.setTheme(with: baseThemeColor)
+    navigationController?.toolbar.setTheme(with: baseThemeColor)
+    tabBarController?.tabBar.setTheme(with: baseThemeColor)
   }
   
 }
@@ -238,7 +237,7 @@ extension RootMenuViewController: UITableViewDelegate {
     
     let item = menuItem(forIndexPath: indexPath)
     guard item.isAvailable else {
-      fatalError()
+      return
     }
     
     let storyboard = UIStoryboard(name: item.storyboardName, bundle: nil)

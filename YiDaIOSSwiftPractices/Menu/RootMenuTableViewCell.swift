@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 
 class RootMenuTableViewCell: UITableViewCell {
-  @IBOutlet weak var titleLabel: YDTintedLabel!
+  @IBOutlet weak var titleLabel: TintedLabel!
   @IBOutlet weak var subtitleLabel: UILabel!
   @IBOutlet weak var stateLabel: UILabel!
 

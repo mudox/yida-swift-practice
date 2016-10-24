@@ -24,8 +24,6 @@ class BrowserViewController: UIViewController {
 
     // set UI
     navigationController!.setToolbarHidden(false, animated: true)
-//    navigationController!.toolbar.barTintColor = theWindow.tintColor
-//    navigationController!.toolbar.tintColor = .white
     navigationItem.hidesBackButton = true
     setNeedsStatusBarAppearanceUpdate()
 
