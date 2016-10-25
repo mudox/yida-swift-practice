@@ -12,7 +12,7 @@
             <objects>
                 <navigationController title="Root Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="Dih-gT-eWu" customClass="RootNavigationController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="RPw-Hn-fFg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="RPw-Hn-fFg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="textColor" catalog="System" colorSpace="catalog"/>

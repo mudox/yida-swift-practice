@@ -12,6 +12,8 @@ func initAppTheme() {
   UINavigationBar.appearance().isTranslucent = false
   UIToolbar.appearance().isTranslucent = false
   UITabBar.appearance().isTranslucent = false
+
+  UITextField.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).tintColor = .black
 }
 
 extension UIWindow {
