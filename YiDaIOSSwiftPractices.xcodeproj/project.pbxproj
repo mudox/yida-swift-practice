@@ -21,11 +21,20 @@
 		F46100161DBB479C006743E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100151DBB479C006743E5 /* Extensions.swift */; };
 		F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100171DBB59FB006743E5 /* BrowserViewController.swift */; };
 		F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */; };
+		F48A63031DC0A41100253910 /* RandomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63021DC0A41100253910 /* RandomDataSource.swift */; };
+		F48A63051DC0A70800253910 /* CNFemaleNames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63041DC0A70800253910 /* CNFemaleNames */; };
+		F48A63081DC0A71900253910 /* CNMaleNames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63061DC0A71900253910 /* CNMaleNames */; };
+		F48A63091DC0A71900253910 /* CNSurnames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63071DC0A71900253910 /* CNSurnames */; };
+		F48A63441DC0D83B00253910 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63431DC0D83B00253910 /* ImageSource.swift */; };
+		F48A63471DC0EB0F00253910 /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63461DC0EB0F00253910 /* MusicList.swift */; };
+		F48A63491DC0EBD100253910 /* MetaInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63481DC0EBD100253910 /* MetaInspector.swift */; };
+		F48A634B1DC0EBF800253910 /* LyricsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A634A1DC0EBF800253910 /* LyricsParser.swift */; };
 		F48DF9C01DB73DF900014B1E /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */; };
 		F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */; };
 		F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */; };
 		F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */; };
 		F4A1A2F61DBE039C00C7D89A /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A2F51DBE039C00C7D89A /* AppTheme.swift */; };
+		F4A1A2F81DBF4C3600C7D89A /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A2F71DBF4C3600C7D89A /* PhotosCollectionViewController.swift */; };
 		F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */; };
 		F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FDF1D81A106006E1487 /* AppDelegate.swift */; };
 		F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE61D81A106006E1487 /* Assets.xcassets */; };
@@ -95,11 +104,20 @@
 		F46100151DBB479C006743E5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F46100171DBB59FB006743E5 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "Practice/View Controller/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
+		F48A63021DC0A41100253910 /* RandomDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomDataSource.swift; sourceTree = "<group>"; };
+		F48A63041DC0A70800253910 /* CNFemaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNFemaleNames; sourceTree = "<group>"; };
+		F48A63061DC0A71900253910 /* CNMaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNMaleNames; sourceTree = "<group>"; };
+		F48A63071DC0A71900253910 /* CNSurnames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNSurnames; sourceTree = "<group>"; };
+		F48A63431DC0D83B00253910 /* ImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		F48A63461DC0EB0F00253910 /* MusicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
+		F48A63481DC0EBD100253910 /* MetaInspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaInspector.swift; sourceTree = "<group>"; };
+		F48A634A1DC0EBF800253910 /* LyricsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsParser.swift; sourceTree = "<group>"; };
 		F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTabBarController.swift; sourceTree = "<group>"; };
 		F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarContentViewController.swift; sourceTree = "<group>"; };
 		F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInAnimator.swift; path = "Practice/View Controller/SlideInAnimator.swift"; sourceTree = "<group>"; };
 		F4A1A2F51DBE039C00C7D89A /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		F4A1A2F71DBF4C3600C7D89A /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		F4ADC17B1DA2CD5400C5E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiDaIOSSwiftPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FDF1D81A106006E1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +232,7 @@
 				F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */,
 				F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */,
 				F46100171DBB59FB006743E5 /* BrowserViewController.swift */,
+				F4A1A2F71DBF4C3600C7D89A /* PhotosCollectionViewController.swift */,
 			);
 			name = "Tab Bar Controller";
 			path = "YiDaIOSSwiftPractices/Practice/Tab Bar Controller";
@@ -229,6 +248,16 @@
 				F44517941DAD335200924485 /* SlideInPresentationController.swift */,
 			);
 			name = CustomPresentation;
+			sourceTree = "<group>";
+		};
+		F48A63451DC0EAB900253910 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				F48A63461DC0EB0F00253910 /* MusicList.swift */,
+				F48A63481DC0EBD100253910 /* MetaInspector.swift */,
+				F48A634A1DC0EBF800253910 /* LyricsParser.swift */,
+			);
+			path = Musics;
 			sourceTree = "<group>";
 		};
 		F4A1A2F41DBE02EB00C7D89A /* Shared */ = {
@@ -265,16 +294,16 @@
 		F4C27FDE1D81A106006E1487 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				F4C27FDF1D81A106006E1487 /* AppDelegate.swift */,
+				F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */,
+				F4C27FE61D81A106006E1487 /* Assets.xcassets */,
+				F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */,
+				F4C27FEB1D81A106006E1487 /* Info.plist */,
 				F4A1A2F41DBE02EB00C7D89A /* Shared */,
 				F4DDE1A21DB9BAD30068A2B0 /* Data */,
 				F4EABB1A1DA3A1C900FDB826 /* Practice */,
 				F4EABB191DA3A1C200FDB826 /* Menu */,
 				F46085191D94EB4A008B3078 /* Mudox */,
-				F4C27FDF1D81A106006E1487 /* AppDelegate.swift */,
-				F4C27FE61D81A106006E1487 /* Assets.xcassets */,
-				F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */,
-				F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */,
-				F4C27FEB1D81A106006E1487 /* Info.plist */,
 			);
 			name = Src;
 			path = YiDaIOSSwiftPractices;
@@ -303,8 +332,14 @@
 		F4DDE1A21DB9BAD30068A2B0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F48A63451DC0EAB900253910 /* Musics */,
 				F4DDE1BC1DBA1A350068A2B0 /* News */,
+				F48A63041DC0A70800253910 /* CNFemaleNames */,
+				F48A63061DC0A71900253910 /* CNMaleNames */,
+				F48A63071DC0A71900253910 /* CNSurnames */,
 				F46100111DBB327B006743E5 /* DataSource.swift */,
+				F48A63021DC0A41100253910 /* RandomDataSource.swift */,
+				F48A63431DC0D83B00253910 /* ImageSource.swift */,
 			);
 			name = Data;
 			path = YiDaIOSSwiftPractices/Data;
@@ -494,7 +529,9 @@
 				F4DDE1B71DBA1A1F0068A2B0 /* News-5.jpg in Resources */,
 				F4DDE2131DBA22760068A2B0 /* News.json in Resources */,
 				F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */,
+				F48A63091DC0A71900253910 /* CNSurnames in Resources */,
 				F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */,
+				F48A63051DC0A70800253910 /* CNFemaleNames in Resources */,
 				F4DDE1B41DBA1A1F0068A2B0 /* News-2.jpg in Resources */,
 				F4EABB281DA3AD2000FDB826 /* Menu.json in Resources */,
 				F4EABB211DA3A20A00FDB826 /* NavigationController.storyboard in Resources */,
@@ -506,6 +543,7 @@
 				F4DDE1B31DBA1A1F0068A2B0 /* News-1.jpg in Resources */,
 				F4DDE1B61DBA1A1F0068A2B0 /* News-4.jpg in Resources */,
 				F4DDE1B81DBA1A1F0068A2B0 /* News-6.jpg in Resources */,
+				F48A63081DC0A71900253910 /* CNMaleNames in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +719,9 @@
 				F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */,
 				F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */,
 				F44517A31DAE8CA800924485 /* Mudox.swift in Sources */,
+				F4A1A2F81DBF4C3600C7D89A /* PhotosCollectionViewController.swift in Sources */,
+				F48A63491DC0EBD100253910 /* MetaInspector.swift in Sources */,
+				F48A63441DC0D83B00253910 /* ImageSource.swift in Sources */,
 				F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */,
 				F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */,
 				F4EABB2B1DA3AD2000FDB826 /* RootMenuTableViewCell.swift in Sources */,
@@ -689,8 +730,11 @@
 				F4EABB2C1DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
 				F46100161DBB479C006743E5 /* Extensions.swift in Sources */,
 				F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */,
+				F48A634B1DC0EBF800253910 /* LyricsParser.swift in Sources */,
 				F4DDE2071DBA22380068A2B0 /* News.swift in Sources */,
+				F48A63031DC0A41100253910 /* RandomDataSource.swift in Sources */,
 				F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */,
+				F48A63471DC0EB0F00253910 /* MusicList.swift in Sources */,
 				F46100121DBB327B006743E5 /* DataSource.swift in Sources */,
 				F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */,
 			);

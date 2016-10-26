@@ -38,18 +38,18 @@
                         <viewControllerLayoutGuide type="bottom" id="gmK-DE-ORz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Of-hk-jtM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="42" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xo1-qV-MHC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="54" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xo1-qV-MHC">
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Root Menu Cell" rowHeight="44" id="Zo1-5H-IcL" customClass="RootMenuTableViewCell" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Root Menu Cell" rowHeight="56" id="Zo1-5H-IcL" customClass="RootMenuTableViewCell" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zo1-5H-IcL" id="Bh5-ZF-mpP">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="320" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视图基础" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-LB-2Rx" customClass="TintedLabel" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
@@ -74,8 +74,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4Ke-LB-2Rx" firstAttribute="top" secondItem="Bh5-ZF-mpP" secondAttribute="topMargin" id="4ya-NG-X1b"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="PHc-7f-EiQ" secondAttribute="trailing" id="7sq-dE-Ibb"/>
-                                                <constraint firstItem="edd-g3-jxD" firstAttribute="top" secondItem="4Ke-LB-2Rx" secondAttribute="bottom" constant="2" id="FSj-Mq-ltp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PHc-7f-EiQ" secondAttribute="trailing" constant="6" id="7sq-dE-Ibb"/>
+                                                <constraint firstItem="edd-g3-jxD" firstAttribute="top" secondItem="4Ke-LB-2Rx" secondAttribute="bottom" constant="8" symbolic="YES" id="FSj-Mq-ltp"/>
                                                 <constraint firstItem="4Ke-LB-2Rx" firstAttribute="leading" secondItem="Bh5-ZF-mpP" secondAttribute="leadingMargin" id="Ra8-f2-pRC"/>
                                                 <constraint firstItem="PHc-7f-EiQ" firstAttribute="centerY" secondItem="Bh5-ZF-mpP" secondAttribute="centerY" id="kpH-oj-nlg"/>
                                                 <constraint firstItem="edd-g3-jxD" firstAttribute="leading" secondItem="4Ke-LB-2Rx" secondAttribute="leading" id="u3K-Qt-aRi"/>

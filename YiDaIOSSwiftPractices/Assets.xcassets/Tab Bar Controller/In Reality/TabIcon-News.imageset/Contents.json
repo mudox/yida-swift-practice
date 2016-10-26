@@ -2,16 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "TabIcon-News.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Tab-News-Selected@2x.png",
+      "filename" : "TabIcon-News@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Tab-News-Selected@3x.png",
+      "filename" : "TabIcon-News@3x.png",
       "scale" : "3x"
     }
   ],

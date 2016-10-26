@@ -11,12 +11,17 @@ import UIKit
 class BrowserViewController: UIViewController {
   var homeURL: URL?
   @IBOutlet weak var webView: UIWebView!
-  @IBOutlet weak var addressBox: UITextField!
+  @IBOutlet weak var addressTextField: UITextField!
+  
+  let addressTextFieldAlpha: CGFloat = 0.7
+}
 
+// MARK: - as UIViewController
+extension BrowserViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
+    
+    addressTextField.backgroundColor = UIColor(white: 1, alpha: addressTextFieldAlpha)
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -27,15 +32,15 @@ class BrowserViewController: UIViewController {
     navigationItem.hidesBackButton = true
     setNeedsStatusBarAppearanceUpdate()
 
-    addressBox.frame.size.width = navigationController!.navigationBar.bounds.width - 20
+    addressTextField.frame.size.width = navigationController!.navigationBar.bounds.width - 20
 
     // load page if any
     if let urlToLoad = homeURL {
       let request = URLRequest(url: urlToLoad)
       webView.loadRequest(request)
-      addressBox.text = urlToLoad.host
+      addressTextField.text = urlToLoad.host
     } else {
-      addressBox.placeholder = "请输入要加载的地址"
+      addressTextField.placeholder = "请输入要加载的地址"
     }
   }
 
@@ -74,7 +79,7 @@ class BrowserViewController: UIViewController {
     }
   }
 
-  @IBAction func goHome(_ sender: UIBarButtonItem) {
+  @IBAction func goHome(_ sender: Any) {
     if let urlToLoad = homeURL {
       let request = URLRequest(url: urlToLoad)
       webView.loadRequest(request)
@@ -84,13 +89,23 @@ class BrowserViewController: UIViewController {
 
 // MARK: - as UITextFieldDelegate
 extension BrowserViewController : UITextFieldDelegate {
-  func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-    becomeFirstResponder()
+  
+  func textFieldDidBeginEditing(_ textField: UITextField) {
+    textField.backgroundColor = .white
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    let urlString = textField.text!
+    if urlString.isEmpty {
+      textField.text = homeURL!.absoluteString
+    } else {
+      goHome(self)
+    }
+    
     return true
   }
-
-  func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-    resignFirstResponder()
-    return true
+  
+  func textFieldDidEndEditing(_ textField: UITextField) {
+    textField.backgroundColor = UIColor(white: 1, alpha: addressTextFieldAlpha)
   }
 }
