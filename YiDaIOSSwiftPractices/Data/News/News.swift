@@ -31,6 +31,7 @@ struct NewsItem: Decodable {
   let url: URL
 
 
+  // Gloss
   init?(json: Gloss.JSON) {
     guard
       let title: String = "title" <~~ json,

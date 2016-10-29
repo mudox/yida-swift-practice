@@ -19,5 +19,5 @@ struct DataSource {
   static let random = RandomDataSource.self
   
   /// Generate in-memory place holder image for UI Design uses.
-  static let image = ImageSource.shared
+  static let placeHolderImage = PlaceholderImageSource.self
 }
