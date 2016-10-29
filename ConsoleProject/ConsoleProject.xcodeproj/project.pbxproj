@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4DACCB41DC24D1F00425AD5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCB31DC24D1F00425AD5 /* main.swift */; };
+		F4DACD161DC24EB100425AD5 /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCFE1DC24EB100425AD5 /* MusicList.swift */; };
+		F4DACD171DC24EB100425AD5 /* MetaInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCFF1DC24EB100425AD5 /* MetaInspector.swift */; };
+		F4DACD181DC24EB100425AD5 /* LyricsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD001DC24EB100425AD5 /* LyricsParser.swift */; };
+		F4DACD191DC24EB100425AD5 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD0D1DC24EB100425AD5 /* News.swift */; };
+		F4DACD1A1DC24EB100425AD5 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD121DC24EB100425AD5 /* DataSource.swift */; };
+		F4DACD1B1DC24EB100425AD5 /* RandomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD131DC24EB100425AD5 /* RandomDataSource.swift */; };
+		F4DACD1C1DC24EB100425AD5 /* PlaceholderImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD141DC24EB100425AD5 /* PlaceholderImageSource.swift */; };
+		F4DACD231DC24F5400425AD5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD211DC24F5400425AD5 /* Student.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4DACCAE1DC24D1F00425AD5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F4DACCB01DC24D1F00425AD5 /* ConsoleProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConsoleProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DACCB31DC24D1F00425AD5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F4DACCFE1DC24EB100425AD5 /* MusicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
+		F4DACCFF1DC24EB100425AD5 /* MetaInspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaInspector.swift; sourceTree = "<group>"; };
+		F4DACD001DC24EB100425AD5 /* LyricsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsParser.swift; sourceTree = "<group>"; };
+		F4DACD021DC24EB100425AD5 /* News-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-1.jpg"; sourceTree = "<group>"; };
+		F4DACD031DC24EB100425AD5 /* News-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-2.jpg"; sourceTree = "<group>"; };
+		F4DACD041DC24EB100425AD5 /* News-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-3.jpg"; sourceTree = "<group>"; };
+		F4DACD051DC24EB100425AD5 /* News-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-4.jpg"; sourceTree = "<group>"; };
+		F4DACD061DC24EB100425AD5 /* News-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-5.jpg"; sourceTree = "<group>"; };
+		F4DACD071DC24EB100425AD5 /* News-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-6.jpg"; sourceTree = "<group>"; };
+		F4DACD081DC24EB100425AD5 /* News-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-7.jpg"; sourceTree = "<group>"; };
+		F4DACD091DC24EB100425AD5 /* News-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-8.jpg"; sourceTree = "<group>"; };
+		F4DACD0A1DC24EB100425AD5 /* News-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-9.jpg"; sourceTree = "<group>"; };
+		F4DACD0C1DC24EB100425AD5 /* News.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = News.json; sourceTree = "<group>"; };
+		F4DACD0D1DC24EB100425AD5 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		F4DACD0F1DC24EB100425AD5 /* CNFemaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNFemaleNames; sourceTree = "<group>"; };
+		F4DACD101DC24EB100425AD5 /* CNMaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNMaleNames; sourceTree = "<group>"; };
+		F4DACD111DC24EB100425AD5 /* CNSurnames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNSurnames; sourceTree = "<group>"; };
+		F4DACD121DC24EB100425AD5 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		F4DACD131DC24EB100425AD5 /* RandomDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomDataSource.swift; sourceTree = "<group>"; };
+		F4DACD141DC24EB100425AD5 /* PlaceholderImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderImageSource.swift; sourceTree = "<group>"; };
+		F4DACD211DC24F5400425AD5 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = "Student Info/Student.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4DACCAD1DC24D1F00425AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4DACCA71DC24D1F00425AD5 = {
+			isa = PBXGroup;
+			children = (
+				F4DACCB21DC24D1F00425AD5 /* ConsoleProject */,
+				F4DACCB11DC24D1F00425AD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4DACCB11DC24D1F00425AD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACCB01DC24D1F00425AD5 /* ConsoleProject */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4DACCB21DC24D1F00425AD5 /* ConsoleProject */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACCB31DC24D1F00425AD5 /* main.swift */,
+				F4DACD151DC24EB100425AD5 /* Data */,
+			);
+			path = ConsoleProject;
+			sourceTree = "<group>";
+		};
+		F4DACCFC1DC24EB100425AD5 /* Mechandise */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mechandise;
+			sourceTree = "<group>";
+		};
+		F4DACD011DC24EB100425AD5 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACCFE1DC24EB100425AD5 /* MusicList.swift */,
+				F4DACCFF1DC24EB100425AD5 /* MetaInspector.swift */,
+				F4DACD001DC24EB100425AD5 /* LyricsParser.swift */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
+		F4DACD0B1DC24EB100425AD5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACD021DC24EB100425AD5 /* News-1.jpg */,
+				F4DACD031DC24EB100425AD5 /* News-2.jpg */,
+				F4DACD041DC24EB100425AD5 /* News-3.jpg */,
+				F4DACD051DC24EB100425AD5 /* News-4.jpg */,
+				F4DACD061DC24EB100425AD5 /* News-5.jpg */,
+				F4DACD071DC24EB100425AD5 /* News-6.jpg */,
+				F4DACD081DC24EB100425AD5 /* News-7.jpg */,
+				F4DACD091DC24EB100425AD5 /* News-8.jpg */,
+				F4DACD0A1DC24EB100425AD5 /* News-9.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F4DACD0E1DC24EB100425AD5 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACD0B1DC24EB100425AD5 /* Images */,
+				F4DACD0C1DC24EB100425AD5 /* News.json */,
+				F4DACD0D1DC24EB100425AD5 /* News.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F4DACD151DC24EB100425AD5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACD221DC24F5400425AD5 /* Student Info */,
+				F4DACCFC1DC24EB100425AD5 /* Mechandise */,
+				F4DACD011DC24EB100425AD5 /* Musics */,
+				F4DACD0E1DC24EB100425AD5 /* News */,
+				F4DACD0F1DC24EB100425AD5 /* CNFemaleNames */,
+				F4DACD101DC24EB100425AD5 /* CNMaleNames */,
+				F4DACD111DC24EB100425AD5 /* CNSurnames */,
+				F4DACD121DC24EB100425AD5 /* DataSource.swift */,
+				F4DACD131DC24EB100425AD5 /* RandomDataSource.swift */,
+				F4DACD141DC24EB100425AD5 /* PlaceholderImageSource.swift */,
+			);
+			name = Data;
+			path = ../../YiDaIOSSwiftPractices/Data;
+			sourceTree = "<group>";
+		};
+		F4DACD221DC24F5400425AD5 /* Student Info */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACD211DC24F5400425AD5 /* Student.swift */,
+			);
+			name = "Student Info";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4DACCAF1DC24D1F00425AD5 /* ConsoleProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DACCB71DC24D1F00425AD5 /* Build configuration list for PBXNativeTarget "ConsoleProject" */;
+			buildPhases = (
+				F4DACCAC1DC24D1F00425AD5 /* Sources */,
+				F4DACCAD1DC24D1F00425AD5 /* Frameworks */,
+				F4DACCAE1DC24D1F00425AD5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConsoleProject;
+			productName = ConsoleProject;
+			productReference = F4DACCB01DC24D1F00425AD5 /* ConsoleProject */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4DACCA81DC24D1F00425AD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Mudox;
+				TargetAttributes = {
+					F4DACCAF1DC24D1F00425AD5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YSQ5ZCLFSD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4DACCAB1DC24D1F00425AD5 /* Build configuration list for PBXProject "ConsoleProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4DACCA71DC24D1F00425AD5;
+			productRefGroup = F4DACCB11DC24D1F00425AD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4DACCAF1DC24D1F00425AD5 /* ConsoleProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4DACCAC1DC24D1F00425AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DACD1A1DC24EB100425AD5 /* DataSource.swift in Sources */,
+				F4DACD181DC24EB100425AD5 /* LyricsParser.swift in Sources */,
+				F4DACD1B1DC24EB100425AD5 /* RandomDataSource.swift in Sources */,
+				F4DACCB41DC24D1F00425AD5 /* main.swift in Sources */,
+				F4DACD231DC24F5400425AD5 /* Student.swift in Sources */,
+				F4DACD161DC24EB100425AD5 /* MusicList.swift in Sources */,
+				F4DACD191DC24EB100425AD5 /* News.swift in Sources */,
+				F4DACD1C1DC24EB100425AD5 /* PlaceholderImageSource.swift in Sources */,
+				F4DACD171DC24EB100425AD5 /* MetaInspector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4DACCB51DC24D1F00425AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4DACCB61DC24D1F00425AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4DACCB81DC24D1F00425AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YSQ5ZCLFSD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4DACCB91DC24D1F00425AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YSQ5ZCLFSD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4DACCAB1DC24D1F00425AD5 /* Build configuration list for PBXProject "ConsoleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DACCB51DC24D1F00425AD5 /* Debug */,
+				F4DACCB61DC24D1F00425AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4DACCB71DC24D1F00425AD5 /* Build configuration list for PBXNativeTarget "ConsoleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DACCB81DC24D1F00425AD5 /* Debug */,
+				F4DACCB91DC24D1F00425AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4DACCA81DC24D1F00425AD5 /* Project object */;
+}

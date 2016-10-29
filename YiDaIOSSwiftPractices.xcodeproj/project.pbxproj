@@ -21,14 +21,14 @@
 		F46100161DBB479C006743E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100151DBB479C006743E5 /* Extensions.swift */; };
 		F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100171DBB59FB006743E5 /* BrowserViewController.swift */; };
 		F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */; };
+		F47575DE1DC500EF003A1480 /* PlaceholderImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47575DD1DC500EF003A1480 /* PlaceholderImageGenerator.swift */; };
 		F48A63031DC0A41100253910 /* RandomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63021DC0A41100253910 /* RandomDataSource.swift */; };
 		F48A63051DC0A70800253910 /* CNFemaleNames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63041DC0A70800253910 /* CNFemaleNames */; };
 		F48A63081DC0A71900253910 /* CNMaleNames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63061DC0A71900253910 /* CNMaleNames */; };
 		F48A63091DC0A71900253910 /* CNSurnames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63071DC0A71900253910 /* CNSurnames */; };
-		F48A63441DC0D83B00253910 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63431DC0D83B00253910 /* ImageSource.swift */; };
+		F48A63441DC0D83B00253910 /* PlaceholderImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63431DC0D83B00253910 /* PlaceholderImageSource.swift */; };
 		F48A63471DC0EB0F00253910 /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63461DC0EB0F00253910 /* MusicList.swift */; };
 		F48A63491DC0EBD100253910 /* MetaInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63481DC0EBD100253910 /* MetaInspector.swift */; };
-		F48A634B1DC0EBF800253910 /* LyricsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A634A1DC0EBF800253910 /* LyricsParser.swift */; };
 		F48DF9C01DB73DF900014B1E /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */; };
 		F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */; };
 		F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */; };
@@ -41,6 +41,10 @@
 		F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE81D81A106006E1487 /* LaunchScreen.storyboard */; };
 		F4C27FF51D81A106006E1487 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FF41D81A106006E1487 /* Tests.swift */; };
 		F4C280001D81A106006E1487 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FFF1D81A106006E1487 /* UITests.swift */; };
+		F4DACCA61DC24AC600425AD5 /* LyricsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCA51DC24AC600425AD5 /* LyricsParser.swift */; };
+		F4DACD1E1DC24F1B00425AD5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD1D1DC24F1B00425AD5 /* Student.swift */; };
+		F4DACD271DC2F9E600425AD5 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD241DC2F07E00425AD5 /* PhotosCollectionViewCell.swift */; };
+		F4DACD291DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD281DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift */; };
 		F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */; };
 		F4DDE1A11DB8F2D00068A2B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */; };
 		F4DDE1B31DBA1A1F0068A2B0 /* News-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DDE1AA1DBA1A1F0068A2B0 /* News-1.jpg */; };
@@ -104,14 +108,14 @@
 		F46100151DBB479C006743E5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F46100171DBB59FB006743E5 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "Practice/View Controller/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
+		F47575DD1DC500EF003A1480 /* PlaceholderImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderImageGenerator.swift; sourceTree = "<group>"; };
 		F48A63021DC0A41100253910 /* RandomDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomDataSource.swift; sourceTree = "<group>"; };
 		F48A63041DC0A70800253910 /* CNFemaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNFemaleNames; sourceTree = "<group>"; };
 		F48A63061DC0A71900253910 /* CNMaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNMaleNames; sourceTree = "<group>"; };
 		F48A63071DC0A71900253910 /* CNSurnames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNSurnames; sourceTree = "<group>"; };
-		F48A63431DC0D83B00253910 /* ImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		F48A63431DC0D83B00253910 /* PlaceholderImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderImageSource.swift; sourceTree = "<group>"; };
 		F48A63461DC0EB0F00253910 /* MusicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
 		F48A63481DC0EBD100253910 /* MetaInspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaInspector.swift; sourceTree = "<group>"; };
-		F48A634A1DC0EBF800253910 /* LyricsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsParser.swift; sourceTree = "<group>"; };
 		F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTabBarController.swift; sourceTree = "<group>"; };
 		F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarContentViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,10 @@
 		F4C27FFB1D81A106006E1487 /* YiDaIOSSwiftPracticesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiDaIOSSwiftPracticesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FFF1D81A106006E1487 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		F4C280011D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DACCA51DC24AC600425AD5 /* LyricsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsParser.swift; sourceTree = "<group>"; };
+		F4DACD1D1DC24F1B00425AD5 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = "Student Info/Student.swift"; sourceTree = "<group>"; };
+		F4DACD241DC2F07E00425AD5 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4DACD281DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionSectionHeaderView.swift; sourceTree = "<group>"; };
 		F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		F4DDE1AA1DBA1A1F0068A2B0 /* News-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-1.jpg"; sourceTree = "<group>"; };
@@ -224,6 +232,7 @@
 		F46AA5111DACD21200DBC3A2 /* Tab Bar Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F4DACD281DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift */,
 				F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */,
 				F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */,
 				F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */,
@@ -233,6 +242,7 @@
 				F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */,
 				F46100171DBB59FB006743E5 /* BrowserViewController.swift */,
 				F4A1A2F71DBF4C3600C7D89A /* PhotosCollectionViewController.swift */,
+				F4DACD241DC2F07E00425AD5 /* PhotosCollectionViewCell.swift */,
 			);
 			name = "Tab Bar Controller";
 			path = "YiDaIOSSwiftPractices/Practice/Tab Bar Controller";
@@ -250,14 +260,38 @@
 			name = CustomPresentation;
 			sourceTree = "<group>";
 		};
+		F47575DF1DC5010B003A1480 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F47575DD1DC500EF003A1480 /* PlaceholderImageGenerator.swift */,
+				F48A63431DC0D83B00253910 /* PlaceholderImageSource.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		F48A63451DC0EAB900253910 /* Musics */ = {
 			isa = PBXGroup;
 			children = (
 				F48A63461DC0EB0F00253910 /* MusicList.swift */,
 				F48A63481DC0EBD100253910 /* MetaInspector.swift */,
-				F48A634A1DC0EBF800253910 /* LyricsParser.swift */,
+				F4DACCA51DC24AC600425AD5 /* LyricsParser.swift */,
 			);
 			path = Musics;
+			sourceTree = "<group>";
+		};
+		F48A63831DC213B500253910 /* Student Info */ = {
+			isa = PBXGroup;
+			children = (
+				F4DACD1D1DC24F1B00425AD5 /* Student.swift */,
+			);
+			name = "Student Info";
+			sourceTree = "<group>";
+		};
+		F48A63841DC213C200253910 /* Mechandise */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mechandise;
 			sourceTree = "<group>";
 		};
 		F4A1A2F41DBE02EB00C7D89A /* Shared */ = {
@@ -332,6 +366,9 @@
 		F4DDE1A21DB9BAD30068A2B0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F47575DF1DC5010B003A1480 /* Image */,
+				F48A63841DC213C200253910 /* Mechandise */,
+				F48A63831DC213B500253910 /* Student Info */,
 				F48A63451DC0EAB900253910 /* Musics */,
 				F4DDE1BC1DBA1A350068A2B0 /* News */,
 				F48A63041DC0A70800253910 /* CNFemaleNames */,
@@ -339,7 +376,6 @@
 				F48A63071DC0A71900253910 /* CNSurnames */,
 				F46100111DBB327B006743E5 /* DataSource.swift */,
 				F48A63021DC0A41100253910 /* RandomDataSource.swift */,
-				F48A63431DC0D83B00253910 /* ImageSource.swift */,
 			);
 			name = Data;
 			path = YiDaIOSSwiftPractices/Data;
@@ -711,17 +747,20 @@
 				F4A1A2F61DBE039C00C7D89A /* AppTheme.swift in Sources */,
 				F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */,
 				F46100141DBB36A2006743E5 /* NewsListTableViewCell.swift in Sources */,
+				F4DACD271DC2F9E600425AD5 /* PhotosCollectionViewCell.swift in Sources */,
 				F4407AFD1DBBD35300BDF930 /* Menu.swift in Sources */,
 				F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */,
 				F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */,
 				F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */,
 				F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */,
 				F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */,
+				F4DACD291DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift in Sources */,
 				F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */,
 				F44517A31DAE8CA800924485 /* Mudox.swift in Sources */,
 				F4A1A2F81DBF4C3600C7D89A /* PhotosCollectionViewController.swift in Sources */,
 				F48A63491DC0EBD100253910 /* MetaInspector.swift in Sources */,
-				F48A63441DC0D83B00253910 /* ImageSource.swift in Sources */,
+				F4DACD1E1DC24F1B00425AD5 /* Student.swift in Sources */,
+				F48A63441DC0D83B00253910 /* PlaceholderImageSource.swift in Sources */,
 				F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */,
 				F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */,
 				F4EABB2B1DA3AD2000FDB826 /* RootMenuTableViewCell.swift in Sources */,
@@ -730,7 +769,8 @@
 				F4EABB2C1DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
 				F46100161DBB479C006743E5 /* Extensions.swift in Sources */,
 				F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */,
-				F48A634B1DC0EBF800253910 /* LyricsParser.swift in Sources */,
+				F4DACCA61DC24AC600425AD5 /* LyricsParser.swift in Sources */,
+				F47575DE1DC500EF003A1480 /* PlaceholderImageGenerator.swift in Sources */,
 				F4DDE2071DBA22380068A2B0 /* News.swift in Sources */,
 				F48A63031DC0A41100253910 /* RandomDataSource.swift in Sources */,
 				F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */,
