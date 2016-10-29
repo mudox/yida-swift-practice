@@ -48,7 +48,7 @@ extension UIView {
 }
 
 extension UINavigationBar {
-  func setTheme(with color: UIColor?) {
+  func setTheme(with color: UIColor?) {Jack.debug("▣ \(type(of: self))")
     if let newColor = color {
       setBackgroundImage(nil, for: .default)
       

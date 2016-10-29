@@ -9,6 +9,8 @@
 import UIKit
 
 class NewsListTableViewCell: UITableViewCell {
+  
+  static let identifier = "News List Cell"
 
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var descriptionLabel: UILabel!
@@ -17,10 +19,11 @@ class NewsListTableViewCell: UITableViewCell {
   @IBOutlet weak var dateLable: UILabel!
   @IBOutlet weak var readCountLabel: UILabel!
 
-  func setup(with item: NewsItem) {
+  func configure(with item: NewsItem) {
     titleLabel.text = item.title
     descriptionLabel.text = item.description
-    thumbnailView.image = UIImage(named: item.imageName)
+//    thumbnailView.image = UIImage(named: item.imageName)
+    thumbnailView.image = DataSource.placeHolderImage.aImage(imageSize: CGSize(width: 400, height: 400))
     sourceLabel.text = item.source
     dateLable.text = item.timePassedDescription
     readCountLabel.text = "\(item.readCount)人已读"
