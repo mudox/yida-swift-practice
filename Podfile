@@ -22,6 +22,8 @@ target 'YiDaIOSSwiftPractices' do
 
   pod 'Alamofire', '~> 4.0'
 
+  pod 'pop', '~> 1.0'
+
   target 'YiDaIOSSwiftPracticesTests' do
     inherit! :search_paths
     # Pods for testing

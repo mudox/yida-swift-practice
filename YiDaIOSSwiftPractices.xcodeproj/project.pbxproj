@@ -10,18 +10,36 @@
 		D2B48108124AA3A82457C3A2 /* Pods_YiDaIOSSwiftPracticesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B087A248BB17FD47F5DFF70D /* Pods_YiDaIOSSwiftPracticesTests.framework */; };
 		F20872FE0916A41C12D51E10 /* Pods_YiDaIOSSwiftPracticesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B636D437D6B7DF3A225AB2 /* Pods_YiDaIOSSwiftPracticesUITests.framework */; };
 		F4407AFD1DBBD35300BDF930 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4407AFC1DBBD35300BDF930 /* Menu.swift */; };
-		F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517941DAD335200924485 /* SlideInPresentationController.swift */; };
-		F44517971DAD3CE800924485 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44517961DAD3CE800924485 /* ViewController.storyboard */; };
-		F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */; };
-		F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */; };
 		F44517A31DAE8CA800924485 /* Mudox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517A21DAE8CA800924485 /* Mudox.swift */; };
-		F46100101DBB320F006743E5 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */; };
 		F46100121DBB327B006743E5 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100111DBB327B006743E5 /* DataSource.swift */; };
-		F46100141DBB36A2006743E5 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */; };
 		F46100161DBB479C006743E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100151DBB479C006743E5 /* Extensions.swift */; };
-		F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100171DBB59FB006743E5 /* BrowserViewController.swift */; };
-		F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */; };
 		F47575DE1DC500EF003A1480 /* PlaceholderImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47575DD1DC500EF003A1480 /* PlaceholderImageGenerator.swift */; };
+		F47FDCB91DC7DDC500817E6A /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47FDCB81DC7DDC500817E6A /* ViewController.storyboard */; };
+		F486C5F01DC62D0400307C71 /* CustomNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5D71DC62D0400307C71 /* CustomNavigationControllerViewController.swift */; };
+		F486C5F11DC62D0400307C71 /* NavigationContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5D81DC62D0400307C71 /* NavigationContentViewController.swift */; };
+		F486C5F21DC62D0400307C71 /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F486C5D91DC62D0400307C71 /* NavigationController.storyboard */; };
+		F486C5F31DC62D0400307C71 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5DC1DC62D0400307C71 /* CustomTabBar.swift */; };
+		F486C5F41DC62D0400307C71 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5DD1DC62D0400307C71 /* CustomTabBarController.swift */; };
+		F486C5F51DC62D0400307C71 /* ImageBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5DE1DC62D0400307C71 /* ImageBrowserViewController.swift */; };
+		F486C5F61DC62D0400307C71 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5DF1DC62D0400307C71 /* NewsListTableViewCell.swift */; };
+		F486C5F71DC62D0400307C71 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5E01DC62D0400307C71 /* NewsListTableViewController.swift */; };
+		F486C5F81DC62D0400307C71 /* PhotosCollectionSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5E11DC62D0400307C71 /* PhotosCollectionSectionHeaderView.swift */; };
+		F486C5F91DC62D0400307C71 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5E21DC62D0400307C71 /* PhotosCollectionViewCell.swift */; };
+		F486C5FA1DC62D0400307C71 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5E31DC62D0400307C71 /* PhotosCollectionViewController.swift */; };
+		F486C5FB1DC62D0400307C71 /* PresentedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5E41DC62D0400307C71 /* PresentedTabBarController.swift */; };
+		F486C5FC1DC62D0400307C71 /* TabBarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5E51DC62D0400307C71 /* TabBarContentViewController.swift */; };
+		F486C5FD1DC62D0400307C71 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F486C5E61DC62D0400307C71 /* TabBarController.storyboard */; };
+		F486C5FE1DC62D0400307C71 /* WebBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5E71DC62D0400307C71 /* WebBrowserViewController.swift */; };
+		F486C5FF1DC62D0400307C71 /* CustomPresentationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5EA1DC62D0400307C71 /* CustomPresentationTableViewController.swift */; };
+		F486C6001DC62D0400307C71 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5EB1DC62D0400307C71 /* CustomPresentedViewController.swift */; };
+		F486C6011DC62D0400307C71 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5EC1DC62D0400307C71 /* SlideInAnimator.swift */; };
+		F486C6021DC62D0400307C71 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5ED1DC62D0400307C71 /* SlideInPresentationController.swift */; };
+		F486C6031DC62D0400307C71 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5EE1DC62D0400307C71 /* SlideInPresentationManager.swift */; };
+		F486C6041DC62D0400307C71 /* CenteredZoomOutScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C5EF1DC62D0400307C71 /* CenteredZoomOutScrollView.swift */; };
+		F486C6061DC62D1400307C71 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F486C6051DC62D1400307C71 /* ScrollView.storyboard */; };
+		F486C6081DC6365100307C71 /* ScrollViewInspectorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C6071DC6365100307C71 /* ScrollViewInspectorTableViewController.swift */; };
+		F486C60A1DC7774F00307C71 /* ViewAnimationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486C6091DC7774F00307C71 /* ViewAnimationTableViewController.swift */; };
+		F486C60C1DC7775F00307C71 /* ViewBasics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F486C60B1DC7775F00307C71 /* ViewBasics.storyboard */; };
 		F48A63031DC0A41100253910 /* RandomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63021DC0A41100253910 /* RandomDataSource.swift */; };
 		F48A63051DC0A70800253910 /* CNFemaleNames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63041DC0A70800253910 /* CNFemaleNames */; };
 		F48A63081DC0A71900253910 /* CNMaleNames in Resources */ = {isa = PBXBuildFile; fileRef = F48A63061DC0A71900253910 /* CNMaleNames */; };
@@ -29,12 +47,7 @@
 		F48A63441DC0D83B00253910 /* PlaceholderImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63431DC0D83B00253910 /* PlaceholderImageSource.swift */; };
 		F48A63471DC0EB0F00253910 /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63461DC0EB0F00253910 /* MusicList.swift */; };
 		F48A63491DC0EBD100253910 /* MetaInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A63481DC0EBD100253910 /* MetaInspector.swift */; };
-		F48DF9C01DB73DF900014B1E /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */; };
-		F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */; };
-		F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */; };
-		F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */; };
 		F4A1A2F61DBE039C00C7D89A /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A2F51DBE039C00C7D89A /* AppTheme.swift */; };
-		F4A1A2F81DBF4C3600C7D89A /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A2F71DBF4C3600C7D89A /* PhotosCollectionViewController.swift */; };
 		F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ADC17A1DA2CD5400C5E7E1 /* Main.storyboard */; };
 		F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FDF1D81A106006E1487 /* AppDelegate.swift */; };
 		F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C27FE61D81A106006E1487 /* Assets.xcassets */; };
@@ -43,10 +56,6 @@
 		F4C280001D81A106006E1487 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C27FFF1D81A106006E1487 /* UITests.swift */; };
 		F4DACCA61DC24AC600425AD5 /* LyricsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCA51DC24AC600425AD5 /* LyricsParser.swift */; };
 		F4DACD1E1DC24F1B00425AD5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD1D1DC24F1B00425AD5 /* Student.swift */; };
-		F4DACD271DC2F9E600425AD5 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD241DC2F07E00425AD5 /* PhotosCollectionViewCell.swift */; };
-		F4DACD291DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACD281DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift */; };
-		F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */; };
-		F4DDE1A11DB8F2D00068A2B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */; };
 		F4DDE1B31DBA1A1F0068A2B0 /* News-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DDE1AA1DBA1A1F0068A2B0 /* News-1.jpg */; };
 		F4DDE1B41DBA1A1F0068A2B0 /* News-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DDE1AB1DBA1A1F0068A2B0 /* News-2.jpg */; };
 		F4DDE1B51DBA1A1F0068A2B0 /* News-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DDE1AC1DBA1A1F0068A2B0 /* News-3.jpg */; };
@@ -58,14 +67,11 @@
 		F4DDE1BB1DBA1A1F0068A2B0 /* News-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DDE1B21DBA1A1F0068A2B0 /* News-9.jpg */; };
 		F4DDE2071DBA22380068A2B0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDE1FC1DBA22380068A2B0 /* News.swift */; };
 		F4DDE2131DBA22760068A2B0 /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = F4DDE2121DBA22760068A2B0 /* News.json */; };
-		F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */; };
-		F4EABB211DA3A20A00FDB826 /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */; };
 		F4EABB281DA3AD2000FDB826 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = F4EABB221DA3AD2000FDB826 /* Menu.json */; };
 		F4EABB2A1DA3AD2000FDB826 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB241DA3AD2000FDB826 /* RootNavigationController.swift */; };
 		F4EABB2B1DA3AD2000FDB826 /* RootMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB251DA3AD2000FDB826 /* RootMenuTableViewCell.swift */; };
 		F4EABB2C1DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB261DA3AD2000FDB826 /* RootMenuViewController.swift */; };
 		F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */; };
-		F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */; };
 		FE84531D08A770A42A999222 /* Pods_YiDaIOSSwiftPractices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEDA13FE5B58EC1DB630AD2 /* Pods_YiDaIOSSwiftPractices.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,18 +103,36 @@
 		C0C4B04E601AD63BC652274C /* Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiDaIOSSwiftPracticesUITests/Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4407AFC1DBBD35300BDF930 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		F44517941DAD335200924485 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationController.swift; path = "Practice/View Controller/SlideInPresentationController.swift"; sourceTree = "<group>"; };
-		F44517961DAD3CE800924485 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
-		F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentationTableViewController.swift; path = "Practice/View Controller/CustomPresentationTableViewController.swift"; sourceTree = "<group>"; };
-		F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPresentedViewController.swift; path = "Practice/View Controller/CustomPresentedViewController.swift"; sourceTree = "<group>"; };
 		F44517A21DAE8CA800924485 /* Mudox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mudox.swift; path = "../../../../xcode-project-startup-files/Swift/Mudox.swift"; sourceTree = "<group>"; };
-		F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		F46100111DBB327B006743E5 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
 		F46100151DBB479C006743E5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F46100171DBB59FB006743E5 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
-		F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "Practice/View Controller/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
 		F47575DD1DC500EF003A1480 /* PlaceholderImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderImageGenerator.swift; sourceTree = "<group>"; };
+		F47FDCB81DC7DDC500817E6A /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		F486C5D71DC62D0400307C71 /* CustomNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerViewController.swift; sourceTree = "<group>"; };
+		F486C5D81DC62D0400307C71 /* NavigationContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationContentViewController.swift; sourceTree = "<group>"; };
+		F486C5D91DC62D0400307C71 /* NavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationController.storyboard; sourceTree = "<group>"; };
+		F486C5DC1DC62D0400307C71 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		F486C5DD1DC62D0400307C71 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		F486C5DE1DC62D0400307C71 /* ImageBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBrowserViewController.swift; sourceTree = "<group>"; };
+		F486C5DF1DC62D0400307C71 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
+		F486C5E01DC62D0400307C71 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		F486C5E11DC62D0400307C71 /* PhotosCollectionSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionSectionHeaderView.swift; sourceTree = "<group>"; };
+		F486C5E21DC62D0400307C71 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		F486C5E31DC62D0400307C71 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		F486C5E41DC62D0400307C71 /* PresentedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTabBarController.swift; sourceTree = "<group>"; };
+		F486C5E51DC62D0400307C71 /* TabBarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarContentViewController.swift; sourceTree = "<group>"; };
+		F486C5E61DC62D0400307C71 /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		F486C5E71DC62D0400307C71 /* WebBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBrowserViewController.swift; sourceTree = "<group>"; };
+		F486C5EA1DC62D0400307C71 /* CustomPresentationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationTableViewController.swift; sourceTree = "<group>"; };
+		F486C5EB1DC62D0400307C71 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentedViewController.swift; sourceTree = "<group>"; };
+		F486C5EC1DC62D0400307C71 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInAnimator.swift; sourceTree = "<group>"; };
+		F486C5ED1DC62D0400307C71 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
+		F486C5EE1DC62D0400307C71 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
+		F486C5EF1DC62D0400307C71 /* CenteredZoomOutScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenteredZoomOutScrollView.swift; sourceTree = "<group>"; };
+		F486C6051DC62D1400307C71 /* ScrollView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		F486C6071DC6365100307C71 /* ScrollViewInspectorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewInspectorTableViewController.swift; sourceTree = "<group>"; };
+		F486C6091DC7774F00307C71 /* ViewAnimationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationTableViewController.swift; sourceTree = "<group>"; };
+		F486C60B1DC7775F00307C71 /* ViewBasics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewBasics.storyboard; sourceTree = "<group>"; };
 		F48A63021DC0A41100253910 /* RandomDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomDataSource.swift; sourceTree = "<group>"; };
 		F48A63041DC0A70800253910 /* CNFemaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNFemaleNames; sourceTree = "<group>"; };
 		F48A63061DC0A71900253910 /* CNMaleNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CNMaleNames; sourceTree = "<group>"; };
@@ -116,12 +140,7 @@
 		F48A63431DC0D83B00253910 /* PlaceholderImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderImageSource.swift; sourceTree = "<group>"; };
 		F48A63461DC0EB0F00253910 /* MusicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
 		F48A63481DC0EBD100253910 /* MetaInspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaInspector.swift; sourceTree = "<group>"; };
-		F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
-		F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTabBarController.swift; sourceTree = "<group>"; };
-		F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarContentViewController.swift; sourceTree = "<group>"; };
-		F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInAnimator.swift; path = "Practice/View Controller/SlideInAnimator.swift"; sourceTree = "<group>"; };
 		F4A1A2F51DBE039C00C7D89A /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
-		F4A1A2F71DBF4C3600C7D89A /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		F4ADC17B1DA2CD5400C5E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4C27FDC1D81A106006E1487 /* YiDaIOSSwiftPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiDaIOSSwiftPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C27FDF1D81A106006E1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,10 +155,6 @@
 		F4C280011D81A106006E1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DACCA51DC24AC600425AD5 /* LyricsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsParser.swift; sourceTree = "<group>"; };
 		F4DACD1D1DC24F1B00425AD5 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = "Student Info/Student.swift"; sourceTree = "<group>"; };
-		F4DACD241DC2F07E00425AD5 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
-		F4DACD281DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionSectionHeaderView.swift; sourceTree = "<group>"; };
-		F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		F4DDE1AA1DBA1A1F0068A2B0 /* News-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-1.jpg"; sourceTree = "<group>"; };
 		F4DDE1AB1DBA1A1F0068A2B0 /* News-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-2.jpg"; sourceTree = "<group>"; };
 		F4DDE1AC1DBA1A1F0068A2B0 /* News-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-3.jpg"; sourceTree = "<group>"; };
@@ -151,14 +166,11 @@
 		F4DDE1B21DBA1A1F0068A2B0 /* News-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "News-9.jpg"; sourceTree = "<group>"; };
 		F4DDE1FC1DBA22380068A2B0 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		F4DDE2121DBA22760068A2B0 /* News.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = News.json; sourceTree = "<group>"; };
-		F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationContentViewController.swift; path = "Practice/Navigation Controller/NavigationContentViewController.swift"; sourceTree = "<group>"; };
-		F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NavigationController.storyboard; path = "Practice/Navigation Controller/NavigationController.storyboard"; sourceTree = "<group>"; };
 		F4EABB221DA3AD2000FDB826 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
 		F4EABB241DA3AD2000FDB826 /* RootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		F4EABB251DA3AD2000FDB826 /* RootMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuTableViewCell.swift; sourceTree = "<group>"; };
 		F4EABB261DA3AD2000FDB826 /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuViewController.swift; sourceTree = "<group>"; };
 		F4EABB271DA3AD2000FDB826 /* YDTintedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDTintedLabel.swift; sourceTree = "<group>"; };
-		F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomNavigationControllerViewController.swift; path = "Practice/Navigation Controller/CustomNavigationControllerViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,46 +232,6 @@
 			name = Mudox;
 			sourceTree = "<group>";
 		};
-		F46AA5101DACD20A00DBC3A2 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F44517961DAD3CE800924485 /* ViewController.storyboard */,
-				F46AA5141DACD45B00DBC3A2 /* CustomPresentation */,
-			);
-			name = "View Controller";
-			sourceTree = "<group>";
-		};
-		F46AA5111DACD21200DBC3A2 /* Tab Bar Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F4DACD281DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift */,
-				F48DF9BF1DB73DF900014B1E /* TabBarController.storyboard */,
-				F48DF9C31DB7571900014B1E /* PresentedTabBarController.swift */,
-				F48DF9C51DB75A4000014B1E /* TabBarContentViewController.swift */,
-				F4DDE19E1DB8E51E0068A2B0 /* CustomTabBar.swift */,
-				F4DDE1A01DB8F2D00068A2B0 /* CustomTabBarController.swift */,
-				F461000F1DBB320F006743E5 /* NewsListTableViewController.swift */,
-				F46100131DBB36A2006743E5 /* NewsListTableViewCell.swift */,
-				F46100171DBB59FB006743E5 /* BrowserViewController.swift */,
-				F4A1A2F71DBF4C3600C7D89A /* PhotosCollectionViewController.swift */,
-				F4DACD241DC2F07E00425AD5 /* PhotosCollectionViewCell.swift */,
-			);
-			name = "Tab Bar Controller";
-			path = "YiDaIOSSwiftPractices/Practice/Tab Bar Controller";
-			sourceTree = SOURCE_ROOT;
-		};
-		F46AA5141DACD45B00DBC3A2 /* CustomPresentation */ = {
-			isa = PBXGroup;
-			children = (
-				F49EE6F01DB6173300538A61 /* SlideInAnimator.swift */,
-				F44517981DAE00B300924485 /* CustomPresentationTableViewController.swift */,
-				F445179A1DAE0CE500924485 /* CustomPresentedViewController.swift */,
-				F46AA5151DACD4C000DBC3A2 /* SlideInPresentationManager.swift */,
-				F44517941DAD335200924485 /* SlideInPresentationController.swift */,
-			);
-			name = CustomPresentation;
-			sourceTree = "<group>";
-		};
 		F47575DF1DC5010B003A1480 /* Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +239,73 @@
 				F48A63431DC0D83B00253910 /* PlaceholderImageSource.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		F486C5D51DC62D0400307C71 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		F486C5D61DC62D0400307C71 /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F486C5D71DC62D0400307C71 /* CustomNavigationControllerViewController.swift */,
+				F486C5D81DC62D0400307C71 /* NavigationContentViewController.swift */,
+				F486C5D91DC62D0400307C71 /* NavigationController.storyboard */,
+			);
+			path = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		F486C5DA1DC62D0400307C71 /* Scroll View */ = {
+			isa = PBXGroup;
+			children = (
+				F486C6051DC62D1400307C71 /* ScrollView.storyboard */,
+				F486C6071DC6365100307C71 /* ScrollViewInspectorTableViewController.swift */,
+			);
+			path = "Scroll View";
+			sourceTree = "<group>";
+		};
+		F486C5DB1DC62D0400307C71 /* Tab Bar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F486C5DC1DC62D0400307C71 /* CustomTabBar.swift */,
+				F486C5DD1DC62D0400307C71 /* CustomTabBarController.swift */,
+				F486C5DE1DC62D0400307C71 /* ImageBrowserViewController.swift */,
+				F486C5DF1DC62D0400307C71 /* NewsListTableViewCell.swift */,
+				F486C5E01DC62D0400307C71 /* NewsListTableViewController.swift */,
+				F486C5E11DC62D0400307C71 /* PhotosCollectionSectionHeaderView.swift */,
+				F486C5E21DC62D0400307C71 /* PhotosCollectionViewCell.swift */,
+				F486C5E31DC62D0400307C71 /* PhotosCollectionViewController.swift */,
+				F486C5E41DC62D0400307C71 /* PresentedTabBarController.swift */,
+				F486C5E51DC62D0400307C71 /* TabBarContentViewController.swift */,
+				F486C5E61DC62D0400307C71 /* TabBarController.storyboard */,
+				F486C5E71DC62D0400307C71 /* WebBrowserViewController.swift */,
+			);
+			path = "Tab Bar Controller";
+			sourceTree = "<group>";
+		};
+		F486C5E81DC62D0400307C71 /* View Basics */ = {
+			isa = PBXGroup;
+			children = (
+				F486C6091DC7774F00307C71 /* ViewAnimationTableViewController.swift */,
+				F486C60B1DC7775F00307C71 /* ViewBasics.storyboard */,
+			);
+			path = "View Basics";
+			sourceTree = "<group>";
+		};
+		F486C5E91DC62D0400307C71 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F47FDCB81DC7DDC500817E6A /* ViewController.storyboard */,
+				F486C5EA1DC62D0400307C71 /* CustomPresentationTableViewController.swift */,
+				F486C5EB1DC62D0400307C71 /* CustomPresentedViewController.swift */,
+				F486C5EC1DC62D0400307C71 /* SlideInAnimator.swift */,
+				F486C5ED1DC62D0400307C71 /* SlideInPresentationController.swift */,
+				F486C5EE1DC62D0400307C71 /* SlideInPresentationManager.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		F48A63451DC0EAB900253910 /* Musics */ = {
@@ -424,21 +463,15 @@
 		F4EABB1A1DA3A1C900FDB826 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
-				F46AA5101DACD20A00DBC3A2 /* View Controller */,
-				F4EABB1B1DA3A1DB00FDB826 /* Navigation Controller */,
-				F46AA5111DACD21200DBC3A2 /* Tab Bar Controller */,
+				F486C5D51DC62D0400307C71 /* Button */,
+				F486C5D61DC62D0400307C71 /* Navigation Controller */,
+				F486C5DA1DC62D0400307C71 /* Scroll View */,
+				F486C5DB1DC62D0400307C71 /* Tab Bar Controller */,
+				F486C5E81DC62D0400307C71 /* View Basics */,
+				F486C5E91DC62D0400307C71 /* View Controller */,
+				F486C5EF1DC62D0400307C71 /* CenteredZoomOutScrollView.swift */,
 			);
-			name = Practice;
-			sourceTree = "<group>";
-		};
-		F4EABB1B1DA3A1DB00FDB826 /* Navigation Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F4EABB1F1DA3A20A00FDB826 /* NavigationController.storyboard */,
-				F4EABB1E1DA3A20A00FDB826 /* NavigationContentViewController.swift */,
-				F4EABB2E1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift */,
-			);
-			name = "Navigation Controller";
+			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,7 +546,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Mudox;
 				TargetAttributes = {
 					F4C27FDB1D81A106006E1487 = {
@@ -561,25 +594,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4DDE1BB1DBA1A1F0068A2B0 /* News-9.jpg in Resources */,
-				F48DF9C01DB73DF900014B1E /* TabBarController.storyboard in Resources */,
 				F4DDE1B71DBA1A1F0068A2B0 /* News-5.jpg in Resources */,
+				F486C6061DC62D1400307C71 /* ScrollView.storyboard in Resources */,
 				F4DDE2131DBA22760068A2B0 /* News.json in Resources */,
 				F4ADC17C1DA2CD5400C5E7E1 /* Main.storyboard in Resources */,
 				F48A63091DC0A71900253910 /* CNSurnames in Resources */,
+				F486C60C1DC7775F00307C71 /* ViewBasics.storyboard in Resources */,
 				F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */,
 				F48A63051DC0A70800253910 /* CNFemaleNames in Resources */,
 				F4DDE1B41DBA1A1F0068A2B0 /* News-2.jpg in Resources */,
+				F486C5FD1DC62D0400307C71 /* TabBarController.storyboard in Resources */,
 				F4EABB281DA3AD2000FDB826 /* Menu.json in Resources */,
-				F4EABB211DA3A20A00FDB826 /* NavigationController.storyboard in Resources */,
 				F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */,
 				F4DDE1B91DBA1A1F0068A2B0 /* News-7.jpg in Resources */,
-				F44517971DAD3CE800924485 /* ViewController.storyboard in Resources */,
 				F4DDE1BA1DBA1A1F0068A2B0 /* News-8.jpg in Resources */,
 				F4DDE1B51DBA1A1F0068A2B0 /* News-3.jpg in Resources */,
 				F4DDE1B31DBA1A1F0068A2B0 /* News-1.jpg in Resources */,
+				F486C5F21DC62D0400307C71 /* NavigationController.storyboard in Resources */,
 				F4DDE1B61DBA1A1F0068A2B0 /* News-4.jpg in Resources */,
 				F4DDE1B81DBA1A1F0068A2B0 /* News-6.jpg in Resources */,
 				F48A63081DC0A71900253910 /* CNMaleNames in Resources */,
+				F47FDCB91DC7DDC500817E6A /* ViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,41 +777,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44517991DAE00B300924485 /* CustomPresentationTableViewController.swift in Sources */,
-				F4DDE1A11DB8F2D00068A2B0 /* CustomTabBarController.swift in Sources */,
 				F4A1A2F61DBE039C00C7D89A /* AppTheme.swift in Sources */,
-				F4DDE19F1DB8E51E0068A2B0 /* CustomTabBar.swift in Sources */,
-				F46100141DBB36A2006743E5 /* NewsListTableViewCell.swift in Sources */,
-				F4DACD271DC2F9E600425AD5 /* PhotosCollectionViewCell.swift in Sources */,
 				F4407AFD1DBBD35300BDF930 /* Menu.swift in Sources */,
-				F46AA5161DACD4C000DBC3A2 /* SlideInPresentationManager.swift in Sources */,
-				F445179B1DAE0CE500924485 /* CustomPresentedViewController.swift in Sources */,
+				F486C5F91DC62D0400307C71 /* PhotosCollectionViewCell.swift in Sources */,
+				F486C6021DC62D0400307C71 /* SlideInPresentationController.swift in Sources */,
+				F486C5FA1DC62D0400307C71 /* PhotosCollectionViewController.swift in Sources */,
+				F486C5FF1DC62D0400307C71 /* CustomPresentationTableViewController.swift in Sources */,
 				F4C27FE01D81A106006E1487 /* AppDelegate.swift in Sources */,
-				F48DF9C41DB7571900014B1E /* PresentedTabBarController.swift in Sources */,
-				F4EABB201DA3A20A00FDB826 /* NavigationContentViewController.swift in Sources */,
-				F4DACD291DC393C400425AD5 /* PhotosCollectionSectionHeaderView.swift in Sources */,
-				F48DF9C81DB7603600014B1E /* TabBarContentViewController.swift in Sources */,
+				F486C5F71DC62D0400307C71 /* NewsListTableViewController.swift in Sources */,
 				F44517A31DAE8CA800924485 /* Mudox.swift in Sources */,
-				F4A1A2F81DBF4C3600C7D89A /* PhotosCollectionViewController.swift in Sources */,
+				F486C5F51DC62D0400307C71 /* ImageBrowserViewController.swift in Sources */,
 				F48A63491DC0EBD100253910 /* MetaInspector.swift in Sources */,
+				F486C6001DC62D0400307C71 /* CustomPresentedViewController.swift in Sources */,
+				F486C6011DC62D0400307C71 /* SlideInAnimator.swift in Sources */,
 				F4DACD1E1DC24F1B00425AD5 /* Student.swift in Sources */,
 				F48A63441DC0D83B00253910 /* PlaceholderImageSource.swift in Sources */,
 				F4EABB2D1DA3AD2000FDB826 /* YDTintedLabel.swift in Sources */,
-				F4EABB2F1DA4A52B00FDB826 /* CustomNavigationControllerViewController.swift in Sources */,
 				F4EABB2B1DA3AD2000FDB826 /* RootMenuTableViewCell.swift in Sources */,
+				F486C5F61DC62D0400307C71 /* NewsListTableViewCell.swift in Sources */,
+				F486C5FE1DC62D0400307C71 /* WebBrowserViewController.swift in Sources */,
 				F4EABB2A1DA3AD2000FDB826 /* RootNavigationController.swift in Sources */,
-				F46100101DBB320F006743E5 /* NewsListTableViewController.swift in Sources */,
 				F4EABB2C1DA3AD2000FDB826 /* RootMenuViewController.swift in Sources */,
+				F486C6081DC6365100307C71 /* ScrollViewInspectorTableViewController.swift in Sources */,
 				F46100161DBB479C006743E5 /* Extensions.swift in Sources */,
-				F44517951DAD335200924485 /* SlideInPresentationController.swift in Sources */,
 				F4DACCA61DC24AC600425AD5 /* LyricsParser.swift in Sources */,
+				F486C5F81DC62D0400307C71 /* PhotosCollectionSectionHeaderView.swift in Sources */,
 				F47575DE1DC500EF003A1480 /* PlaceholderImageGenerator.swift in Sources */,
+				F486C5F11DC62D0400307C71 /* NavigationContentViewController.swift in Sources */,
+				F486C5F01DC62D0400307C71 /* CustomNavigationControllerViewController.swift in Sources */,
+				F486C5F41DC62D0400307C71 /* CustomTabBarController.swift in Sources */,
+				F486C6041DC62D0400307C71 /* CenteredZoomOutScrollView.swift in Sources */,
+				F486C6031DC62D0400307C71 /* SlideInPresentationManager.swift in Sources */,
+				F486C5F31DC62D0400307C71 /* CustomTabBar.swift in Sources */,
 				F4DDE2071DBA22380068A2B0 /* News.swift in Sources */,
 				F48A63031DC0A41100253910 /* RandomDataSource.swift in Sources */,
-				F46100181DBB59FB006743E5 /* BrowserViewController.swift in Sources */,
+				F486C5FC1DC62D0400307C71 /* TabBarContentViewController.swift in Sources */,
 				F48A63471DC0EB0F00253910 /* MusicList.swift in Sources */,
+				F486C5FB1DC62D0400307C71 /* PresentedTabBarController.swift in Sources */,
 				F46100121DBB327B006743E5 /* DataSource.swift in Sources */,
-				F49EE6F11DB6173300538A61 /* SlideInAnimator.swift in Sources */,
+				F486C60A1DC7774F00307C71 /* ViewAnimationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,7 +910,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -913,7 +952,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -953,6 +992,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 866AF6623CAB75B5962A3586 /* Pods-YiDaIOSSwiftPracticesTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = YiDaIOSSwiftPracticesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -967,6 +1007,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0083B1C7B0C36867AA340D3C /* Pods-YiDaIOSSwiftPracticesTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = YiDaIOSSwiftPracticesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -981,6 +1022,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E83A2CE161A7B774584D6B9E /* Pods-YiDaIOSSwiftPracticesUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YiDaIOSSwiftPracticesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -997,6 +1039,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0C4B04E601AD63BC652274C /* Pods-YiDaIOSSwiftPracticesUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YiDaIOSSwiftPracticesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -13,38 +13,79 @@ import UIKit
 // if view controller is in a modally presented view controller hierarchy,
 // add a bar button item to the left of the navigation bar to dismiss the presentation.
 extension UIViewController {
-  func installDismissButtonOnNavigationBar() {
-    guard presentingViewController != nil &&
-      navigationController != nil else {
-        Jack.warn("invoked on wrong context")
-        return
-    }
+	func installDismissButtonOnNavigationBar() {
+		guard presentingViewController != nil &&
+		navigationController != nil else {
+			Jack.warn("invoked on wrong context")
+			return
+		}
 
-    let buttonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "NavIcon-Dismiss"), style: .done, target: self, action: #selector(dismiss(sender:)))
-    navigationItem.leftBarButtonItem = buttonItem
-  }
+		let buttonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "NavIcon-Dismiss"), style: .done, target: self, action: #selector(dismiss(sender:)))
+		navigationItem.leftBarButtonItem = buttonItem
+	}
 
-  func dismiss(sender: Any) {
-    dismiss(animated: true, completion: nil)
-  }
+	func dismiss(sender: Any) {
+		dismiss(animated: true, completion: nil)
+	}
 }
 
 // MARK: - Pan In AnyWhere To Pop Feature
 extension UINavigationController: UIGestureRecognizerDelegate {
 
-  func enablePanInAnywhereToPop() {
-    interactivePopGestureRecognizer!.isEnabled = false
-    let target = interactivePopGestureRecognizer!.delegate!
-    let panGesture = UIPanGestureRecognizer(target: target, action: Selector("handleNavigationTransition:"))
-    panGesture.delegate = self
-    view.addGestureRecognizer(panGesture)
-  }
+	func enablePanInAnywhereToPop() {
+		interactivePopGestureRecognizer!.isEnabled = false
+		let target = interactivePopGestureRecognizer!.delegate!
+		let panGesture = UIPanGestureRecognizer(target: target, action: Selector("handleNavigationTransition:"))
+		panGesture.delegate = self
+		view.addGestureRecognizer(panGesture)
+	}
 
-  func enableEdgePanToPopAlways() {
-    interactivePopGestureRecognizer!.delegate = self
-  }
+	func enableEdgePanToPopAlways() {
+		interactivePopGestureRecognizer!.delegate = self
+	}
 
-  public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-    return viewControllers.count > 1
-  }
+	public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+		guard viewControllers.count > 1 else {
+			return false
+		}
+
+		// only pan to the right will trigger the transition
+		return (gestureRecognizer as! UIPanGestureRecognizer).translation(in: self.view).x > 0
+	}
+}
+
+extension CGRect {
+	var shortDescription: String {
+		return NSString(format: "origin(%@) size(%@)", origin.shortDescription, size.shortDescription) as String
+	}
+}
+
+extension CGPoint {
+	var shortDescription: String {
+		return NSString(format: "%.02f, %.02f", x, y) as String
+	}
+}
+
+extension CGSize {
+	var shortDescription: String {
+		return NSString(format: "%.02f, %.02f", width, height) as String
+	}
+}
+
+extension CGFloat {
+	var shortDescription: String {
+		return NSString(format: "%.02f", self) as String
+	}
+}
+
+extension Float {
+	var shortDescription: String {
+		return NSString(format: "%.02f", self) as String
+	}
+}
+
+extension Double {
+	var shortDescription: String {
+		return NSString(format: "%.02f", self) as String
+	}
 }

@@ -39,8 +39,6 @@ class PhotosCollectionViewController: UICollectionViewController {
 				width: CGFloat(Int(arc4random_uniform(maxDelta * 2)) - Int(maxDelta)) + baseWidth,
 				height: CGFloat(Int(arc4random_uniform(maxDelta * 2)) - Int(maxDelta)) + baseHeight
 			)
-			Jack.info("randomly sized images generated")
-			Jack.verbose(">> random image size: \(Int(size.width)) x \(Int(size.height))")
 
 			images.append(
 				DataSource.placeHolderImage.aImage(imageSize: size)
@@ -171,6 +169,22 @@ class PhotosCollectionViewController: UICollectionViewController {
 
 }
 
+// MARK: as UICollectionViewDelegate
+extension PhotosCollectionViewController {
+	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let text = "\(indexPath.section) : \(indexPath.item)"
+		let image = PlaceholderImageSource.aImage(imageSize: view.bounds.size, imageText: text)
+
+		let vc = storyboard!.instantiateViewController(withIdentifier: ImageBrowserViewController.identifier) as! ImageBrowserViewController
+		let imageView = UIImageView(image: image)
+		imageView.contentMode = .scaleAspectFill
+		vc.image = image
+
+		present(vc, animated: true, completion: nil)
+	}
+}
+
+// MARK: as UICollectionViewDelegateFlowLayout
 extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		switch indexPath.section {

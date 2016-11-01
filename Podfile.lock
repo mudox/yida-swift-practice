@@ -9,6 +9,7 @@ PODS:
     - CocoaLumberjack/Extensions
   - FormValidatorSwift (1.0.0)
   - Gloss (1.0.0)
+  - pop (1.0.9)
   - RxBlocking (3.0.0):
     - RxSwift (~> 3.0)
   - RxCocoa (3.0.0):
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - CocoaLumberjack/Swift
   - FormValidatorSwift (~> 1.0)
   - Gloss (~> 1.0)
+  - pop (~> 1.0)
   - RxBlocking (~> 3.0)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
@@ -36,6 +38,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
   FormValidatorSwift: 5d6995b8db29002fd757d787302b5658f270fa77
   Gloss: '014789e9e69ca18f127eacca999f4c9b0bff6d58'
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   RxBlocking: 0132c660340d8b8f34b65b2e099167ea6134eecf
   RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
@@ -43,6 +46,6 @@ SPEC CHECKSUMS:
   SwiftMessages: debcd4e7e5761021478ee240fbd0a5e02381c33f
   SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
 
-PODFILE CHECKSUM: e46f6e625b27f8ea133c6b9ae01c541a1fd14b48
+PODFILE CHECKSUM: 652b3fbb055cd0a664ea7bf2cad8040789d7ccf1
 
 COCOAPODS: 1.1.1

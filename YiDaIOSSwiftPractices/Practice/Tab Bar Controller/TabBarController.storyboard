@@ -199,6 +199,48 @@
             </objects>
             <point key="canvasLocation" x="532.5" y="2523.5915492957747"/>
         </scene>
+        <!--Image Browser View Controller-->
+        <scene sceneID="3jY-wY-fSk">
+            <objects>
+                <viewController storyboardIdentifier="Image Browser View Controller" id="6Qd-yg-Cln" customClass="ImageBrowserViewController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B7F-Pr-myC"/>
+                        <viewControllerLayoutGuide type="bottom" id="rhE-14-ESe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="azy-Nc-xb7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wax-Vm-cf9" customClass="CenteredZoomOutScrollView" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOS-cC-Upn">
+                                <rect key="frame" x="16" y="530" width="22" height="22"/>
+                                <state key="normal" image="Browser-Dismiss"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="6Qd-yg-Cln" eventType="touchUpInside" id="yKw-H8-fiD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qOS-cC-Upn" firstAttribute="leading" secondItem="azy-Nc-xb7" secondAttribute="leading" constant="16" id="291-In-Hf6"/>
+                            <constraint firstAttribute="trailing" secondItem="Wax-Vm-cf9" secondAttribute="trailing" id="6V2-yz-X6G"/>
+                            <constraint firstItem="Wax-Vm-cf9" firstAttribute="top" secondItem="azy-Nc-xb7" secondAttribute="top" id="Dwk-h6-hty"/>
+                            <constraint firstItem="rhE-14-ESe" firstAttribute="top" secondItem="qOS-cC-Upn" secondAttribute="bottom" constant="16" id="HDd-1C-Li4"/>
+                            <constraint firstItem="Wax-Vm-cf9" firstAttribute="leading" secondItem="azy-Nc-xb7" secondAttribute="leading" id="WK5-fb-N1H"/>
+                            <constraint firstAttribute="bottom" secondItem="Wax-Vm-cf9" secondAttribute="bottom" id="ZoX-HD-x04"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="qOS-cC-Upn" id="w1R-IU-gry"/>
+                        <outlet property="scrollView" destination="Wax-Vm-cf9" id="GAF-Mv-2Id"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlw-y8-lVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="2524"/>
+        </scene>
         <!--News List Table View Controller-->
         <scene sceneID="KeP-Ab-GeR">
             <objects>
@@ -290,18 +332,15 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="新闻" id="gl5-VR-aeH"/>
-                    <connections>
-                        <segue destination="oWa-Ng-jR2" kind="show" identifier="Browse News Content" id="7pD-Lq-CwZ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4An-BG-f3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="533.60000000000002" y="1833.7331334332835"/>
         </scene>
-        <!--Browser View Controller-->
+        <!--Web Browser View Controller-->
         <scene sceneID="ih6-kp-yLM">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="oWa-Ng-jR2" customClass="BrowserViewController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Web Browser View Controller" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="oWa-Ng-jR2" customClass="WebBrowserViewController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hZU-Jv-IiQ"/>
                         <viewControllerLayoutGuide type="bottom" id="f46-bx-gVJ"/>
@@ -370,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILF-ow-lpp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="1833.8028169014085"/>
+            <point key="canvasLocation" x="1380" y="1833"/>
         </scene>
         <!--Root Navigation Controller-->
         <scene sceneID="swL-6K-YcJ">

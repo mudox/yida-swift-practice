@@ -148,7 +148,6 @@ class PlaceholderImageGenerator {
 		// draw text property if available
 		if let textToDraw = text as NSString? {
 			if let textFrame = layout(text: textToDraw) {
-				textFrame
 				textToDraw.draw(in: textFrame, withAttributes: textAttributes)
 			}
 			return
