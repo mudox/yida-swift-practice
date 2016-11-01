@@ -22,6 +22,7 @@ class CenteredZoomOutScrollView: UIScrollView {
 		var contentSize: CGSize
 		var contentInset: UIEdgeInsets
 		var bounds: CGRect
+		var frame: CGRect?
 		var transform: CGAffineTransform?
 	}
 
@@ -65,10 +66,10 @@ class CenteredZoomOutScrollView: UIScrollView {
 			contentSize: contentSize,
 			contentInset: contentInset,
 			bounds: bounds,
+			frame: contentView?.frame,
 			transform: contentView?.transform
 		)
 		internalStateListener?.scrollView(self, internalStateDidChange: state)
-
 	}
 }
 

@@ -17,17 +17,17 @@
     },
 
     {
-      "headerText": "视图进阶",
+      "headerText": "滚动视图（UIScrollView）",
       "items": [{
-        "title": "滚动视图（UIScrollView）",
+        "title": "滚动视图基本原理",
         "subtitle": "观察滚动视图的工作原理",
         "storyboardName": "ScrollView",
         "viewControllerReferenceID": "Inspect Scroll View"
       }, {
-      "title": "表格视图（UITableView）",
-      "subtitle": "表格数据显示，编辑，移动, 表格单元自定义",
-      "storyboardName": "",
-      "viewControllerReferenceID": ""
+      "title": "滚动视图应用",
+      "subtitle": "多图陈列，动画滑动，图片阵列",
+      "storyboardName": "ScrollView",
+      "viewControllerReferenceID": "Scroll View Exercises"
       }]
 
     },

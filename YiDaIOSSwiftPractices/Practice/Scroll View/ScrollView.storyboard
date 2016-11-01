@@ -16,30 +16,30 @@
             <objects>
                 <tableViewController storyboardIdentifier="Inspect Scroll View" id="m3j-xa-Nt0" customClass="ScrollViewInspectorTableViewController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sOR-UJ-7xj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="cJj-lI-Weh">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="146" id="XJJ-xB-Tc4" userLabel="Inspector Cell">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="154" id="XJJ-xB-Tc4" userLabel="Inspector Cell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XJJ-xB-Tc4" id="Ba9-HB-sb7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BQ-Ac-LeO">
-                                                    <rect key="frame" x="8" y="8" width="61" height="13.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="滚动视图" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BQ-Ac-LeO">
+                                                    <rect key="frame" x="8" y="12" width="304" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="sUX-an-9bm" userLabel="Row #1">
-                                                    <rect key="frame" x="8" y="24.5" width="398" height="50"/>
+                                                    <rect key="frame" x="8" y="28.5" width="304" height="50"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIR-my-EzN" userLabel=".contentOffset">
-                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="76.5" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contentOffset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE4-xH-Xgv">
                                                                     <rect key="frame" x="6" y="0.0" width="73" height="13.5"/>
@@ -92,7 +92,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlE-dj-W11" userLabel=".contenteSize">
-                                                            <rect key="frame" x="100" y="0.0" width="99" height="50"/>
+                                                            <rect key="frame" x="76.5" y="0.0" width="75.5" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contentSize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-gH-eOT">
                                                                     <rect key="frame" x="22" y="0.0" width="62.5" height="13.5"/>
@@ -145,7 +145,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjQ-jg-MiC" userLabel=".bound.oritin">
-                                                            <rect key="frame" x="199" y="0.0" width="100" height="50"/>
+                                                            <rect key="frame" x="152" y="0.0" width="76.5" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiB-My-9rQ">
                                                                     <rect key="frame" x="28" y="0.0" width="39" height="13.5"/>
@@ -198,7 +198,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsV-sJ-QIY" userLabel=".bounds.size">
-                                                            <rect key="frame" x="299" y="0.0" width="99" height="50"/>
+                                                            <rect key="frame" x="228.5" y="0.0" width="75.5" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="w" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V42-ym-xx7">
                                                                     <rect key="frame" x="10" y="17" width="9" height="13.5"/>
@@ -248,13 +248,13 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lce-IA-9f9" userLabel="Row #2">
-                                                    <rect key="frame" x="8" y="94" width="398" height="56"/>
+                                                    <rect key="frame" x="8" y="102" width="304" height="56"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JqE-9f-yhA" userLabel=".frame">
-                                                            <rect key="frame" x="0.0" y="0.0" width="199" height="56"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="152" height="56"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-Zq-PKE" userLabel="x &amp; y">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="99.5" height="56"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="76" height="56"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="frame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKP-Pb-AFq">
                                                                             <rect key="frame" x="6" y="0.0" width="30.5" height="13.5"/>
@@ -275,18 +275,18 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-tf-y3H">
-                                                                            <rect key="frame" x="24" y="17.5" width="80" height="13.5"/>
+                                                                            <rect key="frame" x="24" y="17.5" width="40" height="13.5"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="80" id="oC4-0x-IGY"/>
+                                                                                <constraint firstAttribute="width" constant="40" id="oC4-0x-IGY"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzL-ok-zJK">
-                                                                            <rect key="frame" x="24" y="34" width="80" height="13.5"/>
+                                                                            <rect key="frame" x="24" y="34" width="40" height="13.5"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="80" id="NUA-wW-GKb"/>
+                                                                                <constraint firstAttribute="width" constant="40" id="NUA-wW-GKb"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                             <nil key="textColor"/>
@@ -307,7 +307,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ih7-7z-Mtg" userLabel="with &amp; height">
-                                                                    <rect key="frame" x="99.5" y="0.0" width="99.5" height="56"/>
+                                                                    <rect key="frame" x="76" y="0.0" width="76" height="56"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="w" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erx-JW-tBS">
                                                                             <rect key="frame" x="0.0" y="17" width="9" height="13.5"/>
@@ -322,18 +322,18 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yr2-UX-9KJ">
-                                                                            <rect key="frame" x="14" y="17" width="80" height="13.5"/>
+                                                                            <rect key="frame" x="14" y="17" width="40" height="13.5"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="80" id="K4i-Lx-dF0"/>
+                                                                                <constraint firstAttribute="width" constant="40" id="K4i-Lx-dF0"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghz-FX-YOm">
-                                                                            <rect key="frame" x="14" y="33.5" width="80" height="13.5"/>
+                                                                            <rect key="frame" x="14" y="33.5" width="40" height="13.5"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="80" id="qSh-I7-qaU"/>
+                                                                                <constraint firstAttribute="width" constant="40" id="qSh-I7-qaU"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                             <nil key="textColor"/>
@@ -354,10 +354,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xD0-2G-EZa" userLabel=".transform">
-                                                            <rect key="frame" x="199" y="0.0" width="199" height="56"/>
+                                                            <rect key="frame" x="152" y="0.0" width="152" height="56"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPB-54-jbg">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="66.5" height="56"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50.5" height="56"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="transform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMe-Vf-bm7">
                                                                             <rect key="frame" x="-12" y="0.0" width="51.5" height="13.5"/>
@@ -410,7 +410,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPG-7z-uXv">
-                                                                    <rect key="frame" x="66.5" y="0.0" width="66" height="56"/>
+                                                                    <rect key="frame" x="50.5" y="0.0" width="51" height="56"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="c" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ux-3v-VVL">
                                                                             <rect key="frame" x="-3" y="17" width="6.5" height="13.5"/>
@@ -455,7 +455,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-y3-ecV">
-                                                                    <rect key="frame" x="132.5" y="0.0" width="66.5" height="56"/>
+                                                                    <rect key="frame" x="101.5" y="0.0" width="50.5" height="56"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOR-uk-IgT">
                                                                             <rect key="frame" x="4" y="17" width="10" height="13.5"/>
@@ -506,8 +506,8 @@
                                                         <constraint firstAttribute="height" constant="56" id="wDD-JY-vfh"/>
                                                     </constraints>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-CI-oH9">
-                                                    <rect key="frame" x="8" y="76.5" width="73.5" height="13.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="滚动视图所显示的内容视图" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-CI-oH9">
+                                                    <rect key="frame" x="8" y="86.5" width="304" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -515,27 +515,29 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Lce-IA-9f9" firstAttribute="trailing" secondItem="Ba9-HB-sb7" secondAttribute="trailingMargin" id="3o3-7m-4yv"/>
-                                                <constraint firstItem="Lce-IA-9f9" firstAttribute="top" secondItem="5RH-CI-oH9" secondAttribute="bottom" constant="4" id="896-Tv-NMS"/>
+                                                <constraint firstItem="Lce-IA-9f9" firstAttribute="top" secondItem="5RH-CI-oH9" secondAttribute="bottom" constant="2" id="896-Tv-NMS"/>
                                                 <constraint firstItem="Lce-IA-9f9" firstAttribute="leading" secondItem="Ba9-HB-sb7" secondAttribute="leadingMargin" id="A3H-Dp-DhW"/>
                                                 <constraint firstItem="5BQ-Ac-LeO" firstAttribute="leading" secondItem="Ba9-HB-sb7" secondAttribute="leadingMargin" id="FkB-Xz-czo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5BQ-Ac-LeO" secondAttribute="trailing" id="J9u-VC-oad"/>
                                                 <constraint firstItem="5RH-CI-oH9" firstAttribute="leading" secondItem="Ba9-HB-sb7" secondAttribute="leadingMargin" id="RdG-yx-glo"/>
-                                                <constraint firstItem="5RH-CI-oH9" firstAttribute="top" secondItem="sUX-an-9bm" secondAttribute="bottom" constant="2" id="axa-YR-4WL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5RH-CI-oH9" secondAttribute="trailing" id="Xka-Ac-bXA"/>
+                                                <constraint firstItem="5RH-CI-oH9" firstAttribute="top" secondItem="sUX-an-9bm" secondAttribute="bottom" constant="8" id="axa-YR-4WL"/>
                                                 <constraint firstItem="sUX-an-9bm" firstAttribute="top" secondItem="5BQ-Ac-LeO" secondAttribute="bottom" constant="2.5" id="ezI-6k-BIm"/>
                                                 <constraint firstItem="sUX-an-9bm" firstAttribute="leading" secondItem="Ba9-HB-sb7" secondAttribute="leadingMargin" id="jgp-Df-9AY"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="sUX-an-9bm" secondAttribute="trailing" id="nX2-6u-4nL"/>
-                                                <constraint firstItem="5BQ-Ac-LeO" firstAttribute="top" secondItem="Ba9-HB-sb7" secondAttribute="topMargin" id="ruh-T8-CEw"/>
+                                                <constraint firstItem="5BQ-Ac-LeO" firstAttribute="top" secondItem="Ba9-HB-sb7" secondAttribute="topMargin" constant="4" id="ruh-T8-CEw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="198" id="JGy-uI-gF0" userLabel="Scroll View Cell">
-                                        <rect key="frame" x="0.0" y="146" width="414" height="198"/>
+                                        <rect key="frame" x="0.0" y="154" width="320" height="198"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JGy-uI-gF0" id="6Wn-R8-pdg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-N0-VHq" customClass="CenteredZoomOutScrollView" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
                                                     <color key="backgroundColor" white="0.23136393229999999" alpha="1" colorSpace="calibratedWhite"/>
                                                 </scrollView>
                                             </subviews>
@@ -548,14 +550,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="28" id="jP6-gZ-VfO" userLabel="Tip Cell">
-                                        <rect key="frame" x="0.0" y="344" width="414" height="28"/>
+                                        <rect key="frame" x="0.0" y="352" width="320" height="28"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jP6-gZ-VfO" id="oaW-63-Dfi">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平移或者缩放上面滚动视图中的图片，观察各属性值的变化" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmX-wI-yEy">
-                                                    <rect key="frame" x="61" y="7.5" width="292.5" height="13.5"/>
+                                                    <rect key="frame" x="14" y="7.5" width="292.5" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -568,23 +570,23 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="260" id="LwN-k6-O3N" userLabel="Simulator Cell">
-                                        <rect key="frame" x="0.0" y="372" width="414" height="260"/>
+                                        <rect key="frame" x="0.0" y="380" width="320" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LwN-k6-O3N" id="Y9y-LV-Hrf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMm-Y0-NIK">
-                                                    <rect key="frame" x="18" y="18" width="172.5" height="85.5"/>
+                                                    <rect key="frame" x="18" y="18" width="133.5" height="85.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4L-CJ-h4j">
-                                                            <rect key="frame" x="110.5" y="67.5" width="58" height="13.5"/>
+                                                            <rect key="frame" x="71.5" y="67.5" width="58" height="13.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxe-Os-bsl">
-                                                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="85.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="133.5" height="85.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll View Bounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXY-HU-pMC">
                                                                     <rect key="frame" x="3" y="3" width="101" height="13.5"/>
@@ -599,7 +601,7 @@
                                                             </constraints>
                                                         </view>
                                                         <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Csb-1E-t1d">
-                                                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="85.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="133.5" height="85.5"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.95686274770000002" green="0.35392336365206245" blue="0.76589360563291287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -626,6 +628,221 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.1019607857" green="0.27843138579999999" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="333" id="Zsg-Sv-K33" userLabel="Detail Text Cell">
+                                        <rect key="frame" x="0.0" y="640" width="320" height="333"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zsg-Sv-K33" id="LKA-rc-8kJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="333"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yPF-1G-CNA">
+                                                    <rect key="frame" x="8" y="8" width="304" height="317"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="当用户平移内容视图时">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content" base64-UTF8="YES">
+CgoJA
+</string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="内容视图的位置和大小（">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="frame">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="）并没有改变，而是滚动视图的">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" bounds ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="在做反向的平移，也就是改变">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" bounds.origin ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="的值。">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content" base64-UTF8="YES">
+CgkKCQ
+</string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="请注意滚动视图的">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" contentOffset ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="的值反应的就是其">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" bounds.origin ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="的值。">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content" base64-UTF8="YES">
+CgkKA
+</string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="当用户缩放内容视图时">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content" base64-UTF8="YES">
+CgkKCQ
+</string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="滚动视图通过给内容视图施加一个缩放仿射变换（改变其">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="  .transform ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="属性）来改变内容视图的尺寸。">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content" base64-UTF8="YES">
+CgkKCQ
+</string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="默认情况下，内容视图的">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" frame ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="属性始终不会改变。但是当内容视图被缩放到比滚动视图小时，为了美观我们通过修改内容视图">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" center ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="属性的方法来补偿一个偏移量，使得内容视图在滚动视图中完美居中。">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content" base64-UTF8="YES">
+CgkKA
+</string>
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="通常在用户缩放的内容的同时也会伴随着平移。">
+                                                            <attributes>
+                                                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="0.001" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yPF-1G-CNA" secondAttribute="trailing" id="GSt-tB-dD2"/>
+                                                <constraint firstItem="yPF-1G-CNA" firstAttribute="bottom" secondItem="LKA-rc-8kJ" secondAttribute="bottomMargin" id="Vnt-Z5-AFr"/>
+                                                <constraint firstItem="yPF-1G-CNA" firstAttribute="leading" secondItem="LKA-rc-8kJ" secondAttribute="leadingMargin" id="rSj-II-3kg"/>
+                                                <constraint firstItem="yPF-1G-CNA" firstAttribute="top" secondItem="LKA-rc-8kJ" secondAttribute="topMargin" id="vQ3-Ce-d9J"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -638,7 +855,7 @@
                     <navigationItem key="navigationItem" title="观察滚动视图" id="lcm-eP-ag3"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="320" height="1200"/>
                     <connections>
                         <outlet property="boundsHeightLabel" destination="nrh-0u-fwL" id="hah-Z4-4te"/>
                         <outlet property="boundsWidthLabel" destination="CgX-nG-HTH" id="gko-PF-MVS"/>
@@ -651,6 +868,10 @@
                         <outlet property="fakeContentView" destination="Csb-1E-t1d" id="9hH-VX-8AK"/>
                         <outlet property="fakeScrollView" destination="AMm-Y0-NIK" id="Jxb-dM-etF"/>
                         <outlet property="fakeScrollViewBounds" destination="Sxe-Os-bsl" id="Deu-g0-XsI"/>
+                        <outlet property="frameHeightLabel" destination="Ghz-FX-YOm" id="3qj-Yc-j6r"/>
+                        <outlet property="frameWidthLabel" destination="Yr2-UX-9KJ" id="PS3-Sb-vFV"/>
+                        <outlet property="frameXLabel" destination="PC5-tf-y3H" id="nai-Pj-Oha"/>
+                        <outlet property="frameYLabel" destination="xzL-ok-zJK" id="rGg-zE-Ihw"/>
                         <outlet property="scrollView" destination="4CO-N0-VHq" id="3fw-wb-zsy"/>
                         <outlet property="transformALabel" destination="dsW-sV-1LR" id="rBS-lG-97p"/>
                         <outlet property="transformBLabel" destination="9xS-oa-ywv" id="eLD-YI-ia0"/>
@@ -662,7 +883,178 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGM-vL-S9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="49.647887323943664"/>
+            <point key="canvasLocation" x="166.875" y="-180.63380281690141"/>
+        </scene>
+        <!--滚动视图实战-->
+        <scene sceneID="5SC-Lz-JA8">
+            <objects>
+                <tableViewController storyboardIdentifier="Scroll View Exercises" id="UTB-EZ-DYl" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="FPf-mv-TxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="实战一" id="0Rf-J0-adW">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="Fuf-DQ-ndx">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fuf-DQ-ndx" id="zGY-W7-wTD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daX-gi-e0V">
+                                                    <rect key="frame" x="8" y="8" width="304" height="56"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">- 五张图片竖向铺开
+- 上下滚动
+- 无线循环</string>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="daX-gi-e0V" firstAttribute="top" secondItem="zGY-W7-wTD" secondAttribute="topMargin" id="3DZ-Ce-zsd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="daX-gi-e0V" secondAttribute="bottom" id="bPd-Fp-LEI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="daX-gi-e0V" secondAttribute="trailing" id="mdf-QO-Gyl"/>
+                                                <constraint firstItem="daX-gi-e0V" firstAttribute="leading" secondItem="zGY-W7-wTD" secondAttribute="leadingMargin" id="voI-h7-PGx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="5X7-XY-Le8">
+                                        <rect key="frame" x="0.0" y="128" width="320" height="208"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5X7-XY-Le8" id="NzW-aR-62U">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEE-76-udQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </scrollView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jEE-76-udQ" secondAttribute="trailing" id="4aM-8h-sks"/>
+                                                <constraint firstItem="jEE-76-udQ" firstAttribute="leading" secondItem="NzW-aR-62U" secondAttribute="leading" id="97l-f2-NaF"/>
+                                                <constraint firstAttribute="bottom" secondItem="jEE-76-udQ" secondAttribute="bottom" id="gIk-ka-yCa"/>
+                                                <constraint firstItem="jEE-76-udQ" firstAttribute="top" secondItem="NzW-aR-62U" secondAttribute="top" id="gbn-7f-pWT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="实战二" id="TlA-Nf-l9k">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="u3N-3t-z9N">
+                                        <rect key="frame" x="0.0" y="393" width="320" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u3N-3t-z9N" id="blI-ht-2t4">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6x-rg-9Bi">
+                                                    <rect key="frame" x="8" y="8" width="304" height="55.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">- 五张图片竖向铺开
+- 上下滚动
+- 无线循环</string>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a6x-rg-9Bi" firstAttribute="leading" secondItem="blI-ht-2t4" secondAttribute="leadingMargin" id="cb7-Vv-HhJ"/>
+                                                <constraint firstItem="a6x-rg-9Bi" firstAttribute="top" secondItem="blI-ht-2t4" secondAttribute="topMargin" id="gig-yl-sVL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="a6x-rg-9Bi" secondAttribute="bottom" id="pX7-2G-iFe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="a6x-rg-9Bi" secondAttribute="trailing" id="u5Q-mj-qsx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="fx4-8o-Dco">
+                                        <rect key="frame" x="0.0" y="465" width="320" height="208"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fx4-8o-Dco" id="4M1-yG-8f5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r75-sL-IfT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </scrollView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="r75-sL-IfT" secondAttribute="bottom" id="Exz-32-l9Q"/>
+                                                <constraint firstItem="r75-sL-IfT" firstAttribute="leading" secondItem="4M1-yG-8f5" secondAttribute="leading" id="Ibe-cS-ENu"/>
+                                                <constraint firstItem="r75-sL-IfT" firstAttribute="top" secondItem="4M1-yG-8f5" secondAttribute="top" id="Kvf-hn-byQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="r75-sL-IfT" secondAttribute="trailing" id="RA6-Fh-dTa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="实战三" id="ghA-OQ-2Zf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="47F-bn-ACk">
+                                        <rect key="frame" x="0.0" y="730" width="320" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="47F-bn-ACk" id="CL4-V2-U59">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqc-qJ-hYX">
+                                                    <rect key="frame" x="8" y="8" width="304" height="55.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">- 五张图片竖向铺开
+- 上下滚动
+- 无线循环</string>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Aqc-qJ-hYX" firstAttribute="top" secondItem="CL4-V2-U59" secondAttribute="topMargin" id="1oe-Hr-zG9"/>
+                                                <constraint firstItem="Aqc-qJ-hYX" firstAttribute="leading" secondItem="CL4-V2-U59" secondAttribute="leadingMargin" id="Ihm-SJ-Ffz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Aqc-qJ-hYX" secondAttribute="trailing" id="fKv-W6-1k2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Aqc-qJ-hYX" secondAttribute="bottom" id="uQs-x3-7yk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="cwo-rb-U1G">
+                                        <rect key="frame" x="0.0" y="802" width="320" height="208"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cwo-rb-U1G" id="LkN-Yh-fsV">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMX-yN-7TM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </scrollView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="KMX-yN-7TM" secondAttribute="bottom" id="6z9-2v-ejg"/>
+                                                <constraint firstItem="KMX-yN-7TM" firstAttribute="leading" secondItem="LkN-Yh-fsV" secondAttribute="leading" id="Ltz-V1-Dko"/>
+                                                <constraint firstAttribute="trailing" secondItem="KMX-yN-7TM" secondAttribute="trailing" id="jwt-2L-bHV"/>
+                                                <constraint firstItem="KMX-yN-7TM" firstAttribute="top" secondItem="LkN-Yh-fsV" secondAttribute="top" id="mkI-rp-T81"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="UTB-EZ-DYl" id="24E-jy-e95"/>
+                            <outlet property="delegate" destination="UTB-EZ-DYl" id="lAs-oa-w69"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="滚动视图实战" id="clK-2q-Qdv"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1200"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udv-80-9b6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-181"/>
         </scene>
     </scenes>
 </document>

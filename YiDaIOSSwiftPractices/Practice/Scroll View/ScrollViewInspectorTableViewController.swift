@@ -35,7 +35,13 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 	@IBOutlet weak var boundsWidthLabel: UILabel!
 	@IBOutlet weak var boundsHeightLabel: UILabel!
 
-	// transform
+	// content view frame lables
+	@IBOutlet weak var frameXLabel: UILabel!
+	@IBOutlet weak var frameYLabel: UILabel!
+	@IBOutlet weak var frameWidthLabel: UILabel!
+	@IBOutlet weak var frameHeightLabel: UILabel!
+
+	// content view transform
 	@IBOutlet weak var transformALabel: UILabel!
 	@IBOutlet weak var transformBLabel: UILabel!
 	@IBOutlet weak var transformCLabel: UILabel!
@@ -84,31 +90,39 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 }
 
 extension ScrollViewInspectorTableViewController: InternalStateListener {
+
 	func scrollView(_ scrollView: CenteredZoomOutScrollView,
-		internalStateDidChange newState: CenteredZoomOutScrollView.InternalState) {
-			// contentOffset
-			contentOffsetXlabel.pulseTextUpdate(withNewText: newState.contentOffset.x.shortDescription)
-			contentOffsetYLabel.pulseTextUpdate(withNewText: newState.contentOffset.y.shortDescription)
+		internalStateDidChange newState: CenteredZoomOutScrollView.InternalState)
+	{
+		// contentOffset
+		contentOffsetXlabel.pulseTextUpdate(withNewText: newState.contentOffset.x.shortDescription)
+		contentOffsetYLabel.pulseTextUpdate(withNewText: newState.contentOffset.y.shortDescription)
 
-			// contentSize
-			contentSizeWidthLabel.pulseTextUpdate(withNewText: newState.contentSize.width.shortDescription)
-			contentSizeHeightLabel.pulseTextUpdate(withNewText: newState.contentSize.height.shortDescription)
+		// contentSize
+		contentSizeWidthLabel.pulseTextUpdate(withNewText: newState.contentSize.width.shortDescription)
+		contentSizeHeightLabel.pulseTextUpdate(withNewText: newState.contentSize.height.shortDescription)
 
-			// bounds
-			boundsXLabel.pulseTextUpdate(withNewText: newState.bounds.origin.x.shortDescription)
-			boundsYLabel.pulseTextUpdate(withNewText: newState.bounds.origin.y.shortDescription)
-			boundsWidthLabel.pulseTextUpdate(withNewText: newState.bounds.width.shortDescription)
-			boundsHeightLabel.pulseTextUpdate(withNewText: newState.bounds.height.shortDescription)
+		// bounds
+		boundsXLabel.pulseTextUpdate(withNewText: newState.bounds.origin.x.shortDescription)
+		boundsYLabel.pulseTextUpdate(withNewText: newState.bounds.origin.y.shortDescription)
+		boundsWidthLabel.pulseTextUpdate(withNewText: newState.bounds.width.shortDescription)
+		boundsHeightLabel.pulseTextUpdate(withNewText: newState.bounds.height.shortDescription)
 
-			// transform
-			transformALabel.pulseTextUpdate(withNewText: newState.transform?.a.shortDescription)
-			transformBLabel.pulseTextUpdate(withNewText: newState.transform?.b.shortDescription)
-			transformCLabel.pulseTextUpdate(withNewText: newState.transform?.c.shortDescription)
-			transformDLabel.pulseTextUpdate(withNewText: newState.transform?.d.shortDescription)
-			transformTXLabel.pulseTextUpdate(withNewText: newState.transform?.tx.shortDescription)
-			transformTYLabel.pulseTextUpdate(withNewText: newState.transform?.ty.shortDescription)
+		// frame
+		frameXLabel.pulseTextUpdate(withNewText: newState.frame?.origin.x.shortDescription)
+		frameYLabel.pulseTextUpdate(withNewText: newState.frame?.origin.y.shortDescription)
+		frameWidthLabel.pulseTextUpdate(withNewText: newState.frame?.size.width.shortDescription)
+		frameHeightLabel.pulseTextUpdate(withNewText: newState.frame?.size.height.shortDescription)
 
-			syncSimulatorCell(newState: newState)
+		// transform
+		transformALabel.pulseTextUpdate(withNewText: newState.transform?.a.shortDescription)
+		transformBLabel.pulseTextUpdate(withNewText: newState.transform?.b.shortDescription)
+		transformCLabel.pulseTextUpdate(withNewText: newState.transform?.c.shortDescription)
+		transformDLabel.pulseTextUpdate(withNewText: newState.transform?.d.shortDescription)
+		transformTXLabel.pulseTextUpdate(withNewText: newState.transform?.tx.shortDescription)
+		transformTYLabel.pulseTextUpdate(withNewText: newState.transform?.ty.shortDescription)
+
+		syncSimulatorCell(newState: newState)
 	}
 
 	func syncSimulatorCell(newState: CenteredZoomOutScrollView.InternalState) {
