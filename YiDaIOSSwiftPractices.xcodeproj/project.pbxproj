@@ -14,6 +14,7 @@
 		F43F47771DC9031A00478CF5 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43F47761DC9031A00478CF5 /* CardView.xib */; };
 		F4407AFD1DBBD35300BDF930 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4407AFC1DBBD35300BDF930 /* Menu.swift */; };
 		F44517A31DAE8CA800924485 /* Mudox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44517A21DAE8CA800924485 /* Mudox.swift */; };
+		F44AB85B1DC9E19400318438 /* ScrollViewExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AB85A1DC9E19400318438 /* ScrollViewExercisesTableViewController.swift */; };
 		F46100121DBB327B006743E5 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100111DBB327B006743E5 /* DataSource.swift */; };
 		F46100161DBB479C006743E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46100151DBB479C006743E5 /* Extensions.swift */; };
 		F47575DE1DC500EF003A1480 /* PlaceholderImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47575DD1DC500EF003A1480 /* PlaceholderImageGenerator.swift */; };
@@ -110,6 +111,7 @@
 		F43F47761DC9031A00478CF5 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		F4407AFC1DBBD35300BDF930 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F44517A21DAE8CA800924485 /* Mudox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mudox.swift; path = "../../../../xcode-project-startup-files/Swift/Mudox.swift"; sourceTree = "<group>"; };
+		F44AB85A1DC9E19400318438 /* ScrollViewExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewExercisesTableViewController.swift; sourceTree = "<group>"; };
 		F46100111DBB327B006743E5 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		F46100151DBB479C006743E5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F47575DD1DC500EF003A1480 /* PlaceholderImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderImageGenerator.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		F4864C921DC9A0BD00479844 /* Scroll View */ = {
 			isa = PBXGroup;
 			children = (
+				F44AB85A1DC9E19400318438 /* ScrollViewExercisesTableViewController.swift */,
 				F4864C931DC9A0BD00479844 /* ScrollView.storyboard */,
 				F4864C941DC9A0BD00479844 /* ScrollViewInspectorTableViewController.swift */,
 			);
@@ -855,6 +858,7 @@
 				F47575DE1DC500EF003A1480 /* PlaceholderImageGenerator.swift in Sources */,
 				F4864CC01DC9A0BD00479844 /* CustomPresentedViewController.swift in Sources */,
 				F486C6041DC62D0400307C71 /* CenteredZoomOutScrollView.swift in Sources */,
+				F44AB85B1DC9E19400318438 /* ScrollViewExercisesTableViewController.swift in Sources */,
 				F4DDE2071DBA22380068A2B0 /* News.swift in Sources */,
 				F48A63031DC0A41100253910 /* RandomDataSource.swift in Sources */,
 				F48A63471DC0EB0F00253910 /* MusicList.swift in Sources */,

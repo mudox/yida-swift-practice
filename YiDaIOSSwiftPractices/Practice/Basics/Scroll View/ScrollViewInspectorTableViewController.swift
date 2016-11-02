@@ -49,6 +49,13 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 	@IBOutlet weak var transformTXLabel: UILabel!
 	@IBOutlet weak var transformTYLabel: UILabel!
 
+	// indicators
+	@IBOutlet weak var trackingLabel: UILabel!
+	@IBOutlet weak var draggingLabel: UILabel!
+	@IBOutlet weak var deceleratingLabel: UILabel!
+	@IBOutlet weak var zoomingLabel: UILabel!
+	@IBOutlet weak var zoomBouncingLabel: UILabel!
+
 	// simulator area
 	@IBOutlet weak var fakeScrollView: UIView!
 	@IBOutlet weak var fakeScrollViewBounds: UIView!
@@ -70,7 +77,6 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 		fakeScrollViewBounds.layer.borderWidth = 1
 
 		fakeContentView.image = image
-
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
@@ -97,36 +103,45 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 
 extension ScrollViewInspectorTableViewController: InternalStateListener {
 
-	func scrollView(_ scrollView: CenteredZoomOutScrollView,
-		internalStateDidChange newState: CenteredZoomOutScrollView.InternalState)
-	{
+	func scrollView(
+		_ scrollView: CenteredZoomOutScrollView,
+		internalStateDidChange newState: CenteredZoomOutScrollView.InternalState
+	) {
 		// contentOffset
-		contentOffsetXlabel.pulseTextUpdate(withNewText: newState.contentOffset.x.shortDescription)
-		contentOffsetYLabel.pulseTextUpdate(withNewText: newState.contentOffset.y.shortDescription)
+		contentOffsetXlabel.pulseTextUpdate(with: newState.contentOffset.x.shortDescription)
+		contentOffsetYLabel.pulseTextUpdate(with: newState.contentOffset.y.shortDescription)
 
 		// contentSize
-		contentSizeWidthLabel.pulseTextUpdate(withNewText: newState.contentSize.width.shortDescription)
-		contentSizeHeightLabel.pulseTextUpdate(withNewText: newState.contentSize.height.shortDescription)
+		contentSizeWidthLabel.pulseTextUpdate(with: newState.contentSize.width.shortDescription)
+		contentSizeHeightLabel.pulseTextUpdate(with: newState.contentSize.height.shortDescription)
 
 		// bounds
-		boundsXLabel.pulseTextUpdate(withNewText: newState.bounds.origin.x.shortDescription)
-		boundsYLabel.pulseTextUpdate(withNewText: newState.bounds.origin.y.shortDescription)
-		boundsWidthLabel.pulseTextUpdate(withNewText: newState.bounds.width.shortDescription)
-		boundsHeightLabel.pulseTextUpdate(withNewText: newState.bounds.height.shortDescription)
+		boundsXLabel.pulseTextUpdate(with: newState.bounds.origin.x.shortDescription)
+		boundsYLabel.pulseTextUpdate(with: newState.bounds.origin.y.shortDescription)
+		boundsWidthLabel.pulseTextUpdate(with: newState.bounds.width.shortDescription)
+		boundsHeightLabel.pulseTextUpdate(with: newState.bounds.height.shortDescription)
 
 		// frame
-		frameXLabel.pulseTextUpdate(withNewText: newState.frame?.origin.x.shortDescription)
-		frameYLabel.pulseTextUpdate(withNewText: newState.frame?.origin.y.shortDescription)
-		frameWidthLabel.pulseTextUpdate(withNewText: newState.frame?.size.width.shortDescription)
-		frameHeightLabel.pulseTextUpdate(withNewText: newState.frame?.size.height.shortDescription)
+		frameXLabel.pulseTextUpdate(with: newState.contentViewFrame?.origin.x.shortDescription)
+		frameYLabel.pulseTextUpdate(with: newState.contentViewFrame?.origin.y.shortDescription)
+		frameWidthLabel.pulseTextUpdate(with: newState.contentViewFrame?.size.width.shortDescription)
+		frameHeightLabel.pulseTextUpdate(with: newState.contentViewFrame?.size.height.shortDescription)
 
 		// transform
-		transformALabel.pulseTextUpdate(withNewText: newState.transform?.a.shortDescription)
-		transformBLabel.pulseTextUpdate(withNewText: newState.transform?.b.shortDescription)
-		transformCLabel.pulseTextUpdate(withNewText: newState.transform?.c.shortDescription)
-		transformDLabel.pulseTextUpdate(withNewText: newState.transform?.d.shortDescription)
-		transformTXLabel.pulseTextUpdate(withNewText: newState.transform?.tx.shortDescription)
-		transformTYLabel.pulseTextUpdate(withNewText: newState.transform?.ty.shortDescription)
+		transformALabel.pulseTextUpdate(with: newState.contentViewTransform?.a.shortDescription)
+		transformBLabel.pulseTextUpdate(with: newState.contentViewTransform?.b.shortDescription)
+		transformCLabel.pulseTextUpdate(with: newState.contentViewTransform?.c.shortDescription)
+		transformDLabel.pulseTextUpdate(with: newState.contentViewTransform?.d.shortDescription)
+		transformTXLabel.pulseTextUpdate(with: newState.contentViewTransform?.tx.shortDescription)
+		transformTYLabel.pulseTextUpdate(with: newState.contentViewTransform?.ty.shortDescription)
+
+		// indicators
+		if newState.isTracking { trackingLabel.pulse(with: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) }
+		if newState.isDragging { draggingLabel.pulse(with: #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)) }
+		if newState.isDecelerating { deceleratingLabel.pulse(with: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)) }
+
+		if newState.isZooming { zoomingLabel.pulse(with: #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)) }
+		if newState.isZoomBouncing { zoomBouncingLabel.pulse(with: #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)) }
 
 		syncSimulatorCell(newState: newState)
 	}
@@ -156,35 +171,55 @@ extension ScrollViewInspectorTableViewController: InternalStateListener {
 fileprivate var glowBoxes = [UILabel: UIView](minimumCapacity: 20)
 
 extension UILabel {
-	func pulseTextUpdate(withNewText newText: String?) {
+
+	func pulseTextUpdate(with newText: String?) {
 		guard text != newText else {
 			return
 		}
 
+		var color = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+		if newText != nil && text != nil &&
+		(newText! as NSString).floatValue < (text! as NSString).floatValue {
+			color = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+		}
+
+		text = (newText != nil) ? newText : "n/a"
+
+		sizeToFit()
+		pulse(with: color, insetWidthBy: -3, heightBy: -1)
+	}
+
+	func pulse(with color: UIColor, insetWidthBy dx: CGFloat = -2, heightBy dy: CGFloat = -1) {
+		let box = getGlowBox()
+
+		let oldTextColor = textColor
+		textColor = .white
+
+		box.backgroundColor = color
+		box.frame = frame.insetBy(dx: dx, dy: dy)
+
+		UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseIn], animations: {
+			box.backgroundColor = .clear
+			}, completion: { finished in
+			if finished {
+				self.textColor = .black
+			}
+		})
+
+	}
+
+	func getGlowBox() -> UIView {
 		let box: UIView
 		if let view = glowBoxes[self] {
 			box = view
 		} else {
 			box = UIView(frame: frame)
 			box.layer.cornerRadius = 2
+			box.layer.masksToBounds = true
 
 			glowBoxes[self] = box
 			superview?.insertSubview(box, belowSubview: self)
 		}
-
-		box.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
-		if newText != nil && text != nil &&
-		(newText! as NSString).floatValue < (text! as NSString).floatValue {
-			box.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
-		}
-
-		text = (newText != nil) ? newText : "n/a"
-
-		sizeToFit()
-		box.frame = frame.insetBy(dx: -3, dy: -1)
-
-		UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseIn], animations: {
-			box.backgroundColor = .clear
-			}, completion: nil)
+		return box
 	}
 }

@@ -22,8 +22,16 @@ class CenteredZoomOutScrollView: UIScrollView {
 		var contentSize: CGSize
 		var contentInset: UIEdgeInsets
 		var bounds: CGRect
-		var frame: CGRect?
-		var transform: CGAffineTransform?
+
+		var contentViewFrame: CGRect?
+		var contentViewTransform: CGAffineTransform?
+
+		var isTracking: Bool
+		var isDragging: Bool
+		var isDecelerating: Bool
+
+		var isZooming: Bool
+		var isZoomBouncing: Bool
 	}
 
 	var internalStateListener: InternalStateListener?
@@ -60,6 +68,10 @@ class CenteredZoomOutScrollView: UIScrollView {
 	override func layoutSubviews() {
 		super.layoutSubviews()
 
+		if !(isZooming || isZoomBouncing || isDragging || isDecelerating) {
+			jack.debug("normal layout with frame: \(frame.shortDescription)")
+		}
+
 		// report states change to listerner if any
 		if let listener = internalStateListener {
 			let state = InternalState(
@@ -67,8 +79,13 @@ class CenteredZoomOutScrollView: UIScrollView {
 				contentSize: contentSize,
 				contentInset: contentInset,
 				bounds: bounds,
-				frame: contentView?.frame,
-				transform: contentView?.transform
+				contentViewFrame: contentView?.frame,
+				contentViewTransform: contentView?.transform,
+				isTracking: isTracking,
+				isDragging: isDragging,
+				isDecelerating: isDecelerating,
+				isZooming: isZooming,
+				isZoomBouncing: isZoomBouncing
 			)
 			listener.scrollView(self, internalStateDidChange: state)
 		}
@@ -81,24 +98,18 @@ extension CenteredZoomOutScrollView: UIScrollViewDelegate {
 			return
 		}
 
-		jack.debug("x: \((bounds.width * 0.5).shortDescription)(\(bounds.midX.shortDescription)), y: \((bounds.height * 0.5).shortDescription)(\(bounds.midY.shortDescription))")
+		// jack.debug("x: \((bounds.width * 0.5).shortDescription)(\(bounds.midX.shortDescription)), y: \((bounds.height * 0.5).shortDescription)(\(bounds.midY.shortDescription))")
 
 		let xOffset = (bounds.width > contentSize.width)
-			? (bounds.width - contentSize.width) * 0.5: 0.0;
+			? (bounds.width - contentSize.width) * 0.5: 0.0
+
 		let yOffset = bounds.height > contentSize.height
-			? (bounds.height - contentSize.height) * 0.5: 0.0;
+			? (bounds.height - contentSize.height) * 0.5: 0.0
+
 		view.center = CGPoint(
 			x: contentSize.width * 0.5 + xOffset,
 			y: contentSize.height * 0.5 + yOffset
 		);
-
-		/*
-		 if zoomScale < 1 {
-		 view.center = CGPoint(x: bounds.width * 0.5, y: bounds.height * 0.5)
-		 } else {
-		 view.frame.origin = .zero
-		 }
-		 */
 	}
 
 	func viewForZooming(in scrollView: UIScrollView) -> UIView? {
