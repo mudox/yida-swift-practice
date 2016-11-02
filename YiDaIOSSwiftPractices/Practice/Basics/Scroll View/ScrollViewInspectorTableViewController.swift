@@ -185,14 +185,12 @@ extension UILabel {
 
 		text = (newText != nil) ? newText : "n/a"
 
-		sizeToFit()
-		pulse(with: color, insetWidthBy: -3, heightBy: -1)
+		pulse(with: color, heightBy: -1)
 	}
 
 	func pulse(with color: UIColor, insetWidthBy dx: CGFloat = -2, heightBy dy: CGFloat = -1) {
 		let box = getGlowBox()
 
-		let oldTextColor = textColor
 		textColor = .white
 
 		box.backgroundColor = color
