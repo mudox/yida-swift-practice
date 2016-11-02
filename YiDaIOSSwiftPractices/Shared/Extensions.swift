@@ -33,11 +33,34 @@ extension UIViewController {
 extension UINavigationController: UIGestureRecognizerDelegate {
 
 	func enablePanInAnywhereToPop() {
+		// enable all existing pan gestures if any
+		if let gestures = view.gestureRecognizers {
+			var found = false
+			for gesture in gestures {
+				if gesture.isKind(of: UIPanGestureRecognizer.self) &&
+				gesture.delegate === self {
+					gesture.isEnabled = true
+					found = true
+				}
+			}
+			if found { return }
+		}
+
+		// if no pan gesture exists, create and configure a new one
 		interactivePopGestureRecognizer!.isEnabled = false
 		let target = interactivePopGestureRecognizer!.delegate!
 		let panGesture = UIPanGestureRecognizer(target: target, action: Selector("handleNavigationTransition:"))
 		panGesture.delegate = self
 		view.addGestureRecognizer(panGesture)
+	}
+
+	func disablePanInAnyWhereToPop() {
+		view.gestureRecognizers?.forEach { gesture in
+			if gesture.isKind(of: UIPanGestureRecognizer.self) &&
+			gesture.delegate === self {
+				gesture.isEnabled = false
+			}
+		}
 	}
 
 	func enableEdgePanToPopAlways() {

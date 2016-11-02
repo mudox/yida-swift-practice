@@ -75,12 +75,18 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
+		navigationController?.disablePanInAnyWhereToPop()
 
 		scrollView.contentView = imageView
 		imageView.alpha = 0
 		UIView.animate(withDuration: 0.5) {
 			self.imageView.alpha = 1
 		}
+	}
+
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		navigationController?.enablePanInAnywhereToPop()
 	}
 
 	override func viewDidDisappear(_ animated: Bool) {

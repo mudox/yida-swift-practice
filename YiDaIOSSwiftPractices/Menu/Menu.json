@@ -125,12 +125,12 @@
   "3rd party frameworks": [
 
     {
-      "headerText": "段落",
+      "headerText": "动画库",
       "items": [{
-        "title": "标题",
-        "subtitle": "副标题",
-        "storyboardName": "",
-        "viewControllerReferenceID": ""
+        "title": "Facebook Pop 动画库",
+        "subtitle": "Pop 动画库 Sprint, Decay, Basic 动画演示",
+        "storyboardName": "PopAnimation",
+        "viewControllerReferenceID": "Pop Animation Playground"
       }, {
       "title": "标题",
       "subtitle": "副标题",
