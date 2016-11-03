@@ -21,7 +21,7 @@ class PhotosCollectionViewController: UICollectionViewController {
 		var images = [UIImage]()
 		for _ in 0..<self.imageCount {
 			images.append(
-				DataSource.placeHolderImage.aImage(imageSize: CGSize(width: 120, height: 180))
+				DataSource.placeHolderImage.aImage(ofSize: CGSize(width: 120, height: 180))
 			)
 		}
 
@@ -41,7 +41,7 @@ class PhotosCollectionViewController: UICollectionViewController {
 			)
 
 			images.append(
-				DataSource.placeHolderImage.aImage(imageSize: size)
+				DataSource.placeHolderImage.aImage(ofSize: size)
 			)
 		}
 
@@ -141,7 +141,7 @@ class PhotosCollectionViewController: UICollectionViewController {
 extension PhotosCollectionViewController {
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		let text = "\(indexPath.section) : \(indexPath.item)"
-		let image = PlaceholderImageSource.aImage(imageSize: view.bounds.size, imageText: text)
+		let image = PlaceholderImageSource.aImage(ofSize: view.bounds.size, text: text)
 
 		let vc = storyboard!.instantiateViewController(withIdentifier: ImageBrowserViewController.identifier) as! ImageBrowserViewController
 		let imageView = UIImageView(image: image)

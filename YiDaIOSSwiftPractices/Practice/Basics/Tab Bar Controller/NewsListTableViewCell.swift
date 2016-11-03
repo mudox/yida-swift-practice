@@ -23,7 +23,7 @@ class NewsListTableViewCell: UITableViewCell {
 		titleLabel.text = item.title
 		descriptionLabel.text = item.description
 //    thumbnailView.image = UIImage(named: item.imageName)
-		thumbnailView.image = DataSource.placeHolderImage.aImage(imageSize: CGSize(width: 100, height: 100))
+		thumbnailView.image = DataSource.placeHolderImage.aImage(ofSize: CGSize(width: 100, height: 100))
 		sourceLabel.text = item.source
 		dateLable.text = item.timePassedDescription
 		readCountLabel.text = "\(item.readCount)人已读"
