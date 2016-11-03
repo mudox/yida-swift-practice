@@ -8,6 +8,8 @@
 
 import UIKit
 
+fileprivate let jack = Jack.with(levelOfThisFile: .debug)
+
 class PlaceholderImageGenerator {
 
 	// MARK: Settable properties
@@ -17,14 +19,16 @@ class PlaceholderImageGenerator {
 	var imageSize: CGSize
 	var backgroundColor = UIColor.orange
 	var foregroundColor = UIColor.white
-	var maxFontPoint: CGFloat = 16 // magic 22
+
+	// specify CGFloat.infinity to lift font size restriction
+	var maxFontPoint: CGFloat = 16 // magic 20
 	var minFontPoint: CGFloat = 10 // magic 10
 
 	// MARK: Properties for internal computation
 	private let infiniteSize = CGSize(width: CGFloat.infinity, height: CGFloat.infinity)
 
 	private var margin: CGFloat {
-		return max(8, min(imageSize.width, imageSize.height) / 10) // magic 40
+		return max(8, min(imageSize.width, imageSize.height) / 10)
 	}
 
 	private var textClippingFrame: CGRect {
@@ -54,7 +58,7 @@ class PlaceholderImageGenerator {
 
 	/**
    Layout text in the given frame.
-   If will adjust the textAttribute property with appropriate font size on non-nil return.
+   If will adjust the self.textAttributes property with appropriate font size on non-nil return.
    
    - parameter text: Single or multiline string to layout in the imageSize area.
    
@@ -108,13 +112,16 @@ class PlaceholderImageGenerator {
 			return CGRect(x: x, y: y, width: width, height: height)
 		}
 
-		fontPoint = fontPoint * textClippingFrame.width / textSize.width
+		fontPoint = fontPoint * min(
+			textClippingFrame.width / textSize.width,
+			textClippingFrame.height / textSize.height
+		)
 
 		var infiniteLoopCount = 0
 		while true {
 			infiniteLoopCount += 1
-			guard infiniteLoopCount < 200 else {
-				print("loop count upperbound reached")
+			guard infiniteLoopCount < 200 else { // magic 200
+				jack.error("loop count limit reached")
 				return nil
 			}
 
@@ -162,6 +169,8 @@ class PlaceholderImageGenerator {
 		}
 		if let textFrame = layout(text: sizeText) {
 			sizeText.draw(in: textFrame, withAttributes: textAttributes)
+		} else {
+			jack.warn("layout failed")
 		}
 	}
 
