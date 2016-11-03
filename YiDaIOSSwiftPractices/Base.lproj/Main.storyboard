@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dih-gT-eWu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dih-gT-eWu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,31 +41,35 @@
                         <viewControllerLayoutGuide type="bottom" id="gmK-DE-ORz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Of-hk-jtM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="54" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xo1-qV-MHC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Root Menu Cell" rowHeight="56" id="Zo1-5H-IcL" customClass="RootMenuTableViewCell" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="320" height="56"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zo1-5H-IcL" id="Bh5-ZF-mpP">
-                                            <frame key="frameInset" width="320" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视图基础" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-LB-2Rx" customClass="TintedLabel" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="57.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIView basics, UIView animations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edd-g3-jxD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="UIView basics, UIView animations" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edd-g3-jxD">
+                                                    <rect key="frame" x="8" y="33" width="319" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" N/A " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHc-7f-EiQ">
+                                                    <rect key="frame" x="335" y="19.5" width="26" height="17"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="HK4-MB-aat"/>
@@ -73,11 +80,13 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="edd-g3-jxD" secondAttribute="bottom" id="3aX-Ub-Ue0"/>
                                                 <constraint firstItem="4Ke-LB-2Rx" firstAttribute="top" secondItem="Bh5-ZF-mpP" secondAttribute="topMargin" id="4ya-NG-X1b"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="PHc-7f-EiQ" secondAttribute="trailing" constant="6" id="7sq-dE-Ibb"/>
                                                 <constraint firstItem="edd-g3-jxD" firstAttribute="top" secondItem="4Ke-LB-2Rx" secondAttribute="bottom" constant="8" symbolic="YES" id="FSj-Mq-ltp"/>
                                                 <constraint firstItem="4Ke-LB-2Rx" firstAttribute="leading" secondItem="Bh5-ZF-mpP" secondAttribute="leadingMargin" id="Ra8-f2-pRC"/>
                                                 <constraint firstItem="PHc-7f-EiQ" firstAttribute="centerY" secondItem="Bh5-ZF-mpP" secondAttribute="centerY" id="kpH-oj-nlg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="edd-g3-jxD" secondAttribute="trailing" constant="40" id="nVO-b0-Z1G"/>
                                                 <constraint firstItem="edd-g3-jxD" firstAttribute="leading" secondItem="4Ke-LB-2Rx" secondAttribute="leading" id="u3K-Qt-aRi"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -136,7 +145,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raE-GP-D7h">
-                            <frame key="frameInset" width="320" height="189"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                             <state key="normal" title="基 础"/>
@@ -152,7 +161,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-Y8-xxP">
-                            <frame key="frameInset" width="320" height="190"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                             <state key="normal" title="进 阶"/>
@@ -168,7 +177,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioh-7W-M1H">
-                            <frame key="frameInset" width="320" height="189"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                             <state key="normal" title="框 架"/>

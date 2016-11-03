@@ -9,10 +9,15 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-      "title": "按钮控件（UIButton）",
-      "subtitle": "一个简单的计算器",
-      "storyboardName": "",
-      "viewControllerReferenceID": ""
+        "title": "按钮控件（UIButton）",
+        "subtitle": "一个简单的计算器",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "文本框（UITextField）",
+        "subtitle": "模拟登录界面",
+        "storyboardName": "ViewAndControls",
+        "viewControllerReferenceID": "Login Form Interface"
       }]
     },
 
@@ -24,10 +29,10 @@
         "storyboardName": "ScrollView",
         "viewControllerReferenceID": "Inspect Scroll View"
       }, {
-      "title": "滚动视图应用",
-      "subtitle": "多图陈列，动画滑动，图片阵列",
-      "storyboardName": "ScrollView",
-      "viewControllerReferenceID": "Scroll View Exercises"
+        "title": "滚动视图应用",
+        "subtitle": "多图陈列，动画滑动，图片阵列",
+        "storyboardName": "ScrollView",
+        "viewControllerReferenceID": "Scroll View Exercises"
       }]
 
     },
@@ -40,10 +45,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-      "title": "自定义展现与过渡动画",
-      "subtitle": "自定义试图控制器展现样式和动画过渡样式",
-      "storyboardName": "ViewController",
-      "viewControllerReferenceID": "Customize View Controller Presentation And Transition"
+        "title": "自定义展现与过渡动画",
+        "subtitle": "自定义试图控制器展现样式和动画过渡样式",
+        "storyboardName": "ViewController",
+        "viewControllerReferenceID": "Customize View Controller Presentation And Transition"
       }]
     },
 
@@ -55,10 +60,10 @@
         "storyboardName": "NavigationController",
         "viewControllerReferenceID": "Navigation Controller Manages Content View Controllers"
       }, {
-      "title": "自定义导航控制器",
-      "subtitle": "自定义导航栏，工具栏",
-      "storyboardName": "NavigationController",
-      "viewControllerReferenceID": "Customize Navigation Controller"
+        "title": "自定义导航控制器",
+        "subtitle": "自定义导航栏，工具栏",
+        "storyboardName": "NavigationController",
+        "viewControllerReferenceID": "Customize Navigation Controller"
       }]
 
     },
@@ -72,19 +77,45 @@
         "viewControllerReferenceID": "Tab Bar Controller Manages Content View Controller",
         "presenting": "Cross Dissolve"
       }, {
-      "title": "自定义分栏控制器",
-      "subtitle": "自定义分栏，以及子视图控制器的切换过渡动画",
-      "storyboardName": "TabBarController",
-      "viewControllerReferenceID": "",
-      "presenting": "Cross Dissolve"
+        "title": "自定义分栏控制器",
+        "subtitle": "自定义分栏，以及子视图控制器的切换过渡动画",
+        "storyboardName": "TabBarController",
+        "viewControllerReferenceID": "",
+        "presenting": "Cross Dissolve"
       }, {
-      "title": "综合练习",
-      "subtitle": "新闻，相册，音乐播放器，浏览器，联系人",
-      "storyboardName": "TabBarController",
-      "viewControllerReferenceID": "Tab Bar Controller In Reality",
-      "presenting": "Cross Dissolve"
+        "title": "综合练习",
+        "subtitle": "新闻，相册，音乐播放器，浏览器，联系人",
+        "storyboardName": "TabBarController",
+        "viewControllerReferenceID": "Tab Bar Controller In Reality",
+        "presenting": "Cross Dissolve"
+      }]
+    },
+
+    {
+      "headerText": "自动布局（Auto Layout）",
+      "items": [{
+        "title": "静态布局",
+        "subtitle": "常见使用场景的演示",
+        "storyboardName": "AutoLayout",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "实战一： 登录界面",
+        "subtitle": "包裹在一个滚动视图中，支持横竖屏，完美自适应键盘位置",
+        "storyboardName": "AutoLayout",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "自动布局与滚动视图",
+        "subtitle": "滚动视图对于自动布局约束有着特殊的规则",
+        "storyboardName": "AutoLayout",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "自动布局与动画",
+        "subtitle": "通过在运行时改变约束的优先级实现让 UI 元素动起来",
+        "storyboardName": "AutoLayout",
+        "viewControllerReferenceID": ""
       }]
     }
+
   ],
 
 
@@ -98,25 +129,30 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-      "title": "标题",
-      "subtitle": "副标题",
-      "storyboardName": "",
-      "viewControllerReferenceID": ""
-      }]
-    },
-
-    {
-      "headerText": "段落",
-      "items": [{
         "title": "标题",
         "subtitle": "副标题",
         "storyboardName": "",
         "viewControllerReferenceID": ""
+      }]
+    },
+
+    {
+      "headerText": "自动布局（Auto Layout）",
+      "items": [{
+        "title": "静态布局",
+        "subtitle": "常见使用场景的演示",
+        "storyboardName": "AutoLayout",
+        "viewControllerReferenceID": ""
       }, {
-      "title": "标题",
-      "subtitle": "副标题",
-      "storyboardName": "",
-      "viewControllerReferenceID": ""
+        "title": "自动布局与滚动视图",
+        "subtitle": "滚动视图对于自动布局约束有着特殊的规则",
+        "storyboardName": "AutoLayout",
+        "viewControllerReferenceID": ""
+      }, {
+        "title": "自动布局与动画",
+        "subtitle": "通过在运行时改变约束的优先级实现让 UI 元素动起来",
+        "storyboardName": "AutoLayout",
+        "viewControllerReferenceID": ""
       }]
     }
 
@@ -132,10 +168,10 @@
         "storyboardName": "PopAnimation",
         "viewControllerReferenceID": "Pop Animation Playground"
       }, {
-      "title": "标题",
-      "subtitle": "副标题",
-      "storyboardName": "",
-      "viewControllerReferenceID": ""
+        "title": "标题",
+        "subtitle": "副标题",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
       }]
     },
 
@@ -147,10 +183,10 @@
         "storyboardName": "",
         "viewControllerReferenceID": ""
       }, {
-      "title": "标题",
-      "subtitle": "副标题",
-      "storyboardName": "",
-      "viewControllerReferenceID": ""
+        "title": "标题",
+        "subtitle": "副标题",
+        "storyboardName": "",
+        "viewControllerReferenceID": ""
       }]
     }
 
