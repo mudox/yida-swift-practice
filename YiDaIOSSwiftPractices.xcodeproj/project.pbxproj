@@ -36,7 +36,7 @@
 		F4864CBB1DC9A0BD00479844 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4864CA01DC9A0BD00479844 /* TabBarController.storyboard */; };
 		F4864CBC1DC9A0BD00479844 /* WebBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4864CA11DC9A0BD00479844 /* WebBrowserViewController.swift */; };
 		F4864CBD1DC9A0BD00479844 /* ViewAnimationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4864CA31DC9A0BD00479844 /* ViewAnimationTableViewController.swift */; };
-		F4864CBE1DC9A0BD00479844 /* ViewBasics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4864CA41DC9A0BD00479844 /* ViewBasics.storyboard */; };
+		F4864CBE1DC9A0BD00479844 /* ViewAndControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4864CA41DC9A0BD00479844 /* ViewAndControls.storyboard */; };
 		F4864CBF1DC9A0BD00479844 /* CustomPresentationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4864CA61DC9A0BD00479844 /* CustomPresentationTableViewController.swift */; };
 		F4864CC01DC9A0BD00479844 /* CustomPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4864CA71DC9A0BD00479844 /* CustomPresentedViewController.swift */; };
 		F4864CC11DC9A0BD00479844 /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4864CA81DC9A0BD00479844 /* SlideInAnimator.swift */; };
@@ -133,7 +133,7 @@
 		F4864CA01DC9A0BD00479844 /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		F4864CA11DC9A0BD00479844 /* WebBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBrowserViewController.swift; sourceTree = "<group>"; };
 		F4864CA31DC9A0BD00479844 /* ViewAnimationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationTableViewController.swift; sourceTree = "<group>"; };
-		F4864CA41DC9A0BD00479844 /* ViewBasics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewBasics.storyboard; sourceTree = "<group>"; };
+		F4864CA41DC9A0BD00479844 /* ViewAndControls.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewAndControls.storyboard; sourceTree = "<group>"; };
 		F4864CA61DC9A0BD00479844 /* CustomPresentationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationTableViewController.swift; sourceTree = "<group>"; };
 		F4864CA71DC9A0BD00479844 /* CustomPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentedViewController.swift; sourceTree = "<group>"; };
 		F4864CA81DC9A0BD00479844 /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInAnimator.swift; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 				F4864C8E1DC9A0BD00479844 /* Navigation Controller */,
 				F4864C921DC9A0BD00479844 /* Scroll View */,
 				F4864C951DC9A0BD00479844 /* Tab Bar Controller */,
-				F4864CA21DC9A0BD00479844 /* View Basics */,
+				F4864CA21DC9A0BD00479844 /* View And Controls */,
 				F4864CA51DC9A0BD00479844 /* View Controller */,
 			);
 			path = Basics;
@@ -316,6 +316,7 @@
 		F4864C951DC9A0BD00479844 /* Tab Bar Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F4864CA01DC9A0BD00479844 /* TabBarController.storyboard */,
 				F4864C961DC9A0BD00479844 /* CustomTabBar.swift */,
 				F4864C971DC9A0BD00479844 /* CustomTabBarController.swift */,
 				F4864C981DC9A0BD00479844 /* ImageBrowserViewController.swift */,
@@ -326,18 +327,18 @@
 				F4864C9D1DC9A0BD00479844 /* PhotosCollectionViewController.swift */,
 				F4864C9E1DC9A0BD00479844 /* PresentedTabBarController.swift */,
 				F4864C9F1DC9A0BD00479844 /* TabBarContentViewController.swift */,
-				F4864CA01DC9A0BD00479844 /* TabBarController.storyboard */,
 				F4864CA11DC9A0BD00479844 /* WebBrowserViewController.swift */,
 			);
 			path = "Tab Bar Controller";
 			sourceTree = "<group>";
 		};
-		F4864CA21DC9A0BD00479844 /* View Basics */ = {
+		F4864CA21DC9A0BD00479844 /* View And Controls */ = {
 			isa = PBXGroup;
 			children = (
 				F4864CA31DC9A0BD00479844 /* ViewAnimationTableViewController.swift */,
-				F4864CA41DC9A0BD00479844 /* ViewBasics.storyboard */,
+				F4864CA41DC9A0BD00479844 /* ViewAndControls.storyboard */,
 			);
+			name = "View And Controls";
 			path = "View Basics";
 			sourceTree = "<group>";
 		};
@@ -647,7 +648,7 @@
 				F4C27FEA1D81A106006E1487 /* LaunchScreen.storyboard in Resources */,
 				F48A63051DC0A70800253910 /* CNFemaleNames in Resources */,
 				F4DDE1B41DBA1A1F0068A2B0 /* News-2.jpg in Resources */,
-				F4864CBE1DC9A0BD00479844 /* ViewBasics.storyboard in Resources */,
+				F4864CBE1DC9A0BD00479844 /* ViewAndControls.storyboard in Resources */,
 				F4EABB281DA3AD2000FDB826 /* Menu.json in Resources */,
 				F4C27FE71D81A106006E1487 /* Assets.xcassets in Resources */,
 				F4DDE1B91DBA1A1F0068A2B0 /* News-7.jpg in Resources */,

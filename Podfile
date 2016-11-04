@@ -24,6 +24,8 @@ target 'YiDaIOSSwiftPractices' do
 
   pod 'pop', '~> 1.0'
 
+  pod 'SnapKit', '~> 3.0'
+
   target 'YiDaIOSSwiftPracticesTests' do
     inherit! :search_paths
     # Pods for testing

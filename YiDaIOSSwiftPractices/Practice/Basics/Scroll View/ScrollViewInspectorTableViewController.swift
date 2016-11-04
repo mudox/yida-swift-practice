@@ -64,7 +64,11 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		let image = PlaceholderImageSource.aImage(imageSize: CGSize(width: 414, height: 736 / 3))
+		let image = PlaceholderImageSource.aImage(
+			ofSize: CGSize(width: 414, height: 736 / 3),
+			text: "缩 放 我",
+			maxFontPoint: 26
+		)
 		imageView = UIImageView(image: image)
 		scrollView.internalStateListener = self
 
@@ -203,7 +207,6 @@ extension UILabel {
 				self.textColor = .black
 			}
 		})
-
 	}
 
 	func getGlowBox() -> UIView {
@@ -221,3 +224,4 @@ extension UILabel {
 		return box
 	}
 }
+
