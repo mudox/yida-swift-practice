@@ -2,13 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MyPlayground.playground">
+      location = "group:Projects/MyPlayground.playground">
    </FileRef>
    <FileRef
-      location = "group:ConsoleProject/ConsoleProject.xcodeproj">
+      location = "group:/Users/mudox/Dev/apple/YiDaiOS/Practices/YiDaIOSSwiftPractices/Projects/Main/Main.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:YiDaIOSSwiftPractices.xcodeproj">
+      location = "group:/Users/mudox/Dev/apple/YiDaiOS/Practices/YiDaIOSSwiftPractices/Projects/Console/Console.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

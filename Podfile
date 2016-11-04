@@ -1,7 +1,9 @@
 #Uncomment this line to define a global platform for your project
 platform :ios, '10.0'
 
-target 'YiDaIOSSwiftPractices' do
+project "Projects/Main/Main.xcodeproj"
+
+target 'Main' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
@@ -26,15 +28,14 @@ target 'YiDaIOSSwiftPractices' do
 
   pod 'SnapKit', '~> 3.0'
 
-  target 'YiDaIOSSwiftPracticesTests' do
+  target 'MainTests' do
     inherit! :search_paths
-    # Pods for testing
 
     pod 'RxBlocking', '~> 3.0'
     pod 'RxTest',     '~> 3.0'
   end
 
-  target 'YiDaIOSSwiftPracticesUITests' do
+  target 'MainUITests' do
     inherit! :search_paths
     # Pods for testing
 
