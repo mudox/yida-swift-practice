@@ -8,7 +8,6 @@
 
 import UIKit
 import pop
-import SwiftMessages
 import RxSwift
 import RxCocoa
 
@@ -71,19 +70,7 @@ class PopLabelMovingTableViewController: UITableViewController {
 		anim.fromValue = 30
 		anim.toValue = 120
 
-		let view = MessageView.viewFromNib(layout: .CardView)
-		var config = SwiftMessages.Config()
-		config.presentationStyle = .bottom
-		view.configureTheme(.success)
-		view.configureDropShadow()
-
 		anim.completionBlock = { anim, finished in
-			if finished {
-				view.configureContent(body: "动画成功")
-			} else {
-				view.configureContent(body: "动画失败")
-			}
-			SwiftMessages.show(config: config, view: view)
 			self.tapGesture.isEnabled = true
 		}
 

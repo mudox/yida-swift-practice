@@ -7,48 +7,46 @@ PODS:
     - CocoaLumberjack/Default
   - CocoaLumberjack/Swift (3.0.0):
     - CocoaLumberjack/Extensions
+  - EarlGrey (1.5.0)
   - FormValidatorSwift (1.0.0)
-  - Gloss (1.0.0)
+  - Gloss (1.1.0)
   - pop (1.0.9)
-  - RxBlocking (3.0.0):
-    - RxSwift (~> 3.0)
   - RxCocoa (3.0.0):
     - RxSwift (~> 3.0)
   - RxSwift (3.0.0)
-  - RxTest (3.0.0):
-    - RxSwift (~> 3.0)
   - SnapKit (3.0.2)
-  - SwiftMessages (3.0.0)
-  - SwiftyJSON (3.1.0)
+  - SwiftMessages (3.0.3)
+  - SwiftValidators (5.1.1)
+  - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - CocoaLumberjack/Swift
+  - EarlGrey
   - FormValidatorSwift (~> 1.0)
   - Gloss (~> 1.0)
   - pop (~> 1.0)
-  - RxBlocking (~> 3.0)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
-  - RxTest (~> 3.0)
   - SnapKit (~> 3.0)
   - SwiftMessages
+  - SwiftValidators
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  EarlGrey: a8263f60913e9ef2a1a6b44594ec195ec36e14ff
   FormValidatorSwift: 5d6995b8db29002fd757d787302b5658f270fa77
-  Gloss: '014789e9e69ca18f127eacca999f4c9b0bff6d58'
+  Gloss: a8340c124ff69c5d1c12e06c252373f4a16d2958
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  RxBlocking: 0132c660340d8b8f34b65b2e099167ea6134eecf
   RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
-  RxTest: 770511db5d602b618ee8c8a7c06b4b71f9168f7c
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
-  SwiftMessages: debcd4e7e5761021478ee240fbd0a5e02381c33f
-  SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
+  SwiftMessages: 3c6fd0375009d69ff35a7656bae0e31b4d8a930d
+  SwiftValidators: 3be5c8f80287fe4960d1b053519b22f304804a00
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: cb6f9644da73fa60532ef492dc085eb9b9681f73
+PODFILE CHECKSUM: 556c27b344134d5c382e11f5216f3870aa08f3d2
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1

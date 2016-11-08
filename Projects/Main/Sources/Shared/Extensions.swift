@@ -49,7 +49,7 @@ extension UINavigationController: UIGestureRecognizerDelegate {
 		// if no pan gesture exists, create and configure a new one
 		interactivePopGestureRecognizer!.isEnabled = false
 		let target = interactivePopGestureRecognizer!.delegate!
-		let panGesture = UIPanGestureRecognizer(target: target, action: Selector("handleNavigationTransition:"))
+		let panGesture = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
 		panGesture.delegate = self
 		view.addGestureRecognizer(panGesture)
 	}

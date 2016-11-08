@@ -5,12 +5,9 @@
       location = "group:Projects/MyPlayground.playground">
    </FileRef>
    <FileRef
-      location = "group:/Users/mudox/Dev/apple/YiDaiOS/Practices/YiDaIOSSwiftPractices/Projects/Main/Main.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:/Users/mudox/Dev/apple/YiDaiOS/Practices/YiDaIOSSwiftPractices/Projects/Console/Console.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:Projects/Main/Main.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F47CDF381DCC56FA00F44729 /* YidaIOSSwiftPracticesTestable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CDF371DCC56FA00F44729 /* YidaIOSSwiftPracticesTestable.framework */; };
 		F4DACCB41DC24D1F00425AD5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCB31DC24D1F00425AD5 /* main.swift */; };
 		F4DACD161DC24EB100425AD5 /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCFE1DC24EB100425AD5 /* MusicList.swift */; };
 		F4DACD171DC24EB100425AD5 /* MetaInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DACCFF1DC24EB100425AD5 /* MetaInspector.swift */; };
@@ -63,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47CDF381DCC56FA00F44729 /* YidaIOSSwiftPracticesTestable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

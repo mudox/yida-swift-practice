@@ -13,7 +13,7 @@
         <!--Root Navigation Controller-->
         <scene sceneID="ktZ-Tc-ImU">
             <objects>
-                <navigationController title="Root Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="Dih-gT-eWu" customClass="RootNavigationController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Root Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="Dih-gT-eWu" customClass="RootNavigationController" customModule="Main" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="RPw-Hn-fFg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -35,7 +35,7 @@
         <!--iOS · 基础-->
         <scene sceneID="bqs-LE-s2N">
             <objects>
-                <viewController id="Jri-Te-Tjm" customClass="RootMenuViewController" customModule="YiDaIOSSwiftPractices" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jri-Te-Tjm" customClass="RootMenuViewController" customModule="Main" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6VX-TI-nW9"/>
                         <viewControllerLayoutGuide type="bottom" id="gmK-DE-ORz"/>
@@ -49,27 +49,27 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Root Menu Cell" rowHeight="56" id="Zo1-5H-IcL" customClass="RootMenuTableViewCell" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="56"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Root Menu Cell" rowHeight="56" id="Zo1-5H-IcL" customClass="RootMenuTableViewCell" customModule="Main" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zo1-5H-IcL" id="Bh5-ZF-mpP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视图基础" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-LB-2Rx" customClass="TintedLabel" customModule="YiDaIOSSwiftPractices" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="8" width="57.5" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视图基础" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-LB-2Rx" customClass="TintedLabel" customModule="Main" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="58" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="UIView basics, UIView animations" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edd-g3-jxD">
-                                                    <rect key="frame" x="8" y="33" width="319" height="14.5"/>
+                                                    <rect key="frame" x="8" y="33" width="319" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" N/A " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHc-7f-EiQ">
-                                                    <rect key="frame" x="335" y="19.5" width="26" height="17"/>
+                                                    <rect key="frame" x="335" y="19" width="26" height="17"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="HK4-MB-aat"/>
@@ -147,6 +147,7 @@
                         <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raE-GP-D7h">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <accessibility key="accessibilityConfiguration" identifier="Basics 1st Level Button"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                             <state key="normal" title="基 础"/>
                             <connections>
@@ -163,6 +164,7 @@
                         <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-Y8-xxP">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <accessibility key="accessibilityConfiguration" identifier="Advanced 1st Level Button"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                             <state key="normal" title="进 阶"/>
                             <connections>
@@ -179,6 +181,7 @@
                         <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioh-7W-M1H">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <accessibility key="accessibilityConfiguration" identifier="Framework 1st Level Button"/>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="110"/>
                             <state key="normal" title="框 架"/>
                             <connections>

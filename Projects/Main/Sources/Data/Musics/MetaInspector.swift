@@ -92,7 +92,7 @@ class MetadataInspector {
 					case let dict as NSDictionary:
 						print("dump an artwork data in dictionary to \(dumpPath) ...")
 						if let data = dict["data"] {
-							(data as AnyObject).write(toFile: dumpPath, atomically: true)
+							_ = (data as AnyObject).write(toFile: dumpPath, atomically: true)
 							i += 1
 						} else {
 							print("*** failed to extract image data from NSDictionary")

@@ -29,19 +29,23 @@ class MainUITests: XCTestCase {
 	}
 
 	func testAll() {
+		// basics part
 		enterBasicPartIfNeeded()
+
 		testNavgationContentViewController()
 		testCustomNavigationController()
-
 		popCurrentViewController()
 
+		// advanced part
 		enterAdvancedPartIfNeeded()
+
+		// 3rd framework part
 	}
 }
 
 // MARK: - Helpers
 
-extension YiDaIOSSwiftPracticesUITests {
+extension MainUITests {
 
 	var app: XCUIApplication {
 		return XCUIApplication()
@@ -86,7 +90,7 @@ extension YiDaIOSSwiftPracticesUITests {
 
 // MARK: - Tests
 
-extension YiDaIOSSwiftPracticesUITests {
+extension MainUITests {
 
 	func testCustomPresentationTableViewController() {
 		enterBasicPartIfNeeded()

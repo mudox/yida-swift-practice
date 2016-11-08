@@ -46,8 +46,6 @@ class ScrollViewInspectorTableViewController: UITableViewController {
 	@IBOutlet weak var transformBLabel: UILabel!
 	@IBOutlet weak var transformCLabel: UILabel!
 	@IBOutlet weak var transformDLabel: UILabel!
-	@IBOutlet weak var transformTXLabel: UILabel!
-	@IBOutlet weak var transformTYLabel: UILabel!
 
 	// indicators
 	@IBOutlet weak var trackingLabel: UILabel!
@@ -136,8 +134,6 @@ extension ScrollViewInspectorTableViewController: InternalStateListener {
 		transformBLabel.pulseTextUpdate(with: newState.contentViewTransform?.b.shortDescription)
 		transformCLabel.pulseTextUpdate(with: newState.contentViewTransform?.c.shortDescription)
 		transformDLabel.pulseTextUpdate(with: newState.contentViewTransform?.d.shortDescription)
-		transformTXLabel.pulseTextUpdate(with: newState.contentViewTransform?.tx.shortDescription)
-		transformTYLabel.pulseTextUpdate(with: newState.contentViewTransform?.ty.shortDescription)
 
 		// indicators
 		if newState.isTracking { trackingLabel.pulse(with: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) }
@@ -181,10 +177,10 @@ extension UILabel {
 			return
 		}
 
-		var color = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+		var color = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
 		if newText != nil && text != nil &&
 		(newText! as NSString).floatValue < (text! as NSString).floatValue {
-			color = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+			color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
 		}
 
 		text = (newText != nil) ? newText : "n/a"
@@ -199,8 +195,7 @@ extension UILabel {
 
 		box.backgroundColor = color
 		box.frame = frame.insetBy(dx: dx, dy: dy)
-
-		UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseIn], animations: {
+		UIView.animate(withDuration: 0.6, delay: 0, options: [.curveEaseIn], animations: {
 			box.backgroundColor = .clear
 			}, completion: { finished in
 			if finished {
@@ -224,4 +219,3 @@ extension UILabel {
 		return box
 	}
 }
-

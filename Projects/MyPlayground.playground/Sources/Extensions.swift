@@ -43,11 +43,3 @@ extension Double {
 		return NSString(format: "%.02f", self) as String
 	}
 }
-
-//extension String {
-//	func leftPadding(toLength totalLength: Int, withPad character: String, endingAt endIndex: Int) -> String {
-//		if totalLength < self.characters.count {
-//			return self.substring(from: self.characters.index)
-//		}
-//	}
-//}
