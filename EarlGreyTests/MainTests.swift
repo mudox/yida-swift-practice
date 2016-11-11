@@ -53,12 +53,16 @@ class MainEarlGreyTests: XCTestCase {
 		G.select(elementWithMatcher: grey_accessibilityID("birthday"))
 			.perform(grey_tap())
 
+		let interval = -3600 * 24 * TimeInterval(arc4random_uniform(356 * 24))
 		G.select(elementWithMatcher: grey_accessibilityID("date input picker"))
-			.perform(grey_setDate(Date(timeIntervalSinceNow: -3600 * 356 * 24)))
+			.perform(grey_setDate(Date(timeIntervalSinceNow: interval)))
+
+		G.select(elementWithMatcher: grey_accessibilityID("date input ok button"))
+			.perform(grey_tap())
 
 		G.select(elementWithMatcher: grey_accessibilityID("address"))
 			.usingSearch(grey_scrollInDirection(.down, 50), onElementWith: grey_kindOfClass(UIScrollView.self))
-			.perform(grey_replaceText("深圳市 福田区 车公庙皇 冠科技园 A2312"))
+			.perform(grey_replaceText("深圳市福田区车公庙"))
 
 		G.select(elementWithMatcher: grey_accessibilityID("email"))
 			.perform(grey_typeText("wangnima@yd.com"))
